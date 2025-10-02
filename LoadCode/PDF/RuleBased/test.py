@@ -13,12 +13,23 @@
 import fitz  # PyMuPDF
 
 # 打开 PDF 文件
-pdf_path = '../../../Demo/b289b2d04f9f64ca2ed2fd352b44628f.pdf'
-pdf_document = fitz.open(pdf_path)
+pdf_path = '../../../Data/DGA_IWQOS2025.pdf'
 
+doc = fitz.open(pdf_path)
 
-metadata = pdf_document.metadata
-print(metadata)
+# 提取每一页的文本
+for page_num in range(len(doc)):
+    page = doc.load_page(page_num)
+    text = page.get_text()
+    print(f"Page {page_num + 1} Text:")
+    print(text)
+
+    # 提取页面中的图像
+    images = page.get_images(full=True)
+    for img in images:
+        xref = img[0]
+        pix = fitz.Pixmap(doc, xref)
+        pix.save(f"image_page{page_num+1}_{xref}.png")
 
 
 
