@@ -13,9 +13,9 @@
 import fitz  # PyMuPDF
 
 # 打开 PDF 文件
+pdf_path = '../../../Data/PDF/DGA_IWQOS2025.pdf'
 # pdf_path = '../../../Data/DGA_IWQOS2025.pdf'
-# pdf_path = '../../../Data/DGA_IWQOS2025.pdf'
-pdf_path = '../../../Data/PDF/pdf_poc.pdf'
+# pdf_path = '../../../Data/PDF/pdf_poc.pdf'
 # pdf_path = '../../../Data/testinvisiable.pdf'
 
 
