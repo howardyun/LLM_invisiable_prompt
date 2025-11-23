@@ -1,4 +1,4 @@
-# pip install -qU langchain-community pypdf
+# pip install -qU LangChain-community pypdf
 from langchain_community.document_loaders import PyPDFLoader
 import os
 import sys

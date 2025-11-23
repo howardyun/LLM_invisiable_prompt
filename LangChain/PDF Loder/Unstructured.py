@@ -80,7 +80,7 @@ def load_pdf_local():
         print(f"本地解析完成！文件已保存: {output_file_path}")
 
     except ImportError:
-        print("错误: 缺少必要的 Python 库。请运行: pip install 'langchain-unstructured[local]'")
+        print("错误: 缺少必要的 Python 库。请运行: pip install 'LangChain-unstructured[local]'")
     except Exception as e:
         print(f"发生错误: {e}")
         if "poppler" in str(e).lower() or "tesseract" in str(e).lower():
