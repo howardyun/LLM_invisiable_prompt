@@ -1,0 +1,154 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.3.20)  20 MAR 2019 21:08
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**doc.tex
+(./doc.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+No file doc.aux.
+\openout1 = `doc.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Try loading font information for T1+CC on input line 31.
+(./T1CC.fd
+File: t1CC.fd 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map})
+LaTeX Font Info:    Try loading font information for T1+o on input line 31.
+ (./T1o.fd
+File: t1o.fd 
+)
+LaTeX Font Info:    Try loading font information for T1+n on input line 31.
+
+(./T1n.fd
+File: t1n.fd 
+)
+LaTeX Font Info:    Try loading font information for T1+t on input line 31.
+ (./T1t.fd
+File: t1t.fd 
+)
+LaTeX Font Info:    Try loading font information for T1+e on input line 31.
+ (./T1e.fd
+File: t1e.fd 
+)
+LaTeX Font Info:    Try loading font information for T1+m on input line 31.
+ (./T1m.fd
+File: t1m.fd 
+)
+LaTeX Font Info:    Try loading font information for T1+a on input line 31.
+ (./T1a.fd
+File: t1a.fd 
+)
+LaTeX Font Info:    Try loading font information for T1+s on input line 31.
+ (./T1s.fd
+File: t1s.fd 
+)
+LaTeX Font Info:    Try loading font information for T1+k on input line 31.
+ (./T1k.fd
+File: t1k.fd 
+)
+LaTeX Font Info:    Try loading font information for T1+i on input line 31.
+
+(./T1i.fd
+File: t1i.fd 
+)
+LaTeX Font Info:    Try loading font information for T1+g on input line 31.
+ (./T1g.fd
+File: t1g.fd 
+)
+LaTeX Font Info:    Try loading font information for T1+c on input line 31.
+ (./T1c.fd
+File: t1c.fd 
+)
+LaTeX Font Info:    Try loading font information for T1+h on input line 31.
+ (./T1h.fd
+File: t1h.fd 
+)
+LaTeX Font Info:    Try loading font information for T1+d on input line 31.
+ (./T1d.fd
+File: t1d.fd 
+)
+LaTeX Font Info:    Try loading font information for T1+empty on input line 31.
+
+ (./T1empty.fd
+File: t1empty.fd 
+)
+LaTeX Font Info:    Try loading font information for T1+u on input line 31.
+ (./T1u.fd
+File: t1u.fd 
+)
+LaTeX Font Info:    Try loading font information for T1+r on input line 31.
+ (./T1r.fd
+File: t1r.fd 
+)
+LaTeX Font Info:    Try loading font information for T1+l on input line 31.
+ (./T1l.fd
+File: t1l.fd 
+)
+LaTeX Font Info:    Try loading font information for T1+y on input line 31.
+ (./T1y.fd
+File: t1y.fd 
+)
+LaTeX Font Info:    Try loading font information for T1+Period on input line 31
+.
+ (./T1Period.fd
+File: t1Period.fd 
+)
+LaTeX Font Info:    Try loading font information for T1+PP on input line 31.
+ (./T1PP.fd
+File: t1PP.fd 
+)
+LaTeX Font Info:    Try loading font information for T1+p on input line 31.
+ (./T1p.fd
+File: t1p.fd 
+)
+[1
+
+] (./doc.aux) ) 
+Here is how much of TeX's memory you used:
+ 442 strings out of 493029
+ 3619 string characters out of 6136234
+ 53032 words of memory out of 5000000
+ 3956 multiletter control sequences out of 15000+600000
+ 11370 words of font info for 36 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 23i,4n,17p,1211b,107s stack positions out of 5000i,500n,10000p,200000b,80000s
+{T1-WGL4.enc}<p.ttf><PP.ttf><Period.ttf><y.ttf><l.ttf><r.ttf><u.
+ttf><empty.ttf><d.ttf><h.ttf><c.ttf><g.ttf><i.ttf><k.ttf><s.ttf><a.ttf><m.ttf><
+e.ttf><t.ttf><n.ttf><o.ttf><CC.ttf></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb>
+Output written on doc.pdf (1 page, 230343 bytes).
+PDF statistics:
+ 100 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

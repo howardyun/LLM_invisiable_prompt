@@ -1,0 +1,4 @@
+\ProvidesFile{t1Period.fd}
+\DeclareFontFamily{T1}{Period}{}
+\DeclareFontShape{T1}{Period}{m}{n}{ <-> Period}{}
+\pdfmapline{+Period\space <Period.ttf\space <T1-WGL4.enc}

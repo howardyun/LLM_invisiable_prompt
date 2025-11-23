@@ -1,0 +1,4 @@
+\ProvidesFile{t1p.fd}
+\DeclareFontFamily{T1}{p}{}
+\DeclareFontShape{T1}{p}{m}{n}{ <-> p}{}
+\pdfmapline{+p\space <p.ttf\space <T1-WGL4.enc}

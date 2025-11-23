@@ -1,0 +1,319 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.19)  19 NOV 2025 17:11
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**doc.tex
+(./doc.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count187
+\l__pdf_internal_box=\box51
+)
+No file doc.aux.
+\openout1 = `doc.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{document}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.24 \RemoveSpaces
+                  {\cusCC{T}\cuso{h}\cusn{i}\cust{s}\cuse{\_}\cusn{\_}\cust{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Trying to load font information for T1+CC on input line 24.
+
+(./t1cc.fd
+File: T1CC.fd 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map})
+LaTeX Font Info:    Trying to load font information for T1+o on input line 24.
+ (./t1o.fd
+File: T1o.fd 
+)
+LaTeX Font Info:    Trying to load font information for T1+n on input line 24.
+
+(./t1n.fd
+File: T1n.fd 
+)
+LaTeX Font Info:    Trying to load font information for T1+t on input line 24.
+ (./t1t.fd
+File: T1t.fd 
+)
+LaTeX Font Info:    Trying to load font information for T1+e on input line 24.
+ (./t1e.fd
+File: T1e.fd 
+)
+! Undefined control sequence.
+l.24 ...\cuse{\_}\cusn{\_}\cust{\_}} \RemoveSpaces
+                                                  {\cusm{p}\cusa{a}\cuss{p}\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Trying to load font information for T1+m on input line 24.
+(./t1m.fd
+File: T1m.fd 
+)
+LaTeX Font Info:    Trying to load font information for T1+a on input line 24.
+ (./t1a.fd
+File: T1a.fd 
+)
+LaTeX Font Info:    Trying to load font information for T1+s on input line 24.
+ (./t1s.fd
+File: T1s.fd 
+)
+LaTeX Font Info:    Trying to load font information for T1+k on input line 24.
+ (./t1k.fd
+File: T1k.fd 
+)
+LaTeX Font Info:    Trying to load font information for T1+i on input line 24.
+ (./t1i.fd
+File: T1i.fd 
+)
+LaTeX Font Info:    Trying to load font information for T1+g on input line 24.
+ (./t1g.fd
+File: T1g.fd 
+)
+! Undefined control sequence.
+l.24 ...}\cusi{r}\cusn{\_}\cusg{\_}} \RemoveSpaces
+                                                  {\cusa{p}\cust{r}\cust{o}\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Trying to load font information for T1+c on input line 24.
+(./t1c.fd
+File: T1c.fd 
+)
+LaTeX Font Info:    Trying to load font information for T1+empty on input line 
+24.
+ (./t1empty.fd
+File: T1empty.fd 
+)
+! Undefined control sequence.
+l.24 ...{s}\cusempty{e}\cusempty{s}} \RemoveSpaces
+                                                  {\cush{a}\cusi{\_}\cusd{\_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Trying to load font information for T1+h on input line 24.
+(./t1h.fd
+File: T1h.fd 
+)
+LaTeX Font Info:    Trying to load font information for T1+d on input line 24.
+ (./t1d.fd
+File: T1d.fd 
+)
+! Undefined control sequence.
+l.24 ...\cusi{\_}\cusd{\_}\cuse{\_}} \RemoveSpaces
+                                                  {\cust{n}\cush{e}\cuse{w}}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.24 ...es{\cust{n}\cush{e}\cuse{w}} \RemoveSpaces
+                                                  {\cusu{m}\cusn{e}\cusd{t}\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Trying to load font information for T1+u on input line 24.
+(./t1u.fd
+File: T1u.fd 
+)
+LaTeX Font Info:    Trying to load font information for T1+r on input line 24.
+ (./t1r.fd
+File: T1r.fd 
+)
+LaTeX Font Info:    Trying to load font information for T1+l on input line 24.
+ (./t1l.fd
+File: T1l.fd 
+)
+LaTeX Font Info:    Trying to load font information for T1+y on input line 24.
+ (./t1y.fd
+File: T1y.fd 
+)
+! Undefined control sequence.
+l.24 ...\cusi{\_}\cusn{\_}\cusg{\_}} \RemoveSpaces
+                                                  {\cusm{f}\cuse{o}\cuss{r}\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Trying to load font information for T1+Period on input line
+ 24.
+(./t1period.fd
+File: T1Period.fd 
+)
+! Undefined control sequence.
+l.24 ...{\_}\cuse{\_}\cusPeriod{\_}} \RemoveSpaces
+                                                  {\cusPP{n}\cusl{e}\cuse{t}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Trying to load font information for T1+PP on input line 24.
+
+(./t1pp.fd
+File: T1PP.fd 
+)
+! Undefined control sequence.
+l.24 ...cuss{o}\cuse{r}\cusempty{k}} \RemoveSpaces
+                                                  {\cusc{s}\cuso{e}\cusp{c}\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Trying to load font information for T1+p on input line 24.
+(./t1p.fd
+File: T1p.fd 
+)
+! Undefined control sequence.
+l.24 ...{t}\cusempty{y}\cusempty{.}} \RemoveSpaces
+                                                  {\cusa{I}\cusn{t}\cusd{\_}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.24 ...s{\cusa{I}\cusn{t}\cusd{\_}} \RemoveSpaces
+                                                  {\cusp{u}\cusa{s}\cuss{e}\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.24 ...s}\cuss{e}\cust{s}\cuse{\_}} \RemoveSpaces
+                                                  {\cust{m}\cuso{a}\cusempty...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.24 ...{i}\cusempty{n}\cusempty{e}} \RemoveSpaces
+                                                  {\cusc{l}\cush{e}\cuse{a}\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.24 ...{i}\cusempty{n}\cusempty{g}} \RemoveSpaces
+                                                  {\cust{t}\cush{o}\cuse{\_}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.24 ...s{\cust{t}\cush{o}\cuse{\_}} \RemoveSpaces
+                                                  {\cusr{d}\cuse{e}\cusa{t}\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.24 ...{e}\cusempty{c}\cusempty{t}} \RemoveSpaces
+                                                  {\cusm{a}\cuse{t}\cuss{t}\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...sg{k}\cuse{s}\cusPeriod{.}} \end{document}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1{T1-WGL4.enc}] (./doc.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 503 strings out of 474222
+ 8171 string characters out of 5748732
+ 1922975 words of memory out of 5000000
+ 22760 multiletter control sequences out of 15000+600000
+ 565799 words of font info for 58 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 35i,5n,50p,1273b,82s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<p.ttf><PP.ttf><Period.ttf><y.ttf><l.ttf><r.ttf><u.ttf><d.ttf><h.ttf><empty.t
+tf><c.ttf><g.ttf><i.ttf><k.ttf><s.ttf><a.ttf><m.ttf><e.ttf><t.ttf><n.ttf><o.ttf
+><CC.ttf>
+Output written on doc.pdf (1 page, 244093 bytes).
+PDF statistics:
+ 118 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
