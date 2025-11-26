@@ -15,7 +15,7 @@ injector2 = TransparentInjection(modality="default", file_format="pdf")
 injector.apply(input_document="DGA_IWQOS2025.pdf",
                injection="Hidden content",
                output_path="injected_document.pdf")
-injector2.apply(input_document="DGA_IWQOS2025.pdf",injection = "Hidden content",output_path="injected_document_Trans.pdf")
+injector2.apply(input_document="DGA_IWQOS2025.pdf", injection = "Hidden content", output_path="injected_document_Trans.pdf")
 
 # # Transparent injection
 # injector = TransparentInjection(modality="opacity-0", file_format="html")
