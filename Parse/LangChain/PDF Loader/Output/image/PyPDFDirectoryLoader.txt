@@ -1,5 +1,5 @@
-批量解析结果 (PyPDFDirectory): LangChainProject
-保存位置: D:\PycharmProject\LangChainProject\PDF Loder\Output\PyPDFDirectoryLoader.txt
+批量解析结果 (PyPDFDirectory): PDF
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\image\PyPDFDirectoryLoader.txt
 涉及文件数: 3
 总页数 (所有文件合计): 3
 特点: 批量加载目录下所有 PDF，底层使用 pypdf 解析。

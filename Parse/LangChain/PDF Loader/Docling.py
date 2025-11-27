@@ -47,7 +47,7 @@ def load_pdf_docling_full_meta(input_path, output_path):
         # pipeline_options.do_table_structure = True
 
         # 强制OCR
-        # pipeline_options.ocr_options = RapidOcrOptions(force_full_page_ocr=True)
+        pipeline_options.ocr_options = RapidOcrOptions(force_full_page_ocr=True)
 
         pipeline_options.accelerator_options = AcceleratorOptions(
             num_threads=8,

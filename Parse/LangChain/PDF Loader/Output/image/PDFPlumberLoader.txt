@@ -1,5 +1,5 @@
 文件解析结果 (PDFPlumber): image_version.pdf
-保存位置: D:\PycharmProject\LangChainProject\PDF Loder\Output\image\PDFPlumberLoader.txt
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\image\PDFPlumberLoader.txt
 总页数: 1
 特点: 擅长提取复杂布局文本，提供详细的 PDF 元数据。
 ==============================

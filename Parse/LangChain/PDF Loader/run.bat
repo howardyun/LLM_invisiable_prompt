@@ -7,13 +7,13 @@ setlocal
 set PYTHON_EXE=python
 
 :: 设置输入文件路径 (支持相对路径，这里假设 doc.pdf 在上一级目录)
-set "INPUT_FILE=..\image_version.pdf"
+set "INPUT_FILE=..\PDF\image_version.pdf"
 
 :: 设置输入目录 (供 PyPDFDirectory 使用，这里设为上一级目录)
-set "INPUT_DIR=../"
+set "INPUT_DIR=../PDF"
 
 :: 设置输出文件夹名称
-set "OUTPUT_DIR=Output"
+set "OUTPUT_DIR=Output/image"
 :: ===========================================
 
 echo [INFO] 开始自动化测试...

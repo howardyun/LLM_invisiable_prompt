@@ -1,5 +1,5 @@
 文件解析结果 (PyMuPDF4LLM): image_version.pdf
-保存位置: D:\PycharmProject\LangChainProject\PDF Loder\Output\image\PyMuPDF4LLMLoader.txt
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\image\PyMuPDF4LLMLoader.txt
 总页数: 1
 特点: 输出 Markdown 格式，自动处理表格为 Markdown 表格，适合 RAG/LLM 应用。
 ==============================

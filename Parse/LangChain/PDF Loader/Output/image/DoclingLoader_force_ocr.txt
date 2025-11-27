@@ -1,7 +1,152 @@
 文件解析结果: image_version.pdf
-切分块数: 1
+切分块数: 11
 ==============================
 
 【文本内容】:
-Content masking attack hide the underlying message. Please copy and paste to c heck thereal message.
+2
+6
+7
+S
+10
+11
+12
+13
+14
+15
+16
+17
+16
+19
+20
+21
+23
+24
+25
+2h
+Z7
+28
+29
+30
+Z2
+33
+元
+35
+36
+37
+36
+39
+40
+I+
+42
+43
+45
+47
+48
+49
+S0
+51
+53
+55
+56
+57
+56
+
+【文本内容】:
+A Large-Scale Empirical Study of Secret Leakage in Hugging Face Spaces
+Anonymous Author(s)
+Figure 1:When developers useSpaces,theyfirstcreate a repositoryand upload theircode to theplatform O.Subsequently,Spaces deploys and distributes the code based on itscontents②.Inadditiontoaccessingthehostedlargelanguage models (LLMs)through API calls,developers can also levcrageboth HuggingFace and third-party cloud inference APIs.Finally,end-users can interactwithvariousAI applicationsviawebinterfaces.However,ifuserinadvertently hardcodes secrets in a public Space, attackers can exploit them,leadingtoAPI abusc andprivacybreaches.
+
+【文本内容】:
+A Large-Scale Empirical Study of Secret Leakage in Hugging Face Spaces
+AIapplications,providingdeveloperswith anefficientanduserfriendlyenvironmentforquicklydeployingandsharingAImodels. ByleveragingGit-basedcoderepositoriesandbuilt-inwebservice deployment,Spaccs cnablesdeveloperstobuildandshowcascAI applications at minimal cost.As of now,Spaccs has hosted morc than300.000publicAIweb applications,formingahighlycfficicnt AI servicepipeline(asillustrated inFigure 1).Through standardizedAPIinterfaces,developerscanseamlesslyintegratethird-party modelinferenceservicestoperformAItaskssuchastextgeneration andimage rccognition,without theneedforcomplex computing resourcemanagementorextensivecodeadaptation.
+
+【文本内容】:
+A Large-Scale Empirical Study of Secret Leakage in Hugging Face Spaces
+However,thisconveniencealsointroducesserioussecurityrisks. Recent reports[7,26]have revealcd thatalarge number ofAPI accesstokens,databasc crcdentials,andothcrsecretinformation exposures may lead to unauthorized API abuse,user data breaches, and evenmaliciouscodeexecution,posingasignificant threato thcsecurity of AI applications[15].Howcvcr,thcre is still a lack ofsystematicresearchon thcissue ofsecretleakageintheSpaces platform.Comparedtoothercodehostingplatforms,secretleakage in Spaces may prescnt several distinct security challenges:(1) SinceSpaccsfocuscs onAIapplications andprovidesbuilt-inwcb serviccs,thevolumc,types,and filclocations of lcakcd sccretsmay differsignificantlyfrom thoscobscrvedontraditionalplatforms such as GitHub and GitLab.(2) Therapid
+
+【文本内容】:
+A Large-Scale Empirical Study of Secret Leakage in Hugging Face Spaces
+expansion of theSpaces ccosystemmay havcled to inadcquatc secrct dctection andprotection mcchanismsinitscarlystagcs,resultinginvariations in the
+
+【文本内容】:
+Abstract
+HuggingFace Spaces(Spaces) has become a leading platform for hostingAIapplications,offcringdevclopersscamlessintcgrationof Git-basedrcpositorics and out-of-the-boxweb service deployment. Howcvcr,asits adoption continues to expand,security concerns havc comc tolight.Rcccntreports havepointed to thcissuc of accidcntal cxposurcof scnsitiveinformation,such asAPI tokcns anddatabasecrcdentials,withinSpaces-hostedcode.Despitcthese concerns,theresearch communitystill lacks a comprehensive understandingof thescopeandimpactof thescsecurityrisks.To bridgc this gap,wepresent thcfirst large-scalc and systcmatic empirical study to quantifythc extent ofsecret leakage inSpaces. Webeginbycompilingacomprehensive dataset of313,647public SpacesrepositoriescrcatcdbctweenMarch2022andDecember 2024.To detect
+
+【文本内容】:
+Abstract
+cxposedsccrets,weintroduceSecretReviewer,an advancedframcworkthatcombincsstaticanalysisandLargeLanguage Model (LLM)-assisted detection to identify leaked credentials. ApplyingSecretRevicwer,weidentified9.149withsecretleakage vulnerabilities and11,557 uniquekeys-76% of which from leading AIscrviccproviderssuchasOpcnAIand Groq.Ourfindingsindicatethat30%ofleakswereembeddedincommithistories,andover 1,000non-codefilescontainedsensitive data.Furthervalidation revealed that30%of detected keysremained active,including140 validdatabasecredentialsand50%ofAPItokenswithwritepermissions,underscoringsignificant securityrisks.Our studyshcds light on critical security challengesinAl platform ecosystems and advocatesfor stronger security practices to mitigate theserisks.
+
+【文本内容】:
+Keywords
+Secretleakage,ecurity,rivacy，HuggingFaceSpacs
+
+【文本内容】:
+ACMRefercnccFormat:
+Anonymous Author(s).2018.A Large-ScaleEmpirical Study of Secret LeakageinHuggingFaccSpaces.InProcecdings ofMakc sure toenter the correct conferencetitlefromyourrighisconfirmationemail(Conferenceacronym'Xx). ACM.NewYorkNY.USA,11pages.https://doiorg/XXXXXXX.XXXXXXX
+
+【文本内容】:
+1Introduction
+With the rapidadvancement of artificialintelligence(Al) applications,thedemandforconvenientandscalabledeploymentsolutions hasincreased significantly[3o].HuggingFace Spaces (hereafter referred to asSpaces)has emerged as aleadingplatformforhosting
+Permissionto makedigitalorhardcopiesofall orpartof thisworkforpersonalor classroom usesgrantedwithoutfecprovidedthatcopiesarenotmadcordlstributed forprofitorcommercialadvantageandthatcopiesbearthisnoticcandthefullcitation onthefirstpageCopyrighisforcomponentsof thisworkownedbyothersthanhe author（s）mustbehonoredAbstractingwithcreditispermitted.Tocopyotherwise,or republhostnsverdisqresims and/ora feeRequestpermissions from permissions@acin.org
+2018-Copyrightheld by thcowner/author（s）.Publication rightslcensed toACM.
+ConferenceacronymXXWoodstock,NY
+
+【文本内容】:
+1Introduction
+ACMLSBN978-1-4503-XXXX-X/2018/06 https://doiorg/XXXXXXX.XXXXXXX
+n
+s
+61
+62
+61
+H
+65
+67
+68
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+B4
+85
+86
+87
+89
+90
+91
+92
+93
+24
+95
+9%6
+97
+98
+99
+100
+101
+102
+$01
+104
+105
+106
+107
+10S
+109
+110
+111
+112
+113
+11-4
+115
+116
 
