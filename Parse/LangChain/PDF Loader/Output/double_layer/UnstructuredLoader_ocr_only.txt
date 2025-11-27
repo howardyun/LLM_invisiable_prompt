@@ -1,0 +1,6 @@
+本地解析结果 (Unstructured Local): double_layer.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loder\Output\double_layer\UnstructuredLoader_ocr_only.txt
+识别元素数量: 0
+解析策略: 
+==============================
+

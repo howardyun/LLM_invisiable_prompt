@@ -1,0 +1,9 @@
+文件解析结果 (PyMuPDF): image_version.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loder\Output\image\PyMuPDFLoader.txt
+总页数: 1
+特点: 极速渲染，支持提取详细元数据(如创建时间、格式版本)。
+==============================
+
+【正文内容】:
+
+

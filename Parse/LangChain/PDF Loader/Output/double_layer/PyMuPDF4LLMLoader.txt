@@ -1,0 +1,9 @@
+文件解析结果 (PyMuPDF4LLM): double_layer.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loder\Output\double_layer\PyMuPDF4LLMLoader.txt
+总页数: 1
+特点: 输出 Markdown 格式，自动处理表格为 Markdown 表格，适合 RAG/LLM 应用。
+==============================
+
+【Markdown 内容】:
+
+

@@ -1,0 +1,12 @@
+文件解析结果 (PyPDFium2): text_version.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loder\Output\text\PyPDFium2Loader.txt
+总页数: 1
+特点: 高性能文本提取，基于 C++ PDFium 库。
+==============================
+
+【正文内容】:
+This___ message is____ unde the pdf_______ file____ and___ it__ sho not__ be v
+isib to_ huma eye.____
+1
+
+

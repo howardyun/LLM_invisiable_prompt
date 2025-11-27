@@ -1,0 +1,9 @@
+本地解析结果 (Unstructured Local): image_version.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loder\Output\image\UnstructuredLoader_ocr_only.txt
+识别元素数量: 1
+解析策略: 
+==============================
+
+【正文内容】:
+Content masking attack hide the underlying message. Please copy and paste to c heck the real message.
+

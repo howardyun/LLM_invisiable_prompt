@@ -1,0 +1,12 @@
+文件解析结果 (PDFPlumber): text_version.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loder\Output\text\PDFPlumberLoader.txt
+总页数: 1
+特点: 擅长提取复杂布局文本，提供详细的 PDF 元数据。
+==============================
+
+【正文内容】:
+This___ message is____ underlying the pdf_______ file____ and___ it__ should not__ be v
+isible to_ human eye.____
+1
+
+

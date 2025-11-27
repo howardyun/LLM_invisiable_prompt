@@ -1,0 +1,22 @@
+批量解析结果 (PyPDFDirectory): LangChainProject
+保存位置: D:\PycharmProject\LangChainProject\PDF Loder\Output\PyPDFDirectoryLoader.txt
+涉及文件数: 3
+总页数 (所有文件合计): 3
+特点: 批量加载目录下所有 PDF，底层使用 pypdf 解析。
+==============================
+
+文件: double_layer.pdf
+【正文内容】:
+This is the text layer.
+This is the text layer.
+
+文件: image_version.pdf
+【正文内容】:
+
+
+文件: text_version.pdf
+【正文内容】:
+This___ message is____ underlying the pdf_______ file____ and___ it__ should not__ be v
+isible to_ human eye.____
+1
+

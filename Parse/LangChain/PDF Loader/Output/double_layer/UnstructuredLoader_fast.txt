@@ -1,0 +1,9 @@
+本地解析结果 (Unstructured Local): double_layer.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loder\Output\double_layer\UnstructuredLoader_fast.txt
+识别元素数量: 1
+解析策略: 
+==============================
+
+【正文内容】:
+This is the text layer. This is the text layer.
+

@@ -1,0 +1,19 @@
+文件解析结果: text_version.pdf
+切分块数: 1
+==============================
+
+【文本内容】:
+l
+e
+n
+r
+l
+y
+i
+n
+g
+u
+l
+d
+T h i s _ _ _ m e s s a g e i s_ _ _ _ u n d e t h e p d f _ _ _ _ _ _ _ f i le _ _ _ _ a n d _ _ _ i t _ _ s h o n o t _ _ b e v i s i b t o _ h u m a e y e. _ _ _ _
+

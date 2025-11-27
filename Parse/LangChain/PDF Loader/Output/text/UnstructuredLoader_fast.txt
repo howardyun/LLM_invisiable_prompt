@@ -1,0 +1,36 @@
+本地解析结果 (Unstructured Local): text_version.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loder\Output\text\UnstructuredLoader_fast.txt
+识别元素数量: 10
+解析策略: 
+==============================
+
+【正文内容】:
+This___ message is____ under e to_ human eye.____
+
+【正文内容】:
+isibl
+
+【正文内容】:
+l
+
+【正文内容】:
+g the pdf_______ file____ and___ it__ shou
+
+【正文内容】:
+i
+
+【正文内容】:
+n
+
+【正文内容】:
+y
+
+【正文内容】:
+1
+
+【正文内容】:
+l
+
+【正文内容】:
+d not__ be v
+

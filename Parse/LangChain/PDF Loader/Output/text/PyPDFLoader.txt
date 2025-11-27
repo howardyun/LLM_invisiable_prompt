@@ -1,0 +1,10 @@
+文件解析结果 (PyPDFLoader): text_version.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loder\Output\text\PyPDFLoader.txt
+总页数: 1
+==============================
+
+【正文内容】:
+This___ message is____ underlying the pdf_______ file____ and___ it__ should not__ be v
+isible to_ human eye.____
+1
+

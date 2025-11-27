@@ -1,0 +1,6 @@
+本地解析结果 (Unstructured Local): image_version.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loder\Output\image\UnstructuredLoader_fast.txt
+识别元素数量: 0
+解析策略: 
+==============================
+

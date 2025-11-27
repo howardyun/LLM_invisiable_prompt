@@ -1,0 +1,12 @@
+本地解析结果 (Unstructured Local): text_version.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loder\Output\text\UnstructuredLoader_hi_res.txt
+识别元素数量: 2
+解析策略: 
+==============================
+
+【正文内容】:
+This___ message is____ under isibl e to_ human eye.____ g the pdf_______ file____ and___ it__ shou d not__ be v
+
+【正文内容】:
+1
+

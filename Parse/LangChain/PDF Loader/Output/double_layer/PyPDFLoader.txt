@@ -1,0 +1,9 @@
+文件解析结果 (PyPDFLoader): double_layer.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loder\Output\double_layer\PyPDFLoader.txt
+总页数: 1
+==============================
+
+【正文内容】:
+This is the text layer.
+This is the text layer.
+

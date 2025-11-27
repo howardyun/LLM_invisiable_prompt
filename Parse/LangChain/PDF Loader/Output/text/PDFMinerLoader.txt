@@ -1,0 +1,24 @@
+文件解析结果 (PDFMiner): text_version.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loder\Output\text\PDFMinerLoader.txt
+总页数: 1
+特点: 纯 Python 解析，专注于文本布局和结构分析。
+==============================
+
+【正文内容】:
+This___ message is____ under
+e to_ human eye.____
+
+isibl
+
+g the pdf_______ file____ and___ it__ shou
+
+d not__ be v
+
+1
+
+l
+y
+i
+n
+l
+

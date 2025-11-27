@@ -1,0 +1,8 @@
+文件解析结果 (PyPDFLoader): image_version.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loder\Output\image\PyPDFLoader.txt
+总页数: 1
+==============================
+
+【正文内容】:
+
+
