@@ -59,7 +59,7 @@ for page_num in range(len(doc)):
 #                     for span in line["spans"]:
 #                         print(span)
 #                         # 获取文本内容，颜色和透明度等属性
-#                         text = span['text']
+#                         content_masking = span['content_masking']
 #                         color = span['color']  # 颜色
 #                         alpha = span['alpha']  # 透明度
 #                         size = span['size']  # 字体大小
@@ -68,7 +68,7 @@ for page_num in range(len(doc)):
 #                         if alpha == 0 or color == 0xFFFFFF:  # 假设背景色为白色
 #                             invisible_texts.append({
 #                                 "page": page_num + 1,
-#                                 "text": text,
+#                                 "content_masking": content_masking,
 #                                 "color": color,
 #                                 "alpha": alpha,
 #                                 "size": size
@@ -84,7 +84,7 @@ for page_num in range(len(doc)):
 #
 # # 打印输出不可见的文本
 # for item in invisible_texts:
-#     print(f"Page {item['page']} - Text: {item['text']} | Color: {hex(item['color'])} | Alpha: {item['alpha']} | Size: {item['size']}")
+#     print(f"Page {item['page']} - Text: {item['content_masking']} | Color: {hex(item['color'])} | Alpha: {item['alpha']} | Size: {item['size']}")
 #
 
 

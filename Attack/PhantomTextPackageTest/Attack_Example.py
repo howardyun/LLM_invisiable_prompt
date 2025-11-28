@@ -20,5 +20,5 @@ injector2.apply(input_document="DGA_IWQOS2025.pdf", injection = "Hidden content"
 # # Transparent injection
 # injector = TransparentInjection(modality="opacity-0", file_format="html")
 # injector.apply(input_document="document.html",
-#                injection="Invisible text",
+#                injection="Invisible content_masking",
 #                output_path="injected_document.html")

@@ -10,7 +10,7 @@ def create_pdf(output_file):
 
     # 文字层（这是在文字层中绘制的文字）
     c.setFont("Helvetica", 12)
-    c.drawString(100, 750, "This is the text layer.")
+    c.drawString(100, 750, "This is the content_masking layer.")
 
     # 图片层（添加一张图片作为背景）
     c.drawImage("case3.png", 50, 500, width=500, height=500)  # 使用你自己的图片路径
