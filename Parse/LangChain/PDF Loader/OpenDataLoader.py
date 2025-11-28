@@ -44,7 +44,7 @@ def load_pdf_with_opendataloader(input_path, output_path):
         loader = OpenDataLoaderPDFLoader(
             file_path = [pdf_file_path],
             # content_safety_off = ["all"]
-            # content_safety_off = ["hidden-content_masking"]
+            # content_safety_off = ["hidden-text"]
             # content_safety_off = ["off-page"]
             # content_safety_off = ["tiny"]
             # content_safety_off = ["hidden-ocg"]
