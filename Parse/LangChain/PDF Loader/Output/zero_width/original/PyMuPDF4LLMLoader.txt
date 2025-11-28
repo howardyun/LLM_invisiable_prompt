@@ -1,0 +1,30 @@
+文件解析结果 (PyMuPDF4LLM): original.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\zero_width\original\PyMuPDF4LLMLoader.txt
+总页数: 1
+特点: 输出 Markdown 格式，自动处理表格为 Markdown 表格，适合 RAG/LLM 应用。
+==============================
+
+【元数据 (Metadata)】:
+  - producer: Microsoft® Word 2021
+  - creator: Microsoft® Word 2021
+  - creationdate: 2025-11-25T23:30:13+08:00
+  - source: D:\PycharmProject\LangChainProject\PDF\Zero_Width\original.pdf
+  - file_path: D:\PycharmProject\LangChainProject\PDF\Zero_Width\original.pdf
+  - total_pages: 1
+  - format: PDF 1.7
+  - title: 
+  - author: 
+  - subject: 
+  - keywords: 
+  - moddate: 2025-11-25T23:30:13+08:00
+  - trapped: 
+  - modDate: D:20251125233013+08'00'
+  - creationDate: D:20251125233013+08'00'
+  - page: 0
+
+【Markdown 内容】:
+This is a test PDF.
+
+
+
+

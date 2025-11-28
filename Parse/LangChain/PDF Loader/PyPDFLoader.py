@@ -54,15 +54,9 @@ def load_pdf(input_path, output_path):
                     metadata_str += f"  - {key}: {value}\n"
 
                 # --- 构造输出格式 ---
-                # full_page_output = f"{metadata_str}\n【正文内容】:\n{content}\n\n"
-                full_page_output = f"【正文内容】:\n{content}\n\n"
+                full_page_output = f"{metadata_str}\n【正文内容】:\n{content}\n\n"
+                # full_page_output = f"【正文内容】:\n{content}\n\n"
 
-                # 控制台简单打印进度
-                # if i == 0:
-                #     print(f"--- 预览第一页 ---\n{content[:200]}...\n")
-
-                # --- 输出 ---
-                # print(full_page_output) # 控制台不再打印全部内容，避免刷屏
                 f.write(full_page_output)
 
         # print(f"{'=' * 30}")

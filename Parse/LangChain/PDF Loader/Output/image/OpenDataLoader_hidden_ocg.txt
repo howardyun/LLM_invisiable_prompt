@@ -1,0 +1,9 @@
+文件解析结果 (OpenDataLoader): image_version.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\image\OpenDataLoader_hidden-ocg.txt
+文档片段数: 1
+特点: 本地 Java 引擎，重构文档布局(Markdown)，内置 AI 安全过滤。
+==============================
+
+【Markdown 内容】:
+
+

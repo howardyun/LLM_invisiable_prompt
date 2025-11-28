@@ -79,14 +79,8 @@ def load_pdfs_from_directory(input_dir, output_path):
                 # --- 构造输出格式 ---
                 # 增加文件名显示，以便区分不同文件的内容
                 page_header = f"--- 序号 {i + 1} | 文件: {current_file} | 第 {current_page} 页 ---\n"
-                # full_output = f"{page_header}{metadata_str}\n【正文内容】:\n{content}\n\n"
-
-                # 【修改点】：在正文内容前加入文件名
-                full_output = f"文件: {current_file}\n【正文内容】:\n{content}\n\n"
-
-                # 控制台简单打印进度
-                # if i == 0:
-                #     print(f"--- 预览第一条内容 (文件: {current_file}) ---\n{content[:200]}...\n")
+                full_output = f"{current_file}\n{page_header}{metadata_str}\n【正文内容】:\n{content}\n\n"
+                # full_output = f"文件: {current_file}\n【正文内容】:\n{content}\n\n"
 
                 f.write(full_output)
 

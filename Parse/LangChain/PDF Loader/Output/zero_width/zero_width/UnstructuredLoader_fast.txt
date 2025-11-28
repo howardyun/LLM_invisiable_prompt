@@ -1,0 +1,21 @@
+本地解析结果 (Unstructured Local): zero_width.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\zero_width\zero_width\UnstructuredLoader_fast.txt
+识别元素数量: 1
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Zero_Width\zero_width.pdf
+  - coordinates: {'points': ((90.024, 74.7099199999999), (90.024, 85.26991999999996), (181.28343999999998, 85.26991999999996), (181.28343999999998, 74.7099199999999)), 'system': 'PixelSpace', 'layout_width': 595.2, 'layout_height': 841.92}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Zero_Width
+  - filename: zero_width.pdf
+  - last_modified: 2025-11-25T23:51:41
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: NarrativeText
+  - element_id: 569f42f0bb5d7f94af2dbc3006b8ed79
+【内容】:
+This is a test PDF.
+

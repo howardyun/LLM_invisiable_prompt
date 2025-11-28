@@ -40,10 +40,14 @@ def load_pdf_with_opendataloader(input_path, output_path):
 
         # 初始化 Loader
         # file_path 参数接受一个列表
-        # format="markdown" 能更好地保留文档结构
+        # content_safety_off 内容过滤方式
         loader = OpenDataLoaderPDFLoader(
-            file_path=[pdf_file_path],
-            format="markdown"
+            file_path = [pdf_file_path],
+            # content_safety_off = ["all"]
+            # content_safety_off = ["hidden-text"]
+            # content_safety_off = ["off-page"]
+            # content_safety_off = ["tiny"]
+            # content_safety_off = ["hidden-ocg"]
         )
 
         # 加载文档
@@ -73,14 +77,9 @@ def load_pdf_with_opendataloader(input_path, output_path):
                     metadata_str += f"  - {key}: {value}\n"
 
                 # --- 构造输出格式 ---
-                # full_output = f"{metadata_str}\n【Markdown 内容】:\n{content}\n\n"
-                full_output = f"【Markdown 内容】:\n{content}\n\n"
+                full_output = f"{metadata_str}\n【Markdown 内容】:\n{content}\n\n"
+                # full_output = f"【Markdown 内容】:\n{content}\n\n"
 
-                # --- 输出 (控制台只打印部分) ---
-                # if i < 3 or i > len(docs) - 3:
-                #     print(full_output)
-                # elif i == 3:
-                #     print("\n... (中间内容省略，完整内容请查看 TXT 文件) ...\n")
 
                 f.write(full_output)
 
@@ -103,8 +102,8 @@ if __name__ == "__main__":
     parser.add_argument(
         "-i", "--input",
         type=str,
-        default="..\doc.pdf",
-        help="输入 PDF 文件的路径 (默认: ..\doc.pdf)"
+        default="../PDF/text_version.pdf",
+        help="输入 PDF 文件的路径 (默认: ../PDF/text_version.pdf)"
     )
 
     # -o 参数: 输出文件路径

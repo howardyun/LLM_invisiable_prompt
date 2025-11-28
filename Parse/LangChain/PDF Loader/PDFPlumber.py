@@ -61,12 +61,8 @@ def load_pdf_with_pdfplumber(input_path, output_path):
                     metadata_str += f"  - {key}: {value}\n"
 
                 # --- 构造输出格式 ---
-                # full_output = f"{metadata_str}\n【正文内容】:\n{content}\n\n"
-                full_output = f"【正文内容】:\n{content}\n\n"
-
-                # 控制台简单打印进度
-                # if i == 0:
-                #     print(f"--- 预览第一页 ---\n{content[:200]}...\n")
+                full_output = f"{metadata_str}\n【正文内容】:\n{content}\n\n"
+                # full_output = f"【正文内容】:\n{content}\n\n"
 
                 f.write(full_output)
 

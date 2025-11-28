@@ -69,12 +69,8 @@ def load_pdf_local(input_path, output_path):
 
                 # 构造输出
                 element_info = f"--- Element {i + 1} [页码: {page_num} | 类型: {category}] ---\n"
-                # full_text = f"{element_info}{metadata_str}【内容】:\n{content}\n\n"
-                full_text = f"【正文内容】:\n{content}\n\n"
-
-                # 控制台只打印部分，文件写入全部
-                # if i == 0:
-                #     print(f"--- 预览第一个元素 ---\n{content[:200]}...\n")
+                full_text = f"{element_info}{metadata_str}【内容】:\n{content}\n\n"
+                # full_text = f"【正文内容】:\n{content}\n\n"
 
                 f.write(full_text)
 

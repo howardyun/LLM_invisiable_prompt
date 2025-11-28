@@ -1,0 +1,17 @@
+文件解析结果 (PDFMiner): original.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\zero_width\original\PDFMinerLoader.txt
+总页数: 1
+特点: 纯 Python 解析，专注于文本布局和结构分析。
+==============================
+
+【元数据 (Metadata)】:
+  - producer: Microsoft® Word 2021
+  - creator: Microsoft® Word 2021
+  - creationdate: 2025-11-25T23:30:13+08:00
+  - moddate: 2025-11-25T23:30:13+08:00
+  - total_pages: 1
+  - source: D:\PycharmProject\LangChainProject\PDF\Zero_Width\original.pdf
+
+【正文内容】:
+This is a test PDF.
+

@@ -1,0 +1,20 @@
+文件解析结果 (PDFPlumber): original.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\zero_width\original\PDFPlumberLoader.txt
+总页数: 1
+特点: 擅长提取复杂布局文本，提供详细的 PDF 元数据。
+==============================
+
+【元数据 (Metadata)】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Zero_Width\original.pdf
+  - file_path: D:\PycharmProject\LangChainProject\PDF\Zero_Width\original.pdf
+  - page: 0
+  - total_pages: 1
+  - Producer: Microsoft® Word 2021
+  - Creator: Microsoft® Word 2021
+  - CreationDate: D:20251125233013+08'00'
+  - ModDate: D:20251125233013+08'00'
+
+【正文内容】:
+This is a test PDF.
+
+

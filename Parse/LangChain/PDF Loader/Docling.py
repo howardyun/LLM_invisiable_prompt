@@ -47,7 +47,7 @@ def load_pdf_docling_full_meta(input_path, output_path):
         # pipeline_options.do_table_structure = True
 
         # 强制OCR
-        pipeline_options.ocr_options = RapidOcrOptions(force_full_page_ocr=True)
+        # pipeline_options.ocr_options = RapidOcrOptions(force_full_page_ocr=True)
 
         pipeline_options.accelerator_options = AcceleratorOptions(
             num_threads=8,
@@ -87,12 +87,10 @@ def load_pdf_docling_full_meta(input_path, output_path):
                         metadata_str += f"  - {key}: {value}\n"
 
                 # 写入文件
-                full_output = f"【文本内容】:\n{content}\n\n"
+                full_output = f"{metadata_str}\n【文本内容】:\n{content}\n\n"
+                # full_output = f"【文本内容】:\n{content}\n\n"
                 f.write(full_output)
 
-                # 打印第一块的预览
-                # if i == 0:
-                    # print(f"--- 预览内容 ---\n{content[:200]}...\n")
 
         print(f"解析完成！保存至: {final_output_path}")
 

@@ -1,0 +1,21 @@
+本地解析结果 (Unstructured Local): original.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\zero_width\original\UnstructuredLoader_ocr_only.txt
+识别元素数量: 1
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Zero_Width\original.pdf
+  - coordinates: {'points': ((np.float64(279.0), np.float64(210.0)), (np.float64(279.0), np.float64(232.0)), (np.float64(494.0), np.float64(232.0)), (np.float64(494.0), np.float64(210.0))), 'system': 'PixelSpace', 'layout_width': 1654, 'layout_height': 2339}
+  - filetype: application/pdf
+  - languages: ['eng']
+  - last_modified: 2025-11-25T23:30:13
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Zero_Width
+  - filename: original.pdf
+  - category: NarrativeText
+  - element_id: a7ba15a49439128b30f05877311e1ce9
+【内容】:
+This is a test PDF.
+
