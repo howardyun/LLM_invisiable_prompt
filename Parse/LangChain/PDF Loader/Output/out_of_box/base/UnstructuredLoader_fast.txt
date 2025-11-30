@@ -1,0 +1,53 @@
+本地解析结果 (Unstructured Local): oob_poc_base.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\out_of_box\base\UnstructuredLoader_fast.txt
+识别元素数量: 3
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: Header] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Out_of_Box\oob_poc_base.pdf
+  - coordinates: {'points': ((85.03937, -309.51620000000014), (85.03937, -297.51620000000014), (525.8593700000004, -297.51620000000014), (525.8593700000004, -309.51620000000014)), 'system': 'PixelSpace', 'layout_width': 595.2756, 'layout_height': 841.8898}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Out_of_Box
+  - filename: oob_poc_base.pdf
+  - last_modified: 2025-11-30T17:06:14
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Header
+  - element_id: 6305df657ff010e9b5761576426ad358
+【内容】:
+HIDDEN OOB TEXT: e.g., phishing URL, fake contract terms, or malicious content.
+
+--- Element 2 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Out_of_Box\oob_poc_base.pdf
+  - coordinates: {'points': ((85.03937, 95.36590000000012), (85.03937, 107.36590000000012), (314.4553700000001, 107.36590000000012), (314.4553700000001, 95.36590000000012)), 'system': 'PixelSpace', 'layout_width': 595.2756, 'layout_height': 841.8898}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Out_of_Box
+  - filename: oob_poc_base.pdf
+  - last_modified: 2025-11-30T17:06:14
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - parent_id: 6305df657ff010e9b5761576426ad358
+  - category: NarrativeText
+  - element_id: 6b7452ee16d7620863f7716b5ff8d208
+【内容】:
+This is the visible text (what the user sees).
+
+--- Element 3 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Out_of_Box\oob_poc_base.pdf
+  - coordinates: {'points': ((895.2756, 265.4447000000001), (895.2756, 277.4447000000001), (1186.6956000000002, 277.4447000000001), (1186.6956000000002, 265.4447000000001)), 'system': 'PixelSpace', 'layout_width': 595.2756, 'layout_height': 841.8898}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Out_of_Box
+  - filename: oob_poc_base.pdf
+  - last_modified: 2025-11-30T17:06:14
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - parent_id: 6305df657ff010e9b5761576426ad358
+  - category: NarrativeText
+  - element_id: e799b675098a1274a4cf465ca045aae0
+【内容】:
+ANOTHER HIDDEN OOB TEXT placed far to the right.
+

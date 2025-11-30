@@ -1,0 +1,23 @@
+文件解析结果 (PyPDFium2): oob_poc_cropped.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\out_of_box\attacked\PyPDFium2Loader.txt
+总页数: 1
+特点: 高性能文本提取，基于 C++ PDFium 库。
+==============================
+
+【元数据 (Metadata)】:
+  - producer: pypdf
+  - creator: 
+  - creationdate: 
+  - title: 
+  - author: 
+  - subject: 
+  - keywords: 
+  - moddate: 
+  - source: D:\PycharmProject\LangChainProject\PDF\Out_of_Box\oob_poc_cropped.pdf
+  - total_pages: 1
+  - page: 0
+
+【正文内容】:
+
+
+

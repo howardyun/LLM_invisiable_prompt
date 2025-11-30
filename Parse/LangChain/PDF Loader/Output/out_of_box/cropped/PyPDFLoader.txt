@@ -1,0 +1,19 @@
+文件解析结果 (PyPDFLoader): oob_poc_cropped.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\out_of_box\attacked\PyPDFLoader.txt
+总页数: 1
+==============================
+
+【元数据 (Metadata)】:
+  - producer: pypdf
+  - creator: PyPDF
+  - creationdate: 
+  - source: D:\PycharmProject\LangChainProject\PDF\Out_of_Box\oob_poc_cropped.pdf
+  - total_pages: 1
+  - page: 0
+  - page_label: 1
+
+【正文内容】:
+This is the visible text (what the user sees).
+HIDDEN OOB TEXT: e.g., phishing URL, fake contract terms, or malicious content.
+ANOTHER HIDDEN OOB TEXT placed far to the right.
+

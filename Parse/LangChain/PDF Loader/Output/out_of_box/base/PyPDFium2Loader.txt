@@ -1,0 +1,23 @@
+文件解析结果 (PyPDFium2): oob_poc_base.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\Out_of_Box\original\PyPDFium2Loader.txt
+总页数: 1
+特点: 高性能文本提取，基于 C++ PDFium 库。
+==============================
+
+【元数据 (Metadata)】:
+  - producer: ReportLab PDF Library - www.reportlab.com
+  - creator: ReportLab PDF Library - www.reportlab.com
+  - creationdate: 2025-11-30T16:56:45+08:00
+  - title: untitled
+  - author: anonymous
+  - subject: unspecified
+  - keywords: 
+  - moddate: 2025-11-30T16:56:45+08:00
+  - source: D:\PycharmProject\LangChainProject\PDF\Out_of_Box\oob_poc_base.pdf
+  - total_pages: 1
+  - page: 0
+
+【正文内容】:
+This is the visible text (what the user sees).
+
+

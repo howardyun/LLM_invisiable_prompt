@@ -1,0 +1,27 @@
+文件解析结果 (PyMuPDF): oob_poc_cropped.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\out_of_box\attacked\PyMuPDFLoader.txt
+总页数: 1
+特点: 极速渲染，支持提取详细元数据(如创建时间、格式版本)。
+==============================
+
+【元数据 (Metadata)】:
+  - producer: pypdf
+  - creator: 
+  - creationdate: 
+  - source: D:\PycharmProject\LangChainProject\PDF\Out_of_Box\oob_poc_cropped.pdf
+  - file_path: D:\PycharmProject\LangChainProject\PDF\Out_of_Box\oob_poc_cropped.pdf
+  - total_pages: 1
+  - format: PDF 1.3
+  - title: 
+  - author: 
+  - subject: 
+  - keywords: 
+  - moddate: 
+  - trapped: 
+  - modDate: 
+  - creationDate: 
+  - page: 0
+
+【正文内容】:
+
+

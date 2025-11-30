@@ -1,0 +1,55 @@
+本地解析结果 (Unstructured Local): oob_poc_cropped.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\out_of_box\attacked\UnstructuredLoader_hi_res.txt
+识别元素数量: 3
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: UncategorizedText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Out_of_Box\oob_poc_cropped.pdf
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(236.22047222222224), np.float64(-859.7672222222226)), (np.float64(236.22047222222224), np.float64(-826.4338888888892)), (np.float64(1460.7204722222232), np.float64(-826.4338888888892)), (np.float64(1460.7204722222232), np.float64(-859.7672222222226))), 'system': 'PixelSpace', 'layout_width': 1654, 'layout_height': 2339}
+  - last_modified: 2025-11-30T17:06:14
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Out_of_Box
+  - filename: oob_poc_cropped.pdf
+  - category: UncategorizedText
+  - element_id: ee4125de37378bd091c16baddf66fa74
+【内容】:
+HIDDEN OOB TEXT: e.g., phishing URL, fake contract terms, or malicious content.
+
+--- Element 2 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Out_of_Box\oob_poc_cropped.pdf
+  - detection_class_prob: 0.707984209060669
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(235.26133728027344), np.float64(264.9052777777781)), (np.float64(235.26133728027344), np.float64(298.2386111111114)), (np.float64(874.67138671875), np.float64(298.2386111111114)), (np.float64(874.67138671875), np.float64(264.9052777777781))), 'system': 'PixelSpace', 'layout_width': 1654, 'layout_height': 2339}
+  - last_modified: 2025-11-30T17:06:14
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Out_of_Box
+  - filename: oob_poc_cropped.pdf
+  - category: NarrativeText
+  - element_id: c481dee228687a6405482e85b06cc64f
+【内容】:
+This is the visible text (what the user sees).
+
+--- Element 3 [页码: 1 | 类型: UncategorizedText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Out_of_Box\oob_poc_cropped.pdf
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(2486.8766666666666), np.float64(737.3463888888892)), (np.float64(2486.8766666666666), np.float64(770.6797222222225)), (np.float64(3296.376666666667), np.float64(770.6797222222225)), (np.float64(3296.376666666667), np.float64(737.3463888888892))), 'system': 'PixelSpace', 'layout_width': 1654, 'layout_height': 2339}
+  - last_modified: 2025-11-30T17:06:14
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Out_of_Box
+  - filename: oob_poc_cropped.pdf
+  - category: UncategorizedText
+  - element_id: 7f506c515e3688019eefab0b7db4dbdc
+【内容】:
+ANOTHER HIDDEN OOB TEXT placed far to the right.
+

@@ -1,0 +1,47 @@
+文件解析结果: oob_poc_base.pdf
+切分块数: 1
+==============================
+
+【Metadata】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Out_of_Box\oob_poc_base.pdf
+  - dl_meta:
+{
+  "schema_name": "docling_core.transforms.chunker.DocMeta",
+  "version": "1.0.0",
+  "doc_items": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 83.71875,
+            "t": 748.5228373209635,
+            "r": 315.0023600260417,
+            "b": 731.5470275878906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            46
+          ]
+        }
+      ]
+    }
+  ],
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 4473028569594320960,
+    "filename": "oob_poc_base.pdf"
+  }
+}
+
+【文本内容】:
+This is the visible text (what the user sees).
+

@@ -1,0 +1,26 @@
+文件解析结果 (PDFMiner): oob_poc_base.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\Out_of_Box\original\PDFMinerLoader.txt
+总页数: 1
+特点: 纯 Python 解析，专注于文本布局和结构分析。
+==============================
+
+【元数据 (Metadata)】:
+  - producer: ReportLab PDF Library - www.reportlab.com
+  - creator: ReportLab PDF Library - www.reportlab.com
+  - creationdate: 2025-11-30T16:56:45+08:00
+  - author: anonymous
+  - keywords: 
+  - moddate: 2025-11-30T16:56:45+08:00
+  - subject: unspecified
+  - title: untitled
+  - trapped: False
+  - total_pages: 1
+  - source: D:\PycharmProject\LangChainProject\PDF\Out_of_Box\oob_poc_base.pdf
+
+【正文内容】:
+HIDDEN OOB TEXT: e.g., phishing URL, fake contract terms, or malicious content.
+
+This is the visible text (what the user sees).
+
+ANOTHER HIDDEN OOB TEXT placed far to the right.
+

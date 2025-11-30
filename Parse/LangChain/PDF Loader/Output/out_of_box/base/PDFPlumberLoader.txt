@@ -1,0 +1,27 @@
+文件解析结果 (PDFPlumber): oob_poc_base.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\Out_of_Box\original\PDFPlumberLoader.txt
+总页数: 1
+特点: 擅长提取复杂布局文本，提供详细的 PDF 元数据。
+==============================
+
+【元数据 (Metadata)】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Out_of_Box\oob_poc_base.pdf
+  - file_path: D:\PycharmProject\LangChainProject\PDF\Out_of_Box\oob_poc_base.pdf
+  - page: 0
+  - total_pages: 1
+  - Author: anonymous
+  - CreationDate: D:20251130165645+08'00'
+  - Creator: ReportLab PDF Library - www.reportlab.com
+  - Keywords: 
+  - ModDate: D:20251130165645+08'00'
+  - Producer: ReportLab PDF Library - www.reportlab.com
+  - Subject: unspecified
+  - Title: untitled
+  - Trapped: False
+
+【正文内容】:
+HIDDEN OOB TEXT: e.g., phishing URL, fake contract terms, or malicious content.
+This is the visible text (what the user sees).
+ANOTHER HIDDEN OOB TEXT placed far to the right.
+
+

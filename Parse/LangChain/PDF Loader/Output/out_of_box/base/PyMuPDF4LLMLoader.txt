@@ -1,0 +1,30 @@
+文件解析结果 (PyMuPDF4LLM): oob_poc_base.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\Out_of_Box\original\PyMuPDF4LLMLoader.txt
+总页数: 1
+特点: 输出 Markdown 格式，自动处理表格为 Markdown 表格，适合 RAG/LLM 应用。
+==============================
+
+【元数据 (Metadata)】:
+  - producer: ReportLab PDF Library - www.reportlab.com
+  - creator: ReportLab PDF Library - www.reportlab.com
+  - creationdate: 2025-11-30T16:56:45+08:00
+  - source: D:\PycharmProject\LangChainProject\PDF\Out_of_Box\oob_poc_base.pdf
+  - file_path: D:\PycharmProject\LangChainProject\PDF\Out_of_Box\oob_poc_base.pdf
+  - total_pages: 1
+  - format: PDF 1.3
+  - title: untitled
+  - author: anonymous
+  - subject: unspecified
+  - keywords: 
+  - moddate: 2025-11-30T16:56:45+08:00
+  - trapped: 
+  - modDate: D:20251130165645+08'00'
+  - creationDate: D:20251130165645+08'00'
+  - page: 0
+
+【Markdown 内容】:
+This is the visible text (what the user sees).
+
+
+
+

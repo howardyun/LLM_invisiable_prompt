@@ -1,0 +1,21 @@
+本地解析结果 (Unstructured Local): oob_poc_cropped.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\out_of_box\cropped\UnstructuredLoader_ocr_only.txt
+识别元素数量: 1
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Out_of_Box\oob_poc_cropped.pdf
+  - coordinates: {'points': ((np.float64(237.0), np.float64(267.0)), (np.float64(237.0), np.float64(298.0)), (np.float64(870.0), np.float64(298.0)), (np.float64(870.0), np.float64(267.0))), 'system': 'PixelSpace', 'layout_width': 1654, 'layout_height': 2339}
+  - filetype: application/pdf
+  - languages: ['eng']
+  - last_modified: 2025-11-30T17:06:14
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Out_of_Box
+  - filename: oob_poc_cropped.pdf
+  - category: NarrativeText
+  - element_id: 0b2ce895a97743dc8d35dadaf127981d
+【内容】:
+This is the visible text (what the user sees).
+
