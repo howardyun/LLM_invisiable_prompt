@@ -1,0 +1,18 @@
+文件解析结果 (PDFMiner): injected_document_Trans.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\transparent_injection\PDFMinerLoader.txt
+总页数: 1
+特点: 纯 Python 解析，专注于文本布局和结构分析。
+==============================
+
+【元数据 (Metadata)】:
+  - producer: PyPDF2
+  - creator: PDFMiner
+  - creationdate: 
+  - total_pages: 1
+  - source: D:\PycharmProject\LangChainProject\PDF\Transparent_Injection\injected_document_Trans.pdf
+
+【正文内容】:
+This is a test PDF. 
+
+Hidden content
+

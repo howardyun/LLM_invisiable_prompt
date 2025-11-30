@@ -1,0 +1,18 @@
+文件解析结果 (PyPDFLoader): injected_document_Trans.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\transparent_injection\PyPDFLoader.txt
+总页数: 1
+==============================
+
+【元数据 (Metadata)】:
+  - producer: PyPDF2
+  - creator: PyPDF
+  - creationdate: 
+  - source: D:\PycharmProject\LangChainProject\PDF\Transparent_Injection\injected_document_Trans.pdf
+  - total_pages: 1
+  - page: 0
+  - page_label: 1
+
+【正文内容】:
+This is a test PDF. 
+Hidden content
+

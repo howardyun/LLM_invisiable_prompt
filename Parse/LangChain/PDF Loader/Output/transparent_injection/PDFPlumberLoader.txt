@@ -1,0 +1,18 @@
+文件解析结果 (PDFPlumber): injected_document_Trans.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\transparent_injection\PDFPlumberLoader.txt
+总页数: 1
+特点: 擅长提取复杂布局文本，提供详细的 PDF 元数据。
+==============================
+
+【元数据 (Metadata)】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Transparent_Injection\injected_document_Trans.pdf
+  - file_path: D:\PycharmProject\LangChainProject\PDF\Transparent_Injection\injected_document_Trans.pdf
+  - page: 0
+  - total_pages: 1
+  - Producer: PyPDF2
+
+【正文内容】:
+This is a test PDF.
+Hidden content
+
+

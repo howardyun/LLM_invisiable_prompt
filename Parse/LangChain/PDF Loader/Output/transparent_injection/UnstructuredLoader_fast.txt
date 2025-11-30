@@ -1,0 +1,36 @@
+本地解析结果 (Unstructured Local): injected_document_Trans.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\transparent_injection\UnstructuredLoader_fast.txt
+识别元素数量: 2
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Transparent_Injection\injected_document_Trans.pdf
+  - coordinates: {'points': ((90.024, 74.7099199999999), (90.024, 85.26991999999996), (181.28343999999998, 85.26991999999996), (181.28343999999998, 74.7099199999999)), 'system': 'PixelSpace', 'layout_width': 595.2, 'layout_height': 841.92}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Transparent_Injection
+  - filename: injected_document_Trans.pdf
+  - last_modified: 2025-11-30T12:02:01
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: NarrativeText
+  - element_id: 020f175fc80eda15f0fc646a8661708e
+【内容】:
+This is a test PDF.
+
+--- Element 2 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Transparent_Injection\injected_document_Trans.pdf
+  - coordinates: {'points': ((100.0, 102.404), (100.0, 114.404), (180.712, 114.404), (180.712, 102.404)), 'system': 'PixelSpace', 'layout_width': 595.2, 'layout_height': 841.92}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Transparent_Injection
+  - filename: injected_document_Trans.pdf
+  - last_modified: 2025-11-30T12:02:01
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Title
+  - element_id: a43fdb7b09bda0adde053b29fd95a1b5
+【内容】:
+Hidden content
+

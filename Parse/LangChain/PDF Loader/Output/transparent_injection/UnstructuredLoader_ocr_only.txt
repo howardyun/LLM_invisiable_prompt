@@ -1,0 +1,21 @@
+本地解析结果 (Unstructured Local): injected_document_Trans.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\transparent_injection\UnstructuredLoader_ocr_only.txt
+识别元素数量: 1
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Transparent_Injection\injected_document_Trans.pdf
+  - coordinates: {'points': ((np.float64(279.0), np.float64(210.0)), (np.float64(279.0), np.float64(232.0)), (np.float64(494.0), np.float64(232.0)), (np.float64(494.0), np.float64(210.0))), 'system': 'PixelSpace', 'layout_width': 1654, 'layout_height': 2339}
+  - filetype: application/pdf
+  - languages: ['eng']
+  - last_modified: 2025-11-30T12:02:01
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Transparent_Injection
+  - filename: injected_document_Trans.pdf
+  - category: NarrativeText
+  - element_id: 020f175fc80eda15f0fc646a8661708e
+【内容】:
+This is a test PDF.
+

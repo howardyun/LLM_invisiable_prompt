@@ -1,0 +1,38 @@
+本地解析结果 (Unstructured Local): injected_document_Trans.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\transparent_injection\UnstructuredLoader_hi_res.txt
+识别元素数量: 2
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: UncategorizedText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Transparent_Injection\injected_document_Trans.pdf
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(250.06666666666666), np.float64(207.52755555555527)), (np.float64(250.06666666666666), np.float64(236.86088888888875)), (np.float64(503.56511111111104), np.float64(236.86088888888875)), (np.float64(503.56511111111104), np.float64(207.52755555555527))), 'system': 'PixelSpace', 'layout_width': 1654, 'layout_height': 2339}
+  - last_modified: 2025-11-30T12:02:01
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Transparent_Injection
+  - filename: injected_document_Trans.pdf
+  - category: UncategorizedText
+  - element_id: 020f175fc80eda15f0fc646a8661708e
+【内容】:
+This is a test PDF.
+
+--- Element 2 [页码: 1 | 类型: UncategorizedText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Transparent_Injection\injected_document_Trans.pdf
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(277.77777777777777), np.float64(284.4555555555555)), (np.float64(277.77777777777777), np.float64(317.7888888888889)), (np.float64(501.9777777777777), np.float64(317.7888888888889)), (np.float64(501.9777777777777), np.float64(284.4555555555555))), 'system': 'PixelSpace', 'layout_width': 1654, 'layout_height': 2339}
+  - last_modified: 2025-11-30T12:02:01
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Transparent_Injection
+  - filename: injected_document_Trans.pdf
+  - category: UncategorizedText
+  - element_id: a43fdb7b09bda0adde053b29fd95a1b5
+【内容】:
+Hidden content
+

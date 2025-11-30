@@ -1,0 +1,24 @@
+文件解析结果 (PyPDFium2): injected_document_Trans.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\transparent_injection\PyPDFium2Loader.txt
+总页数: 1
+特点: 高性能文本提取，基于 C++ PDFium 库。
+==============================
+
+【元数据 (Metadata)】:
+  - producer: PyPDF2
+  - creator: 
+  - creationdate: 
+  - title: 
+  - author: 
+  - subject: 
+  - keywords: 
+  - moddate: 
+  - source: D:\PycharmProject\LangChainProject\PDF\Transparent_Injection\injected_document_Trans.pdf
+  - total_pages: 1
+  - page: 0
+
+【正文内容】:
+This is a test PDF.
+Hidden content
+
+
