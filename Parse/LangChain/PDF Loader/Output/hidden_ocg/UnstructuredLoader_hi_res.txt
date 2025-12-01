@@ -1,0 +1,39 @@
+本地解析结果 (Unstructured Local): ocg_poc.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\Hidden_OCG\UnstructuredLoader_hi_res.txt
+识别元素数量: 2
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Hidden_OCG\ocg_poc.pdf
+  - detection_class_prob: 0.3005838096141815
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(194.6490478515625), np.float64(242.53333333333336)), (np.float64(194.6490478515625), np.float64(286.9777777777778)), (np.float64(1203.1595458984375), np.float64(286.9777777777778)), (np.float64(1203.1595458984375), np.float64(242.53333333333336))), 'system': 'PixelSpace', 'layout_width': 1653, 'layout_height': 2339}
+  - last_modified: 2025-12-01T21:52:44
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Hidden_OCG
+  - filename: ocg_poc.pdf
+  - category: NarrativeText
+  - element_id: dc28084e623028605a8e102cbe992d3d
+【内容】:
+VISIBLE A: this text is on the normal page content.
+
+--- Element 2 [页码: 1 | 类型: UncategorizedText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Hidden_OCG\ocg_poc.pdf
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(200.0), np.float64(325.8666666666667)), (np.float64(200.0), np.float64(370.31111111111113)), (np.float64(1264.577777777778), np.float64(370.31111111111113)), (np.float64(1264.577777777778), np.float64(325.8666666666667))), 'system': 'PixelSpace', 'layout_width': 1653, 'layout_height': 2339}
+  - last_modified: 2025-12-01T21:52:44
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Hidden_OCG
+  - filename: ocg_poc.pdf
+  - category: UncategorizedText
+  - element_id: 6d17857e58fe0d264cd1412e74772692
+【内容】:
+HIDDEN B: this text is attached to an OFF OCG layer.
+

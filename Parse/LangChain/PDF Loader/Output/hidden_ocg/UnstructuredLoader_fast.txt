@@ -1,0 +1,36 @@
+本地解析结果 (Unstructured Local): ocg_poc.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\Hidden_OCG\UnstructuredLoader_fast.txt
+识别元素数量: 2
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Hidden_OCG\ocg_poc.pdf
+  - coordinates: {'points': ((72.0, 87.31200000000001), (72.0, 103.31200000000001), (431.3120000000002, 103.31200000000001), (431.3120000000002, 87.31200000000001)), 'system': 'PixelSpace', 'layout_width': 595.0, 'layout_height': 842.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Hidden_OCG
+  - filename: ocg_poc.pdf
+  - last_modified: 2025-12-01T21:52:44
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: NarrativeText
+  - element_id: dc28084e623028605a8e102cbe992d3d
+【内容】:
+VISIBLE A: this text is on the normal page content.
+
+--- Element 2 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Hidden_OCG\ocg_poc.pdf
+  - coordinates: {'points': ((72.0, 117.31200000000001), (72.0, 133.312), (455.2480000000001, 133.312), (455.2480000000001, 117.31200000000001)), 'system': 'PixelSpace', 'layout_width': 595.0, 'layout_height': 842.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Hidden_OCG
+  - filename: ocg_poc.pdf
+  - last_modified: 2025-12-01T21:52:44
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: NarrativeText
+  - element_id: 6d17857e58fe0d264cd1412e74772692
+【内容】:
+HIDDEN B: this text is attached to an OFF OCG layer.
+

@@ -1,0 +1,30 @@
+文件解析结果 (PyMuPDF4LLM): ocg_poc.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\Hidden_OCG\PyMuPDF4LLMLoader.txt
+总页数: 1
+特点: 输出 Markdown 格式，自动处理表格为 Markdown 表格，适合 RAG/LLM 应用。
+==============================
+
+【元数据 (Metadata)】:
+  - producer: 
+  - creator: 
+  - creationdate: 
+  - source: D:\PycharmProject\LangChainProject\PDF\Hidden_OCG\ocg_poc.pdf
+  - file_path: D:\PycharmProject\LangChainProject\PDF\Hidden_OCG\ocg_poc.pdf
+  - total_pages: 1
+  - format: PDF 1.7
+  - title: 
+  - author: 
+  - subject: 
+  - keywords: 
+  - moddate: 
+  - trapped: 
+  - modDate: 
+  - creationDate: 
+  - page: 0
+
+【Markdown 内容】:
+VISIBLE A: this text is on the normal page content.
+
+
+
+

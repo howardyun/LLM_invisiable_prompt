@@ -1,0 +1,21 @@
+本地解析结果 (Unstructured Local): ocg_poc.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\Hidden_OCG\UnstructuredLoader_ocr_only.txt
+识别元素数量: 1
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Hidden_OCG\ocg_poc.pdf
+  - coordinates: {'points': ((np.float64(200.0), np.float64(245.0)), (np.float64(200.0), np.float64(286.0)), (np.float64(1194.0), np.float64(286.0)), (np.float64(1194.0), np.float64(245.0))), 'system': 'PixelSpace', 'layout_width': 1653, 'layout_height': 2339}
+  - filetype: application/pdf
+  - languages: ['eng']
+  - last_modified: 2025-12-01T21:52:44
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Hidden_OCG
+  - filename: ocg_poc.pdf
+  - category: NarrativeText
+  - element_id: dc28084e623028605a8e102cbe992d3d
+【内容】:
+VISIBLE A: this text is on the normal page content.
+

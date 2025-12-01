@@ -1,0 +1,47 @@
+文件解析结果: ocg_poc.pdf
+切分块数: 1
+==============================
+
+【Metadata】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Hidden_OCG\ocg_poc.pdf
+  - dl_meta:
+{
+  "schema_name": "docling_core.transforms.chunker.DocMeta",
+  "version": "1.0.0",
+  "doc_items": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 70.57173156738281,
+            "t": 755.4233907063802,
+            "r": 430.6143391927083,
+            "b": 738.023183186849,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ]
+    }
+  ],
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 12715094776499212139,
+    "filename": "ocg_poc.pdf"
+  }
+}
+
+【文本内容】:
+VISIBLE A: this text is on the normal page content.
+

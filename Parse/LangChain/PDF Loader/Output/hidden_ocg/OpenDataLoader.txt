@@ -1,0 +1,15 @@
+文件解析结果 (OpenDataLoader): ocg_poc.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\Hidden_OCG\OpenDataLoader.txt
+文档片段数: 1
+特点: 本地 Java 引擎，重构文档布局(Markdown)，内置 AI 安全过滤。
+==============================
+
+【元数据 (Metadata)】:
+  - source: ocg_poc.pdf
+  - format: markdown
+
+【Markdown 内容】:
+# VISIBLE A: this text is on the normal page content.
+
+
+

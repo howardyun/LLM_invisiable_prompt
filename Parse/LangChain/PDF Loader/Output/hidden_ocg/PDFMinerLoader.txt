@@ -1,0 +1,18 @@
+文件解析结果 (PDFMiner): ocg_poc.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\Hidden_OCG\PDFMinerLoader.txt
+总页数: 1
+特点: 纯 Python 解析，专注于文本布局和结构分析。
+==============================
+
+【元数据 (Metadata)】:
+  - producer: PDFMiner
+  - creator: PDFMiner
+  - creationdate: 
+  - total_pages: 1
+  - source: D:\PycharmProject\LangChainProject\PDF\Hidden_OCG\ocg_poc.pdf
+
+【正文内容】:
+VISIBLE A: this text is on the normal page content.
+
+HIDDEN B: this text is attached to an OFF OCG layer.
+

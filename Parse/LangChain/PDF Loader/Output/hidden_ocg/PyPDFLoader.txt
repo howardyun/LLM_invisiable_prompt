@@ -1,0 +1,18 @@
+文件解析结果 (PyPDFLoader): ocg_poc.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\Hidden_OCG\PyPDFLoader.txt
+总页数: 1
+==============================
+
+【元数据 (Metadata)】:
+  - producer: PyPDF
+  - creator: PyPDF
+  - creationdate: 
+  - source: D:\PycharmProject\LangChainProject\PDF\Hidden_OCG\ocg_poc.pdf
+  - total_pages: 1
+  - page: 0
+  - page_label: 1
+
+【正文内容】:
+VISIBLE A: this text is on the normal page content.
+HIDDEN B: this text is attached to an OFF OCG layer.
+

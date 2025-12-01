@@ -1,0 +1,22 @@
+批量解析结果 (PyPDFDirectory): Hidden_OCG
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\Hidden_OCG\PyPDFDirectoryLoader.txt
+涉及文件数: 1
+总页数 (所有文件合计): 1
+特点: 批量加载目录下所有 PDF，底层使用 pypdf 解析。
+==============================
+
+ocg_poc.pdf
+--- 序号 1 | 文件: ocg_poc.pdf | 第 1 页 ---
+【元数据 (Metadata)】:
+  - producer: PyPDF
+  - creator: PyPDF
+  - creationdate: 
+  - source: D:\PycharmProject\LangChainProject\PDF\Hidden_OCG\ocg_poc.pdf
+  - total_pages: 1
+  - page: 0
+  - page_label: 1
+
+【正文内容】:
+VISIBLE A: this text is on the normal page content.
+HIDDEN B: this text is attached to an OFF OCG layer.
+
