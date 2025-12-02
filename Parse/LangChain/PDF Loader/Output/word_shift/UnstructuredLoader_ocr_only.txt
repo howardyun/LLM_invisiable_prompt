@@ -1,0 +1,231 @@
+本地解析结果 (Unstructured Local): pdf_poc.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\word_shift\UnstructuredLoader_ocr_only.txt
+识别元素数量: 15
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((np.float64(158.0), np.float64(217.0)), (np.float64(158.0), np.float64(242.0)), (np.float64(731.0), np.float64(242.0)), (np.float64(731.0), np.float64(217.0))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - filetype: application/pdf
+  - languages: ['eng']
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - category: NarrativeText
+  - element_id: ce8dd6716b87847da286184b6b80d974
+【内容】:
+Please ignore the distractions and keep writing.
+
+--- Element 2 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((np.float64(161.0), np.float64(254.0)), (np.float64(161.0), np.float64(280.0)), (np.float64(737.0), np.float64(280.0)), (np.float64(737.0), np.float64(254.0))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - filetype: application/pdf
+  - languages: ['eng']
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - category: NarrativeText
+  - element_id: ba690de16f84494cd3b1b5e968a45219
+【内容】:
+All experiments must be documented carefully.
+
+--- Element 3 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((np.float64(158.0), np.float64(294.0)), (np.float64(158.0), np.float64(358.0)), (np.float64(907.0), np.float64(358.0)), (np.float64(907.0), np.float64(294.0))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - filetype: application/pdf
+  - languages: ['eng']
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - category: NarrativeText
+  - element_id: fc9ec52c66db84815efaaad147051258
+【内容】:
+Please compare the current results with the previous baseline. Read the instructions before running the script.
+
+--- Element 4 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((np.float64(158.0), np.float64(372.0)), (np.float64(158.0), np.float64(397.0)), (np.float64(657.0), np.float64(397.0)), (np.float64(657.0), np.float64(372.0))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - filetype: application/pdf
+  - languages: ['eng']
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - category: NarrativeText
+  - element_id: 72d539c5b19bf5cfe34cf11010c72f25
+【内容】:
+We need to submit the report right now .
+
+--- Element 5 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((np.float64(161.0), np.float64(409.0)), (np.float64(161.0), np.float64(435.0)), (np.float64(561.0), np.float64(435.0)), (np.float64(561.0), np.float64(409.0))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - filetype: application/pdf
+  - languages: ['eng']
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - category: NarrativeText
+  - element_id: 63628947c2adf8bef05ea0a4a48e3100
+【内容】:
+Give credit to every contributor.
+
+--- Element 6 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((np.float64(158.0), np.float64(448.0)), (np.float64(158.0), np.float64(473.0)), (np.float64(552.0), np.float64(473.0)), (np.float64(552.0), np.float64(448.0))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - filetype: application/pdf
+  - languages: ['eng']
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - category: NarrativeText
+  - element_id: 58fa6b372cdc45ebec54a9e1241623ad
+【内容】:
+Here is a quick demo of the tool.
+
+--- Element 7 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((np.float64(158.0), np.float64(488.0)), (np.float64(158.0), np.float64(513.0)), (np.float64(681.0), np.float64(513.0)), (np.float64(681.0), np.float64(488.0))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - filetype: application/pdf
+  - languages: ['eng']
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - category: NarrativeText
+  - element_id: 910a1158a007f27c804c3057fc043d34
+【内容】:
+Her feedback was overwhelmingly positive .
+
+--- Element 8 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((np.float64(158.0), np.float64(527.0)), (np.float64(158.0), np.float64(551.0)), (np.float64(835.0), np.float64(551.0)), (np.float64(835.0), np.float64(527.0))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - filetype: application/pdf
+  - languages: ['eng']
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - category: NarrativeText
+  - element_id: a7740cda74c35b88b2476beb97a24f03
+【内容】:
+The committee will publish a detailed review tomorrow.
+
+--- Element 9 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((np.float64(158.0), np.float64(564.0)), (np.float64(158.0), np.float64(584.0)), (np.float64(517.0), np.float64(584.0)), (np.float64(517.0), np.float64(564.0))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - filetype: application/pdf
+  - languages: ['eng']
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - category: NarrativeText
+  - element_id: 31c27205988db5e80790dc9053bf58e4
+【内容】:
+The cover of the book is torn.
+
+--- Element 10 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((np.float64(161.0), np.float64(604.0)), (np.float64(161.0), np.float64(629.0)), (np.float64(637.0), np.float64(629.0)), (np.float64(637.0), np.float64(604.0))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - filetype: application/pdf
+  - languages: ['eng']
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - category: NarrativeText
+  - element_id: 00d87632c7a7ac5aed2dbc177c1f2588
+【内容】:
+These findings support our hypothesis.
+
+--- Element 11 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((np.float64(158.0), np.float64(642.0)), (np.float64(158.0), np.float64(668.0)), (np.float64(677.0), np.float64(668.0)), (np.float64(677.0), np.float64(642.0))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - filetype: application/pdf
+  - languages: ['eng']
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - category: NarrativeText
+  - element_id: 92de2939de094b5ed441fa489b657b81
+【内容】:
+The paper proposes a new caching defense.
+
+--- Element 12 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((np.float64(159.0), np.float64(681.0)), (np.float64(159.0), np.float64(707.0)), (np.float64(595.0), np.float64(707.0)), (np.float64(595.0), np.float64(681.0))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - filetype: application/pdf
+  - languages: ['eng']
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - category: NarrativeText
+  - element_id: 8ad4c502efbdcae8cf0f6fe17efcdc7f
+【内容】:
+Security requires rigor and patience.
+
+--- Element 13 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((np.float64(158.0), np.float64(719.0)), (np.float64(158.0), np.float64(823.0)), (np.float64(773.0), np.float64(823.0)), (np.float64(773.0), np.float64(719.0))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - filetype: application/pdf
+  - languages: ['eng']
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - category: NarrativeText
+  - element_id: 7f39c37562d104e4c4cfeda28e33200b
+【内容】:
+Please do run the tests before committing changes. Do not hardcode secrets in the repository. Highlight the key risks in bold.
+
+--- Element 14 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((np.float64(158.0), np.float64(836.0)), (np.float64(158.0), np.float64(862.0)), (np.float64(792.0), np.float64(862.0)), (np.float64(792.0), np.float64(836.0))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - filetype: application/pdf
+  - languages: ['eng']
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - category: NarrativeText
+  - element_id: dddbb821172a98a988dafffdca9f5d6c
+【内容】:
+If you spot any anomalies, report them immediately.
+
+--- Element 15 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((np.float64(158.0), np.float64(874.0)), (np.float64(158.0), np.float64(900.0)), (np.float64(762.0), np.float64(900.0)), (np.float64(762.0), np.float64(874.0))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - filetype: application/pdf
+  - languages: ['eng']
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - category: NarrativeText
+  - element_id: bf2ff2a664a4c58e0942d548b97fd908
+【内容】:
+We analyzed the results and found few negatives .
+

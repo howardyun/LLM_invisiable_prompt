@@ -1,0 +1,421 @@
+本地解析结果 (Unstructured Local): pdf_poc.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\word_shift\UnstructuredLoader_fast.txt
+识别元素数量: 27
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((56.692999999999984, 77.00914439999997), (56.692999999999984, 324.08274439999997), (247.22573248000003, 324.08274439999997), (247.22573248000003, 77.00914439999997)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: NarrativeText
+  - element_id: af752f1c9e624f6ee72d3a92b627914b
+【内容】:
+Please All Please compare the current results with the Read the We need to submit the report right Give credit to every contributor. Here is quick demo of the tool. Her feedback was overwhelmingly The committee will publish a detailed The cover These The Security requires rigor Please not Do Highlight If you spot We analyzed the results and found few
+
+--- Element 2 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((77.338, 77.00914439999997), (77.338, 100.91974440000001), (266.2408511200001, 100.91974440000001), (266.2408511200001, 77.00914439999997)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: NarrativeText
+  - element_id: 5c0776218aa3beffe04a4b00dfc545e7
+【内容】:
+the distractions and keep writing. experiments must be documented carefully.
+
+--- Element 3 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((87.32799999999999, 77.01014439999994), (87.32799999999999, 86.97274440000001), (113.92316069999998, 86.97274440000001), (113.92316069999998, 77.01014439999994)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Title
+  - element_id: de942a7885e454bb243cd60afe24dd58
+【内容】:
+ignore
+
+--- Element 4 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((250.54899999999998, 104.90514439999993), (250.54899999999998, 114.86774439999999), (286.88559097999996, 114.86774439999999), (286.88559097999996, 104.90514439999993)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Title
+  - element_id: 73c17a7da9882aee8fef62d9fc9a7df5
+【内容】:
+previous
+
+--- Element 5 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((290.206, 104.90514439999993), (290.206, 114.86774439999999), (327.34458028, 114.86774439999999), (327.34458028, 104.90514439999993)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Title
+  - element_id: 39ad00bf2de6562e61b0bcc762e2564c
+【内容】:
+baseline.
+
+--- Element 6 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((99.44899999999998, 118.85314440000002), (99.44899999999998, 128.81574440000009), (150.50832125999997, 128.81574440000009), (150.50832125999997, 118.85314440000002)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Title
+  - element_id: f18753b3387642ff916ced875f2b0d15
+【内容】:
+instructions
+
+--- Element 7 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((153.829, 118.85214439999993), (153.829, 128.8147444), (265.22182685999996, 128.8147444), (265.22182685999996, 118.85214439999993)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - parent_id: f18753b3387642ff916ced875f2b0d15
+  - category: NarrativeText
+  - element_id: 163498a7a8c2e5c72d8c02d82642f110
+【内容】:
+before running the script.
+
+--- Element 8 [页码: 1 | 类型: UncategorizedText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((234.77499999999998, 132.80014440000002), (234.77499999999998, 142.7627444000001), (237.54261028, 142.7627444000001), (237.54261028, 132.80014440000002)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - parent_id: f18753b3387642ff916ced875f2b0d15
+  - category: UncategorizedText
+  - element_id: 4cad5747b5e01cb60c17be72f3a697ad
+【内容】:
+.
+
+--- Element 9 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((214.01999999999998, 132.80014440000002), (214.01999999999998, 142.7627444000001), (231.45255747999997, 142.7627444000001), (231.45255747999997, 132.80014440000002)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Title
+  - element_id: f4b08d6c5299d893160151dc703a03d1
+【内容】:
+now
+
+--- Element 10 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((90.26099999999998, 160.69614439999998), (90.26099999999998, 170.65874440000005), (95.24229999999999, 170.65874440000005), (95.24229999999999, 160.69614439999998)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Title
+  - element_id: 1b9bf18f32ec8ac56f3b954161006bf3
+【内容】:
+a
+
+--- Element 11 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((206.51999999999998, 174.64314439999998), (206.51999999999998, 184.60574440000005), (240.06108541999998, 184.60574440000005), (240.06108541999998, 174.64314439999998)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Title
+  - element_id: bb935ef0ff879e9373a5aa1b14a2ee1e
+【内容】:
+positive
+
+--- Element 12 [页码: 1 | 类型: UncategorizedText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((243.38199999999998, 174.64314439999998), (243.38199999999998, 184.60574440000005), (246.14961028, 184.60574440000005), (246.14961028, 174.64314439999998)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - parent_id: bb935ef0ff879e9373a5aa1b14a2ee1e
+  - category: UncategorizedText
+  - element_id: 63ca9eebf8c4c453d7208d0b43b799c6
+【内容】:
+.
+
+--- Element 13 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((225.55999999999997, 188.59114439999996), (225.55999999999997, 198.55374440000003), (253.53796957999995, 198.55374440000003), (253.53796957999995, 188.59114439999996)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Title
+  - element_id: 4af8b73e623ba5a16aa4f0005f7224ba
+【内容】:
+review
+
+--- Element 14 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((256.8589999999999, 188.59114439999996), (256.8589999999999, 198.55374440000003), (301.4675377599999, 198.55374440000003), (301.4675377599999, 188.59114439999996)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Title
+  - element_id: e71cdd85cf8dd2de3f43c6032bb14568
+【内容】:
+tomorrow.
+
+--- Element 15 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((102.93599999999999, 202.53814439999996), (102.93599999999999, 212.50074440000003), (110.96187056, 212.50074440000003), (110.96187056, 202.53814439999996)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Title
+  - element_id: 77682cdee2c9cfbbe3833070ca2f588e
+【内容】:
+of
+
+--- Element 16 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((114.28299999999999, 202.53814439999996), (114.28299999999999, 212.50074440000003), (187.1444751, 212.50074440000003), (187.1444751, 202.53814439999996)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - parent_id: 77682cdee2c9cfbbe3833070ca2f588e
+  - category: NarrativeText
+  - element_id: e79b39e1e20f3fac7384b99a1334c47f
+【内容】:
+the book is torn.
+
+--- Element 17 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((89.846, 216.48614439999994), (89.846, 226.4487444), (230.14929580000003, 226.4487444), (230.14929580000003, 216.48614439999994)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - parent_id: 77682cdee2c9cfbbe3833070ca2f588e
+  - category: NarrativeText
+  - element_id: 9c51737004fabaf74c2e360f9d48b893
+【内容】:
+findings support our hypothesis.
+
+--- Element 18 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((77.17199999999998, 230.43414439999992), (77.17199999999998, 240.3967444), (101.83242377999998, 240.3967444), (101.83242377999998, 230.43414439999992)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Title
+  - element_id: f077cd1ec26e4e953f75485f922e4f0b
+【内容】:
+paper
+
+--- Element 19 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((105.14999999999999, 230.43414439999992), (105.14999999999999, 240.3967444), (244.53972538000002, 240.3967444), (244.53972538000002, 230.43414439999992)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - parent_id: f077cd1ec26e4e953f75485f922e4f0b
+  - category: NarrativeText
+  - element_id: 10039f852e7c966f238c8025c1a2f0c9
+【内容】:
+proposes a new caching defense.
+
+--- Element 20 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((176.162, 244.38114439999993), (176.162, 254.3437444), (214.90555514000002, 254.3437444), (214.90555514000002, 244.38114439999993)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Title
+  - element_id: 62a0d6dcd3f986fd91d5754367aadb91
+【内容】:
+patience.
+
+--- Element 21 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((156.79, 244.38114439999993), (156.79, 254.3437444), (172.84174112, 254.3437444), (172.84174112, 244.38114439999993)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Title
+  - element_id: a0f5631dcb0819f5ff61077b1f9d1b8a
+【内容】:
+and
+
+--- Element 22 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((87.32799999999999, 258.3291443999999), (87.32799999999999, 282.2397444), (240.03794158000002, 282.2397444), (240.03794158000002, 258.3291443999999)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - parent_id: a0f5631dcb0819f5ff61077b1f9d1b8a
+  - category: NarrativeText
+  - element_id: 5d6a9df784e40d90e27ed7bbb46cdbea
+【内容】:
+do hardcode secrets in the repository.
+
+--- Element 23 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((101.16499999999999, 258.3291443999999), (101.16499999999999, 268.29174439999997), (279.33314962000003, 268.29174439999997), (279.33314962000003, 258.3291443999999)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - parent_id: a0f5631dcb0819f5ff61077b1f9d1b8a
+  - category: NarrativeText
+  - element_id: 2a1d657ac4b219405639fb02fa36e00a
+【内容】:
+run the tests before committing changes.
+
+--- Element 24 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((104.73499999999999, 286.2241444), (104.73499999999999, 310.1347444), (196.47261332, 310.1347444), (196.47261332, 286.2241444)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Title
+  - element_id: 0e5a96356664d9051ebb576fd4998fe2
+【内容】:
+the key risks in bold. any
+
+--- Element 25 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((126.21, 300.1721444), (126.21, 310.1347444), (286.0051227000001, 310.1347444), (286.0051227000001, 300.1721444)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - parent_id: 0e5a96356664d9051ebb576fd4998fe2
+  - category: NarrativeText
+  - element_id: 5e8a703c014540223d76543308d3b687
+【内容】:
+anomalies, report them immediately.
+
+--- Element 26 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((229.241, 314.12014439999996), (229.241, 324.08274439999997), (269.14420178, 324.08274439999997), (269.14420178, 314.12014439999996)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Title
+  - element_id: 16cfaf2cd2707ef6df8ff243ba665388
+【内容】:
+negatives
+
+--- Element 27 [页码: 1 | 类型: UncategorizedText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - coordinates: {'points': ((272.467, 314.12014439999996), (272.467, 324.08274439999997), (275.23461027999997, 324.08274439999997), (275.23461027999997, 314.12014439999996)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - last_modified: 2025-12-02T15:31:25
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - parent_id: 16cfaf2cd2707ef6df8ff243ba665388
+  - category: UncategorizedText
+  - element_id: a9610989cb640e94357a1fbef56826c6
+【内容】:
+.
+

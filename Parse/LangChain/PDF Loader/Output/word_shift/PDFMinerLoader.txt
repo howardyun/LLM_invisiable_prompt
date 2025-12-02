@@ -1,0 +1,94 @@
+文件解析结果 (PDFMiner): pdf_poc.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\Word_shift\PDFMinerLoader.txt
+总页数: 1
+特点: 纯 Python 解析，专注于文本布局和结构分析。
+==============================
+
+【元数据 (Metadata)】:
+  - producer: pdfTeX-1.40.26
+  - creator: TeX
+  - creationdate: 2025-09-03T15:17:25+00:00
+  - moddate: 2025-09-03T15:17:25+00:00
+  - ptex.fullbanner: This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) kpathsea version 6.4.0
+  - trapped: False
+  - total_pages: 1
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+
+【正文内容】:
+previous
+
+baseline.
+
+before running the script.
+
+ignore
+
+the distractions and keep writing.
+experiments must be documented carefully.
+
+.
+
+a
+
+now
+
+instructions
+
+Please
+All
+Please compare the current results with the
+Read the
+We need to submit the report right
+Give
+credit to every contributor.
+Here is
+quick demo of the tool.
+Her feedback was overwhelmingly
+The committee will publish a detailed
+The cover
+These
+The
+Security requires rigor
+Please
+not
+Do
+Highlight
+If you spot
+We analyzed the results and found few
+
+do
+hardcode secrets in the repository.
+
+the key risks in bold.
+any
+
+findings support our hypothesis.
+
+proposes a new caching defense.
+
+the book is torn.
+
+patience.
+
+positive
+
+paper
+
+and
+
+of
+
+.
+
+run the tests before committing changes.
+
+negatives
+
+.
+
+anomalies, report them immediately.
+
+review
+
+tomorrow.
+

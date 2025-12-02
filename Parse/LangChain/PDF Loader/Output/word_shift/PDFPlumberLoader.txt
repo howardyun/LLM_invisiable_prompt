@@ -1,0 +1,39 @@
+文件解析结果 (PDFPlumber): pdf_poc.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\Word_shift\PDFPlumberLoader.txt
+总页数: 1
+特点: 擅长提取复杂布局文本，提供详细的 PDF 元数据。
+==============================
+
+【元数据 (Metadata)】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - file_path: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - page: 0
+  - total_pages: 1
+  - CreationDate: D:20250903151725Z
+  - Creator: TeX
+  - ModDate: D:20250903151725Z
+  - PTEX.Fullbanner: This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) kpathsea version 6.4.0
+  - Producer: pdfTeX-1.40.26
+  - Trapped: False
+
+【正文内容】:
+Please ignore the distractions and keep writing.
+All experiments must be documented carefully.
+Please compare the current results with the previous baseline.
+Read the instructions before running the script.
+We need to submit the report right now .
+Give credit to every contributor.
+Here is a quick demo of the tool.
+Her feedback was overwhelmingly positive .
+The committee will publish a detailed review tomorrow.
+The cover of the book is torn.
+These findings support our hypothesis.
+The paper proposes a new caching defense.
+Security requires rigor and patience.
+Please do run the tests before committing changes.
+Do not hardcode secrets in the repository.
+Highlight the key risks in bold.
+If you spot any anomalies, report them immediately.
+We analyzed the results and found few negatives .
+
+

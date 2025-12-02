@@ -1,0 +1,87 @@
+本地解析结果 (Unstructured Local): pdf_poc.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\Word_shift\UnstructuredLoader_hi_res.txt
+识别元素数量: 5
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - detection_class_prob: 0.8514834046363831
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(157.4805555555555), np.float64(213.9142899999999)), (np.float64(157.4805555555555), np.float64(893.0166625976562)), (np.float64(877.4889526367188), np.float64(893.0166625976562)), (np.float64(877.4889526367188), np.float64(213.9142899999999))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - last_modified: 2025-12-02T15:31:25
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - category: NarrativeText
+  - element_id: 47427251c6c135499d3db41691661a3f
+【内容】:
+Please ignore the distractions and keep writing. All experiments must be documented carefully. Please compare the current results with the previous Read the instructions before running the script. We need to submit the report right now . Give credit to every contributor. Here is a quick demo of the tool. Her feedback was overwhelmingly positive . The committee will publish a detailed review tomorrow. The cover of the book is torn. These findings support our hypothesis. The paper proposes a new caching defense. Security requires rigor and patience. Please do run the tests before committing changes. Do not hardcode secrets in the repository. Highlight the key risks in bold. If you spot any anomalies, report them immediately.
+
+--- Element 2 [页码: 1 | 类型: UncategorizedText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(157.4805555555555), np.float64(872.5559566666665)), (np.float64(157.4805555555555), np.float64(900.2298455555555)), (np.float64(627.5409300555556), np.float64(900.2298455555555)), (np.float64(627.5409300555556), np.float64(872.5559566666665))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - last_modified: 2025-12-02T15:31:25
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - category: UncategorizedText
+  - element_id: 2effbab43a0ca0c054e23166885a9cc0
+【内容】:
+We analyzed the results and found few
+
+--- Element 3 [页码: 1 | 类型: UncategorizedText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(636.7805555555556), np.float64(872.5559566666665)), (np.float64(636.7805555555556), np.float64(900.2298455555555)), (np.float64(747.6227827222222), np.float64(900.2298455555555)), (np.float64(747.6227827222222), np.float64(872.5559566666665))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - last_modified: 2025-12-02T15:31:25
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - category: UncategorizedText
+  - element_id: b8fa6a4979e77f001a91cfb9688e4b19
+【内容】:
+negatives
+
+--- Element 4 [页码: 1 | 类型: UncategorizedText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(756.8527777777778), np.float64(872.5559566666665)), (np.float64(756.8527777777778), np.float64(900.2298455555555)), (np.float64(764.540584111111), np.float64(900.2298455555555)), (np.float64(764.540584111111), np.float64(872.5559566666665))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - last_modified: 2025-12-02T15:31:25
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - category: UncategorizedText
+  - element_id: 2d343742ca76ed2e61690992bd39f827
+【内容】:
+.
+
+--- Element 5 [页码: 1 | 类型: UncategorizedText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(806.1277777777779), np.float64(291.40317888888865)), (np.float64(806.1277777777779), np.float64(319.07706777777776)), (np.float64(909.2905007777778), np.float64(319.07706777777776)), (np.float64(909.2905007777778), np.float64(291.40317888888865))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - last_modified: 2025-12-02T15:31:25
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Word_Shift
+  - filename: pdf_poc.pdf
+  - category: UncategorizedText
+  - element_id: 39ad00bf2de6562e61b0bcc762e2564c
+【内容】:
+baseline.
+

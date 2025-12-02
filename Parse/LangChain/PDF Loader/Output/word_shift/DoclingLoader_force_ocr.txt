@@ -1,0 +1,47 @@
+文件解析结果: pdf_poc.pdf
+切分块数: 1
+==============================
+
+【Metadata】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Word_Shift\pdf_poc.pdf
+  - dl_meta:
+{
+  "schema_name": "docling_core.transforms.chunker.DocMeta",
+  "version": "1.0.0",
+  "doc_items": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 55.3828125,
+            "t": 715.7540283203125,
+            "r": 326.3203125,
+            "b": 466.65724690755206,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            787
+          ]
+        }
+      ]
+    }
+  ],
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 13709103610919792171,
+    "filename": "pdf_poc.pdf"
+  }
+}
+
+【文本内容】:
+Please ignore the distractions and keep writing. All experiments must be documented carefully. Please compare the current results with the previous baseline. Read the instructions before running the script. We need to submit the report right now . Give credit to every contributor. Here is a quick demo of the tool. Her feedback was overwhelmingly positive . The committee will publish a detailed review tomorrow. The cover of the book is torn. These findings support our hypothesis. The paper proposes a new caching defense. Security requires rigor and patience. Please do run the tests before committing changes. Do not hardcode secrets in the repository. Highlight the key risks in bold. If you spot any anomalies, report them immediately. We analyzedtheresults andfound fewnegatives.
+
