@@ -1,0 +1,40 @@
+本地解析结果 (Unstructured Local): font_1.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\zero_size\font_1\UnstructuredLoader_hi_res.txt
+识别元素数量: 2
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: Header] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Zero_Size\font_1.pdf
+  - detection_class_prob: 0.4959878623485565
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(83.33333333333333), np.float64(74.07310485839844)), (np.float64(83.33333333333333), np.float64(89.79754638671875)), (np.float64(101.39444444444443), np.float64(89.79754638671875)), (np.float64(101.39444444444443), np.float64(74.07310485839844))), 'system': 'PixelSpace', 'layout_width': 1654, 'layout_height': 2339}
+  - last_modified: 2025-12-03T14:51:22
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Zero_Size
+  - filename: font_1.pdf
+  - category: Header
+  - element_id: 7b619a5ef249efae3aa1d434725a389a
+【内容】:
+attack invisible
+
+--- Element 2 [页码: 1 | 类型: UncategorizedText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Zero_Size\font_1.pdf
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(250.06666666666666), np.float64(207.52755555555527)), (np.float64(250.06666666666666), np.float64(236.86088888888875)), (np.float64(503.56511111111104), np.float64(236.86088888888875)), (np.float64(503.56511111111104), np.float64(207.52755555555527))), 'system': 'PixelSpace', 'layout_width': 1654, 'layout_height': 2339}
+  - last_modified: 2025-12-03T14:51:22
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Zero_Size
+  - filename: font_1.pdf
+  - parent_id: 7b619a5ef249efae3aa1d434725a389a
+  - category: UncategorizedText
+  - element_id: 2b80f7ae60cd57c20ddb8af9bed4db03
+【内容】:
+This is a test PDF.
+

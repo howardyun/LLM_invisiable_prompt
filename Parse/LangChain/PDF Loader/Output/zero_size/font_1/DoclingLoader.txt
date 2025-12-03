@@ -1,0 +1,73 @@
+文件解析结果: font_1.pdf
+切分块数: 1
+==============================
+
+【Metadata】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Zero_Size\font_1.pdf
+  - dl_meta:
+{
+  "schema_name": "docling_core.transforms.chunker.DocMeta",
+  "version": "1.0.0",
+  "doc_items": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 30.0,
+            "t": 812.6380439453126,
+            "r": 36.502,
+            "b": 811.7130439453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 90.024,
+            "t": 767.6540439453125,
+            "r": 181.283,
+            "b": 756.6500439453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ]
+    }
+  ],
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 18428620504571805316,
+    "filename": "font_1.pdf"
+  }
+}
+
+【文本内容】:
+- at ack invisible
+This is a test PDF.
+

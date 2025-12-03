@@ -3,13 +3,14 @@ import os
 import argparse
 
 
-def load_pdf_local(input_path, output_path):
+def load_pdf_local(input_path, output_path, strategy="fast"):
     # 处理路径（转换为绝对路径）
     pdf_file_path = os.path.abspath(input_path)
     final_output_path = os.path.abspath(output_path)
 
     print(f"输入文件: {pdf_file_path}")
     print(f"输出文件: {final_output_path}")
+    print(f"解析策略: {strategy}")
 
     # 自动创建输出目录
     output_dir = os.path.dirname(final_output_path)
@@ -31,11 +32,10 @@ def load_pdf_local(input_path, output_path):
         print("提示: 本地解析依赖 Poppler 和 Tesseract，如果没有安装这些系统工具将会报错。")
 
         # 初始化 Loader
+        # 初始化 Loader，使用传入的 strategy 参数
         loader = UnstructuredLoader(
             pdf_file_path,
-            strategy="hi_res",  # 使用 'hi_res' 可以利用 Tesseract 识别图片中的文字，但速度较慢
-            # strategy="fast",
-            # strategy="ocr_only",
+            strategy=strategy,
         )
 
         # 开始加载 (这一步在本地消耗 CPU/内存)
@@ -96,7 +96,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-i", "--input",
         type=str,
-        default="../text_version.pdf",
+        default="../PDF/Word_Shift/pdf_poc.pdf",
         help="输入 PDF 文件的路径 (默认: ../text_version.pdf)"
     )
 
@@ -104,11 +104,20 @@ if __name__ == "__main__":
     parser.add_argument(
         "-o", "--output",
         type=str,
-        default="Output/UnstructuredLoader_hi_res.txt",
+        default="Output/word_shift/UnstructuredLoader_fast.txt",
         help="输出 txt 文件的路径 (默认: Output/UnstructuredLoader_hi_res.txt)"
+    )
+
+    # --strategy 参数: 支持 fast, hi_res, ocr_only
+    parser.add_argument(
+        "--strategy",
+        type=str,
+        default="fast",
+        choices=["fast", "hi_res", "ocr_only"],
+        help="解析策略: fast (快速), hi_res (高精), ocr_only (仅OCR)"
     )
 
     args = parser.parse_args()
 
     # 运行主逻辑
-    load_pdf_local(args.input, args.output)
+    load_pdf_local(args.input, args.output, args.strategy)

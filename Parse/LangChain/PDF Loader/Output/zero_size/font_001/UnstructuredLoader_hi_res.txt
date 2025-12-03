@@ -1,0 +1,39 @@
+本地解析结果 (Unstructured Local): font_001.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\zero_size\font_001\UnstructuredLoader_hi_res.txt
+识别元素数量: 2
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: UncategorizedText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Zero_Size\font_001.pdf
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(250.06666666666666), np.float64(207.52755555555527)), (np.float64(250.06666666666666), np.float64(236.86088888888875)), (np.float64(503.56511111111104), np.float64(236.86088888888875)), (np.float64(503.56511111111104), np.float64(207.52755555555527))), 'system': 'PixelSpace', 'layout_width': 1654, 'layout_height': 2339}
+  - last_modified: 2025-12-03T14:51:22
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Zero_Size
+  - filename: font_001.pdf
+  - category: UncategorizedText
+  - element_id: e5e541a5d67fc111e244f881ed6fb5b2
+【内容】:
+This is a test PDF.
+
+--- Element 2 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Zero_Size\font_001.pdf
+  - detection_class_prob: 0.7172677516937256
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(279.7803039550781), np.float64(211.57301330566406)), (np.float64(279.7803039550781), np.float64(236.84603881835938)), (np.float64(495.2007751464844), np.float64(236.84603881835938)), (np.float64(495.2007751464844), np.float64(211.57301330566406))), 'system': 'PixelSpace', 'layout_width': 1654, 'layout_height': 2339}
+  - last_modified: 2025-12-03T14:51:22
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Zero_Size
+  - filename: font_001.pdf
+  - category: NarrativeText
+  - element_id: 9bf1bff98a03aa64df8e1d8220b5deac
+【内容】:
+This is a test PDF.
+

@@ -4,7 +4,7 @@ import shutil
 import argparse
 
 
-def load_pdf_with_opendataloader(input_path, output_path):
+def load_pdf_with_opendataloader(input_path, output_path, safety_mode="default"):
     # 检查 Java 环境 (OpenDataLoader 的硬性要求)
     if not shutil.which("java"):
         print("【错误】：未检测到 Java 环境。")
@@ -17,6 +17,7 @@ def load_pdf_with_opendataloader(input_path, output_path):
 
     print(f"输入文件: {pdf_file_path}")
     print(f"输出文件: {final_output_path}")
+    print(f"安全过滤模式: {safety_mode}")
 
     # 自动创建输出目录
     output_dir = os.path.dirname(final_output_path)
@@ -38,17 +39,23 @@ def load_pdf_with_opendataloader(input_path, output_path):
         print("正在使用 OpenDataLoader 解析 PDF...")
         print("提示: OpenDataLoader 在本地运行，具备 AI 安全过滤功能。")
 
-        # 初始化 Loader
-        # file_path 参数接受一个列表
-        # content_safety_off 内容过滤方式
-        loader = OpenDataLoaderPDFLoader(
-            file_path = [pdf_file_path],
-            # content_safety_off = ["all"]
-            # content_safety_off = ["hidden-text"]
-            # content_safety_off = ["off-page"]
-            # content_safety_off = ["tiny"]
-            # content_safety_off = ["hidden-ocg"]
-        )
+        # --- 动态构建参数字典 ---
+        loader_params = {
+            "file_path": [pdf_file_path],
+            "format": "markdown"
+        }
+
+        # 如果不是默认模式，则添加 content_safety_off 参数
+        # 注意：该参数接受的是一个列表，例如 ["all"]
+        if safety_mode != "default":
+            loader_params["content_safety_off"] = [safety_mode]
+            print(f"【配置】已禁用安全过滤: {loader_params['content_safety_off']}")
+        else:
+            print("【配置】使用默认安全过滤策略")
+        # -----------------------
+
+        # 使用 **kwargs 解包参数
+        loader = OpenDataLoaderPDFLoader(**loader_params)
 
         # 加载文档
         docs = loader.load()
@@ -102,7 +109,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-i", "--input",
         type=str,
-        default="../PDF/text_version.pdf",
+        default="../PDF/Word_Shift/pdf_poc.pdf",
         help="输入 PDF 文件的路径 (默认: ../PDF/text_version.pdf)"
     )
 
@@ -110,11 +117,20 @@ if __name__ == "__main__":
     parser.add_argument(
         "-o", "--output",
         type=str,
-        default="Output/OpenDataLoader.txt",
+        default="Output/word_shift/OpenDataLoader_all.txt",
         help="输出 txt 文件的路径 (默认: Output/OpenDataLoader.txt)"
+    )
+
+    # --safety 控制安全过滤策略
+    parser.add_argument(
+        "--safety",
+        type=str,
+        default="default",
+        choices=["default", "all", "hidden-text", "off-page", "tiny", "hidden-ocg"],
+        help="控制 content_safety_off 模式"
     )
 
     args = parser.parse_args()
 
     # 运行主逻辑
-    load_pdf_with_opendataloader(args.input, args.output)
+    load_pdf_with_opendataloader(args.input, args.output, args.safety)

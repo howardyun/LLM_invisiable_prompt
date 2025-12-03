@@ -1,0 +1,21 @@
+本地解析结果 (Unstructured Local): font_1.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\zero_size\font_1\UnstructuredLoader_fast.txt
+识别元素数量: 1
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Zero_Size\font_1.pdf
+  - coordinates: {'points': ((90.024, 74.7099199999999), (90.024, 85.26991999999996), (181.28343999999998, 85.26991999999996), (181.28343999999998, 74.7099199999999)), 'system': 'PixelSpace', 'layout_width': 595.2, 'layout_height': 841.92}
+  - file_directory: D:\PycharmProject\LangChainProject\PDF\Zero_Size
+  - filename: font_1.pdf
+  - last_modified: 2025-12-03T14:51:22
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: NarrativeText
+  - element_id: 51c78298dc1379bbc9bbee9de469d6ab
+【内容】:
+This is a test PDF.
+

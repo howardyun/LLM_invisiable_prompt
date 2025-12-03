@@ -1,0 +1,19 @@
+文件解析结果 (PyPDFLoader): font_0.pdf
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\zero_size\font_0\PyPDFLoader.txt
+总页数: 1
+==============================
+
+【元数据 (Metadata)】:
+  - producer: Microsoft® Word 2021
+  - creator: Microsoft® Word 2021
+  - creationdate: 2025-11-25T23:30:13+08:00
+  - moddate: 2025-11-25T23:30:13+08:00
+  - source: D:\PycharmProject\LangChainProject\PDF\Zero_Size\font_0.pdf
+  - total_pages: 1
+  - page: 0
+  - page_label: 1
+
+【正文内容】:
+This is a test PDF. 
+invisiable
+

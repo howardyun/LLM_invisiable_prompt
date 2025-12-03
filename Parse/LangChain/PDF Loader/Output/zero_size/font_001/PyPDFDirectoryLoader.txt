@@ -1,0 +1,55 @@
+批量解析结果 (PyPDFDirectory): Zero_Size
+保存位置: D:\PycharmProject\LangChainProject\PDF Loader\Output\zero_size\font_001\PyPDFDirectoryLoader.txt
+涉及文件数: 3
+总页数 (所有文件合计): 3
+特点: 批量加载目录下所有 PDF，底层使用 pypdf 解析。
+==============================
+
+font_0.pdf
+--- 序号 1 | 文件: font_0.pdf | 第 1 页 ---
+【元数据 (Metadata)】:
+  - producer: Microsoft® Word 2021
+  - creator: Microsoft® Word 2021
+  - creationdate: 2025-11-25T23:30:13+08:00
+  - moddate: 2025-11-25T23:30:13+08:00
+  - source: D:\PycharmProject\LangChainProject\PDF\Zero_Size\font_0.pdf
+  - total_pages: 1
+  - page: 0
+  - page_label: 1
+
+【正文内容】:
+This is a test PDF. 
+invisiable
+
+font_001.pdf
+--- 序号 2 | 文件: font_001.pdf | 第 1 页 ---
+【元数据 (Metadata)】:
+  - producer: Microsoft® Word 2021
+  - creator: Microsoft® Word 2021
+  - creationdate: 2025-11-25T23:30:13+08:00
+  - moddate: 2025-11-25T23:30:13+08:00
+  - source: D:\PycharmProject\LangChainProject\PDF\Zero_Size\font_001.pdf
+  - total_pages: 1
+  - page: 0
+  - page_label: 1
+
+【正文内容】:
+This is a test PDF. 
+invisible
+
+font_1.pdf
+--- 序号 3 | 文件: font_1.pdf | 第 1 页 ---
+【元数据 (Metadata)】:
+  - producer: Microsoft® Word 2021
+  - creator: Microsoft® Word 2021
+  - creationdate: 2025-11-25T23:30:13+08:00
+  - moddate: 2025-11-25T23:30:13+08:00
+  - source: D:\PycharmProject\LangChainProject\PDF\Zero_Size\font_1.pdf
+  - total_pages: 1
+  - page: 0
+  - page_label: 1
+
+【正文内容】:
+This is a test PDF. 
+attack invisible
+

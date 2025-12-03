@@ -1,0 +1,73 @@
+文件解析结果: font_001.pdf
+切分块数: 1
+==============================
+
+【Metadata】:
+  - source: D:\PycharmProject\LangChainProject\PDF\Zero_Size\font_001.pdf
+  - dl_meta:
+{
+  "schema_name": "docling_core.transforms.chunker.DocMeta",
+  "version": "1.0.0",
+  "doc_items": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 30.0,
+            "t": 811.9270439453126,
+            "r": 30.036,
+            "b": 811.9180439453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 90.024,
+            "t": 767.6540439453125,
+            "r": 181.283,
+            "b": 756.6500439453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ]
+    }
+  ],
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 9651530972573072957,
+    "filename": "font_001.pdf"
+  }
+}
+
+【文本内容】:
+inv s ble
+This is a test PDF.
+

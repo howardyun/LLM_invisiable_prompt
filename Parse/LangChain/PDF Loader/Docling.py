@@ -9,7 +9,7 @@ import json
 import argparse
 
 
-def load_pdf_docling_full_meta(input_path, output_path):
+def load_pdf_docling_full_meta(input_path, output_path, force_ocr=False):
     # 检查 GPU
     if not torch.cuda.is_available():
         print("【警告】：未检测到 GPU。正在使用 CPU，速度可能较慢。")
@@ -22,6 +22,7 @@ def load_pdf_docling_full_meta(input_path, output_path):
 
     print(f"输入文件: {pdf_file_path}")
     print(f"输出文件: {final_output_path}")
+    print(f"OCR 模式: {'【强制开启】' if force_ocr else '【默认(自动)】'}")
 
     # 自动创建输出目录
     output_dir = os.path.dirname(final_output_path)
@@ -47,7 +48,11 @@ def load_pdf_docling_full_meta(input_path, output_path):
         # pipeline_options.do_table_structure = True
 
         # 强制OCR
-        # pipeline_options.ocr_options = RapidOcrOptions(force_full_page_ocr=True)
+        if force_ocr:
+            print("【配置】已启用强制全页 OCR (RapidOcrOptions)")
+            pipeline_options.ocr_options = RapidOcrOptions(force_full_page_ocr=True)
+        else:
+            print("【配置】使用默认解析策略")
 
         pipeline_options.accelerator_options = AcceleratorOptions(
             num_threads=8,
@@ -108,7 +113,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-i", "--input",
         type=str,
-        default="..\doc.pdf",
+        default="../PDF/Zero_Size/font_0.pdf",
         help="输入 PDF 文件的路径 (默认: ..\doc.pdf)"
     )
 
@@ -116,11 +121,18 @@ if __name__ == "__main__":
     parser.add_argument(
         "-o", "--output",
         type=str,
-        default="Output\DoclingLoader.txt",
+        default="Output/zero_size/font_0/DoclingLoader_force_ocr.txt",
         help="输出 txt 文件的路径 (默认: DoclingLoader.txt)"
+    )
+
+    # --force_ocr 参数: 开关
+    parser.add_argument(
+        "--force_ocr",
+        action="store_true",
+        help="是否开启强制全页 OCR"
     )
 
     args = parser.parse_args()
 
     # 运行主逻辑
-    load_pdf_docling_full_meta(args.input, args.output)
+    load_pdf_docling_full_meta(args.input, args.output,args.force_ocr)
