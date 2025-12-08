@@ -1,0 +1,15 @@
+文件解析结果 (PDFMarkerReader): text_version.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LlamaIndex\PDF Reader\Output\homoglyph_characters\PDFMarkerLoader.txt
+解析出的文档块数量: 1
+说明: Marker 会自动去除页眉页脚，并将公式转换为 LaTeX，输出标准 Markdown
+==============================
+
+【文档块 (Block 0) 元数据】:
+  - (无元数据)
+
+【Markdown 内容】:
+This___ message is____ unde the pdf_______ file____ and___ it__ sho not__ be v isib to_ huma eye.____
+1
+
+--------------------
+

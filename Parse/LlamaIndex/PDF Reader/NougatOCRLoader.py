@@ -1,22 +1,8 @@
 import os
 import sys
 import shutil  # 引入 shutil 用于清理文件夹
-
-# --- 【编码修复】强制使用 UTF-8 避免 GBK 解码错误 ---
-os.environ["PYTHONUTF8"] = "1"
-os.environ["PYTHONIOENCODING"] = "utf-8"
-
 import argparse
 from pathlib import Path
-
-# --- 【关键修复】手动将 Scripts 目录加入环境变量 ---
-python_dir = os.path.dirname(sys.executable)  # 获取 E:\Conda\LlamaIndex
-scripts_dir = os.path.join(python_dir, "Scripts")  # 拼接出 Scripts 路径
-if scripts_dir not in os.environ["PATH"]:
-    os.environ["PATH"] += os.pathsep + scripts_dir
-    print(f"【环境修复】已临时添加 Scripts 路径: {scripts_dir}")
-# ------------------------------------------------
-
 from llama_index.readers.nougat_ocr import PDFNougatOCR
 
 

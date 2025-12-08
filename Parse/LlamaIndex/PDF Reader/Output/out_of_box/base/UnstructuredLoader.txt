@@ -1,0 +1,24 @@
+文件解析结果 (UnstructuredReader): oob_poc_base.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LlamaIndex\PDF Reader\Output\Out_of_Box\base\UnstructuredLoader.txt
+解析出的元素数量: 1
+说明: Unstructured 擅长识别文档结构元素（标题、正文、列表等）
+==============================
+
+【元素 (Element 0) 元数据】:
+  - coordinates: {"points": [[85.03937, -309.51620000000014], [85.03937, -297.51620000000014], [525.8593700000004, -297.51620000000014], [525.8593700000004, -309.51620000000014]], "system": "PixelSpace", "layout_width": 595.2756, "layout_height": 841.8898}
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\Out_of_Box
+  - filename: oob_poc_base.pdf
+  - last_modified: 2025-11-30T17:06:14
+  - page_number: 1
+  - languages: ["eng"]
+  - filetype: application/pdf
+
+【内容】:
+HIDDEN OOB TEXT: e.g., phishing URL, fake contract terms, or malicious content.
+
+This is the visible text (what the user sees).
+
+ANOTHER HIDDEN OOB TEXT placed far to the right.
+
+--------------------
+

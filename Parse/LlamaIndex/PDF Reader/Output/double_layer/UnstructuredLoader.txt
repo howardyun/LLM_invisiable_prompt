@@ -1,0 +1,20 @@
+文件解析结果 (UnstructuredReader): double_layer.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LlamaIndex\PDF Reader\Output\double_layer\UnstructuredLoader.txt
+解析出的元素数量: 1
+说明: Unstructured 擅长识别文档结构元素（标题、正文、列表等）
+==============================
+
+【元素 (Element 0) 元数据】:
+  - coordinates: {"points": [[100.0, 32.48400000000004], [100.0, 44.48400000000004], [210.04, 44.48400000000004], [210.04, 32.48400000000004]], "system": "PixelSpace", "layout_width": 612.0, "layout_height": 792.0}
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\Double_Layer
+  - filename: double_layer.pdf
+  - last_modified: 2025-11-27T10:42:10
+  - page_number: 1
+  - languages: ["eng"]
+  - filetype: application/pdf
+
+【内容】:
+This is the text layer. This is the text layer.
+
+--------------------
+

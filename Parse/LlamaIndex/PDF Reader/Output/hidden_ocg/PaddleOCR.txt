@@ -1,0 +1,14 @@
+文件解析结果 (PaddleOCR): ocg_poc.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LlamaIndex\PDF Reader\Output\hidden_ocg\PaddleOCR.txt
+解析出的文档片段数量: 1
+==============================
+
+【片段索引 (Doc 0) 元数据】:
+  - page: 1
+  - source: D:\PycharmProject\LLM_Parser\PDF\Hidden_OCG\ocg_poc.pdf
+
+【正文内容】:
+[Text Content]: VISIBLE A: this text is on the normal page content. [Text Content]: HIDDEN B: this text is attached to an OFF OCG layer.
+
+--------------------
+

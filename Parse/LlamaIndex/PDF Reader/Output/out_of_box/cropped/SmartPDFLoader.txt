@@ -1,0 +1,38 @@
+文件解析结果 (SmartPDFLoader): oob_poc_cropped.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LlamaIndex\PDF Reader\Output\Out_of_Box\cropped\SmartPDFLoader.txt
+解析出的块(Chunks)数量: 3
+==============================
+
+【块索引 (Chunk 0) 元数据】:
+  - page_idx: 0
+  - tag: para
+  - level: 0
+
+【正文内容】:
+
+This is the visible text (what the user sees).
+
+--------------------
+
+【块索引 (Chunk 1) 元数据】:
+  - page_idx: 0
+  - tag: para
+  - level: 0
+
+【正文内容】:
+
+HIDDEN OOB TEXT: e.g., phishing URL, fake contract terms, or malicious content.
+
+--------------------
+
+【块索引 (Chunk 2) 元数据】:
+  - page_idx: 0
+  - tag: para
+  - level: 0
+
+【正文内容】:
+
+ANOTHER HIDDEN OOB TEXT placed far to the right.
+
+--------------------
+

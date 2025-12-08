@@ -1,0 +1,38 @@
+文件解析结果 (UnstructuredReader): text_version.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LlamaIndex\PDF Reader\Output\homoglyph_characters\UnstructuredLoader.txt
+解析出的元素数量: 1
+说明: Unstructured 擅长识别文档结构元素（标题、正文、列表等）
+==============================
+
+【元素 (Element 0) 元数据】:
+  - coordinates: {"points": [[148.712, 126.95432159999996], [148.712, 148.87192160000006], [264.6854318, 148.87192160000006], [264.6854318, 126.95432159999996]], "system": "PixelSpace", "layout_width": 612.0, "layout_height": 792.0}
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\Homoglyph_Characters
+  - filename: text_version.pdf
+  - last_modified: 2025-11-24T20:11:08
+  - page_number: 1
+  - languages: ["eng"]
+  - filetype: application/pdf
+
+【内容】:
+This___ message is____ under e to_ human eye.____
+
+isibl
+
+g the pdf_______ file____ and___ it__ shou
+
+l
+
+y
+
+i
+
+n
+
+1
+
+d not__ be v
+
+l
+
+--------------------
+

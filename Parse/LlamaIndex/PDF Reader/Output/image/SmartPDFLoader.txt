@@ -1,0 +1,5 @@
+文件解析结果 (SmartPDFLoader): image_version.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LlamaIndex\PDF Reader\Output\image\SmartPDFLoader.txt
+解析出的块(Chunks)数量: 0
+==============================
+

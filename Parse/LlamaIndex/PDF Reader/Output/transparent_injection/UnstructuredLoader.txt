@@ -1,0 +1,22 @@
+文件解析结果 (UnstructuredReader): injected_document_Trans.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LlamaIndex\PDF Reader\Output\transparent_injection\UnstructuredLoader.txt
+解析出的元素数量: 1
+说明: Unstructured 擅长识别文档结构元素（标题、正文、列表等）
+==============================
+
+【元素 (Element 0) 元数据】:
+  - coordinates: {"points": [[90.024, 74.7099199999999], [90.024, 85.26991999999996], [181.28343999999998, 85.26991999999996], [181.28343999999998, 74.7099199999999]], "system": "PixelSpace", "layout_width": 595.2, "layout_height": 841.92}
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\Transparent_Injection
+  - filename: injected_document_Trans.pdf
+  - last_modified: 2025-11-30T12:02:01
+  - page_number: 1
+  - languages: ["eng"]
+  - filetype: application/pdf
+
+【内容】:
+This is a test PDF.
+
+Hidden content
+
+--------------------
+

@@ -1,0 +1,18 @@
+文件解析结果 (PyMuPDFReader): font_001.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LlamaIndex\PDF Reader\Output\zero_size\font_001\PyMuPDFLoader.txt
+解析出的页面数量: 1
+说明: 使用 PyMuPDF (fitz) 引擎，速度快，适合提取纯文本
+==============================
+
+【页面 (Page 0) 元数据】:
+  - total_pages: 1
+  - file_path: D:\PycharmProject\LLM_Parser\PDF\Zero_Size\font_001.pdf
+  - source: 1
+
+【正文内容】:
+  This is a test PDF. 
+invisible
+
+
+--------------------
+

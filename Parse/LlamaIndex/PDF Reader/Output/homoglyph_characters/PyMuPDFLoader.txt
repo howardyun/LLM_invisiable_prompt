@@ -1,0 +1,19 @@
+文件解析结果 (PyMuPDFReader): text_version.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LlamaIndex\PDF Reader\Output\homoglyph_characters\PyMuPDFLoader.txt
+解析出的页面数量: 1
+说明: 使用 PyMuPDF (fitz) 引擎，速度快，适合提取纯文本
+==============================
+
+【页面 (Page 0) 元数据】:
+  - total_pages: 1
+  - file_path: D:\PycharmProject\LLM_Parser\PDF\Homoglyph_Characters\text_version.pdf
+  - source: 1
+
+【正文内容】:
+This___ message is____ underlying the pdf_______ file____ and___ it__ should not__ be v
+isible to_ human eye.____
+1
+
+
+--------------------
+

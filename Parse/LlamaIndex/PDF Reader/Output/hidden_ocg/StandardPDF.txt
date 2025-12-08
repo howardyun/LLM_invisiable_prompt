@@ -1,0 +1,16 @@
+文件解析结果 (Standard PDFReader): ocg_poc.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LlamaIndex\PDF Reader\Output\hidden_ocg\StandardPDF.txt
+解析出的页面/块数量: 1
+说明: 这是基础解析器，适合提取纯文本，不包含复杂布局信息
+==============================
+
+【页面 (Page 0) 元数据】:
+  - page_label: 1
+  - file_name: ocg_poc.pdf
+
+【正文内容】:
+VISIBLE A: this text is on the normal page content.
+HIDDEN B: this text is attached to an OFF OCG layer.
+
+--------------------
+
