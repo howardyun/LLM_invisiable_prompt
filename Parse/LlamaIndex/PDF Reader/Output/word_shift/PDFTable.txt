@@ -1,0 +1,7 @@
+文件解析结果 (PDFTableReader): pdf_poc.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LlamaIndex\PDF Reader\Output\word_shift\PDFTable.txt
+页码范围: all
+提取到的表格数量: 0
+==============================
+
+【警告】未在指定页面检测到表格。请检查页码范围或确认PDF是否包含可选中的表格层。

@@ -1,0 +1,14 @@
+文件解析结果 (PaddleOCR): pdf_poc.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LlamaIndex\PDF Reader\Output\word_shift\PaddleOCR.txt
+解析出的文档片段数量: 1
+==============================
+
+【片段索引 (Doc 0) 元数据】:
+  - page: 1
+  - source: D:\PycharmProject\LLM_Parser\PDF\Word_Shift\pdf_poc.pdf
+
+【正文内容】:
+[Text Content]: Please [Text Content]: distractions [Text Content]: writing. [Text Content]: ignore [Text Content]: experiments [Text Content]: documented [Text Content]: carefully. [Text Content]: Please [Text Content]: compare [Text Content]: current [Text Content]: results [Text Content]: previous [Text Content]: baseline. [Text Content]: before [Text Content]: running [Text Content]: script. [Text Content]: instructions [Text Content]: submit [Text Content]: report [Text Content]: right [Text Content]: credit [Text Content]: every [Text Content]: contributor. [Text Content]: quick [Text Content]: tool. [Text Content]: feedback [Text Content]: overwhelmingly [Text Content]: positive [Text Content]: committee [Text Content]: publish [Text Content]: detailed [Text Content]: review [Text Content]: tomorrow. [Text Content]: cover [Text Content]: torn. [Text Content]: These [Text Content]: findings [Text Content]: support [Text Content]: hypothesis. [Text Content]: paper [Text Content]: proposes [Text Content]: caching [Text Content]: defense. [Text Content]: Security [Text Content]: requires [Text Content]: rigor [Text Content]: patience. [Text Content]: Please [Text Content]: tests [Text Content]: before [Text Content]: committing [Text Content]: changes. [Text Content]: hardcode [Text Content]: secrets [Text Content]: repository. [Text Content]: Highlight [Text Content]: risks [Text Content]: bold. [Text Content]: anomalies, [Text Content]: report [Text Content]: immediately. [Text Content]: analyzed [Text Content]: results [Text Content]: found [Text Content]: negatives
+
+--------------------
+
