@@ -1,13 +1,4 @@
 import os
-
-os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
-os.environ["TORCH_SDPA_EXPERIMENTAL_IMPLEMENTATION"] = "0"
-
-# 2. (可选) 如果你开了VPN但报错 ProxyError，这行代码可以强制清除代理干扰
-# 如果你没开VPN，这两行也没副作用
-os.environ.pop("HTTP_PROXY", None)
-os.environ.pop("HTTPS_PROXY", None)
-
 import argparse
 from pathlib import Path
 from llama_index.readers.pdf_marker import PDFMarkerReader
@@ -62,6 +53,7 @@ def load_pdf_marker(input_path, output_path):
             print(header)
             f.write(header)
 
+
             for i, doc in enumerate(docs):
                 # 提取内容
                 content = doc.text
@@ -94,9 +86,9 @@ if __name__ == "__main__":
     # 初始化参数解析器
     parser = argparse.ArgumentParser(description="PDFMarkerReader 解析工具 (高质量 Markdown 转换)")
 
-    parser.add_argument("-i", "--input", type=str, default="../../PDF/Zero_Size/font_1.pdf",
+    parser.add_argument("-i", "--input", type=str, default="../../PDF/Word_Shift/pdf_poc.pdf",
                         help="输入 PDF 路径")
-    parser.add_argument("-o", "--output", type=str, default="Output/PDFMarkerLoader.txt", help="输出 txt 路径")
+    parser.add_argument("-o", "--output", type=str, default="Output/word_shift/PDFMarkerLoader.txt", help="输出 txt 路径")
 
     args = parser.parse_args()
 
