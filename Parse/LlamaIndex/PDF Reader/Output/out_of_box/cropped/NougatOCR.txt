@@ -1,5 +1,5 @@
 文件解析结果 (NougatOCR): oob_poc_cropped.pdf
-保存位置: D:\PycharmProject\LLM_Parser\LlamaIndex\PDF Reader\Output\Out_of_Box\cropped\NougatOCR.txt
+保存位置: D:\PycharmProject\LLM_Parser\LlamaIndex\PDF Reader\Output\out_of_box\cropped\NougatOCR.txt
 解析出的文档对象数量: 1
 说明: Nougat 擅长提取公式(LaTeX)和表格格式
 ==============================
