@@ -1,0 +1,39 @@
+本地解析结果 (Unstructured Local): zero_width.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LangChain\PDF Loader\Output\zero_width\text\UnstructuredLoader_hi_res.txt
+识别元素数量: 2
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: UncategorizedText] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\Zero_Width\text\zero_width.pdf
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(250.06666666666666), np.float64(207.52755555555527)), (np.float64(250.06666666666666), np.float64(236.86088888888875)), (np.float64(503.56511111111104), np.float64(236.86088888888875)), (np.float64(503.56511111111104), np.float64(207.52755555555527))), 'system': 'PixelSpace', 'layout_width': 1654, 'layout_height': 2339}
+  - last_modified: 2025-12-10T15:07:17
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\Zero_Width\text
+  - filename: zero_width.pdf
+  - category: UncategorizedText
+  - element_id: 569f42f0bb5d7f94af2dbc3006b8ed79
+【内容】:
+This is a test PDF.
+
+--- Element 2 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\Zero_Width\text\zero_width.pdf
+  - detection_class_prob: 0.7172677516937256
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(279.7803039550781), np.float64(211.57301330566406)), (np.float64(279.7803039550781), np.float64(236.84603881835938)), (np.float64(495.2007751464844), np.float64(236.84603881835938)), (np.float64(495.2007751464844), np.float64(211.57301330566406))), 'system': 'PixelSpace', 'layout_width': 1654, 'layout_height': 2339}
+  - last_modified: 2025-12-10T15:07:17
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\Zero_Width\text
+  - filename: zero_width.pdf
+  - category: NarrativeText
+  - element_id: 466da453935e29b5e6363e2b6f4a3276
+【内容】:
+This is a test PDF.
+

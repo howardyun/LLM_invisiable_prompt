@@ -1,0 +1,14 @@
+文件解析结果 (NougatOCR): zero_width.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LlamaIndex\PDF Reader\Output\zero_width\text\NougatOCR.txt
+解析出的文档对象数量: 1
+说明: Nougat 擅长提取公式(LaTeX)和表格格式
+==============================
+
+【文档块 (Document 0) 元数据】:
+  - (无元数据)
+
+【正文内容 (Markdown/LaTeX)】:
+[MISSING_PAGE_EMPTY:1]
+
+--------------------
+

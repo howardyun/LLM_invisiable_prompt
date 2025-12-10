@@ -1,0 +1,16 @@
+文件解析结果 (PDFMiner): zero_width.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LangChain\PDF Loader\Output\zero_width\text\PDFMinerLoader.txt
+总页数: 1
+特点: 纯 Python 解析，专注于文本布局和结构分析。
+==============================
+
+【元数据 (Metadata)】:
+  - producer: pypdf
+  - creator: PDFMiner
+  - creationdate: 
+  - total_pages: 1
+  - source: D:\PycharmProject\LLM_Parser\PDF\Zero_Width\text\zero_width.pdf
+
+【正文内容】:
+This is a test PDF.
+
