@@ -1,0 +1,293 @@
+文件解析结果 (SmartPDFLoader): image_version.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LlamaIndex\PDF Reader\Output\image\SmartPDFLoader_apply_ocr.txt
+解析出的块(Chunks)数量: 6
+==============================
+
+【块索引 (Chunk 0) 元数据】:
+  - page_idx: 0
+  - tag: para
+  - level: 0
+
+【正文内容】:
+
+eo      MHArnreoweunse
+
+--------------------
+
+【块索引 (Chunk 1) 元数据】:
+  - page_idx: 0
+  - tag: para
+  - level: 1
+
+【正文内容】:
+Abstract
+SsBRBNRR Yeas      wu   
+ 
+&       Hugging      Face      Spaces      (Spaces)      has      become   
+ 
+a      leading      platform      for  
+ 
+  hosting      Al      applications,      offering      developers      seamless      integration      of  
+ 
+  Git-based      repositories      and      out-of-the-box      web      service      deployment,  
+ 
+  However,      as      its      adoption      continues      to      expand,      security      concerns  
+ 
+  have      come      to      light.
+Recent      reports      have      pointed      to      the      issuc      of  
+ 
+  accidental      exposure      of      sensitive      information,      such      as      API      tokens  
+ 
+  and      database      credentials,      within      Spaces-hosted      code.
+Despite      these  
+ 
+  concerns,      the      research      community      still      lacks   
+ 
+a      comprehensive      un-  
+ 
+  derstanding      of      the      scope      and      impact      of      these      security      risks.
+To  
+ 
+  bridge      this      gap,      we      present      the      first      large-scale      and      systematic  
+ 
+  empirical      study      to      quantify      the      extent      of      secret      leakage      in      Spaces.
+ 
+ 
+  We      begin      by      compiling   
+ 
+a      comprehensive      dataset      of      313,647      public  
+ 
+  Spaces      repositories      created      between      March      2022      and      December  
+ 
+  2024.      To      detect      exposed      secrets,      we      introduce      Secret      Reviewer,      an  
+ 
+  advanced      framework      that      combines      static      analysis      and      Large      Lan-  
+ 
+  guage      Model      (LLM)-assisted      detection      to      identify      leaked      credentials,  
+ 
+  Applying      Secret      Reviewer,      we      identified      9,149      with      secret      leakage  
+ 
+  vulnerabilities      and      11,557      unique      keys—76%      of      which      from      leading  
+ 
+  Al      service      providers      such      as      OpenAl      and      Grog.
+Our      findings      indi-  
+ 
+  cate      that      30%      of      leaks      were      embedded      in      commit      histories,      and      over  
+ 
+  1,000      non-code      files      contained      sensitive      data.
+Further      validation  
+ 
+  tevealed      that      30%      of      detected      keys      remained      active,      including      140  
+ 
+  valid      database      credentials      and      50%      of      API      tokens      with      write      per-  
+ 
+  missions,      underscoring      significant      security      risks.
+Our      study      sheds  
+ 
+  light      on      critical      security      challenges      in      Al      platform      ecosystems      and       advocates      for      stronger      security      practices      to      mitigate      these      risks.
+
+--------------------
+
+【块索引 (Chunk 2) 元数据】:
+  - page_idx: 0
+  - tag: para
+  - level: 1
+
+【正文内容】:
+Keywords
+Secret      leakage,      Security,      Privacy,      Hugging      Face      Spaces  
+ 
+  ACM      Reference      Format:  
+ 
+  Anonymous      Author(s).
+2018.   
+ 
+A      Large-Scale      Empirical      Study      of      Secret      Leak-  
+ 
+  age      in      Hugging      Face      Spaces,      In      Proceedings      of      Make      sure      to      enter      the      correct  
+ 
+  conference      title      from      your      rights      confirmation      email      (Conference      acronym      \\\'XX).
+ 
+ 
+  ACM,      New      York,      NY,      USA,      11      pages.
+https://doi.org/XXXXXXX.XXXXXXX 1
+ 
+   Introduction  
+ 
+  With      the      rapid      advancement      of      artificial      intelligence      (AI)      applica-  
+ 
+  tions,      the      demand      for      convenient      and      scalable      deployment      solutions  
+ 
+  has      increased      significantly[30].
+Hugging      Face      Spaces      (hereafter      re-  
+ 
+  ferred      to      as      Spaces)      has      emerged      as   
+ 
+a      leading      platform      for      hosting  
+ 
+  Permission      to      make      digital      or      hard      copics      of      all      or      part      of      this      work      for      personal      or  
+ 
+  classroom      use      is      granted      without      fee      provided      that      copies      are      not      made      or      distributed  
+ 
+  for      profit      or      commercial      advantage      and      that      coples      bear      this      notice      and      the      full      citation  
+ 
+  on      the      first      page.
+Copyrights      for      components      of      this      work      owned      by      others      than      the  
+ 
+  author(s)      must      be      honored.
+Abstracting      with      credit      is      permitted.
+To      copy      otherwise,      or  
+ 
+  republish,      to      post      on      servers      or      to      redistribute      to      lists,      requires      prior      specific      permission  
+ 
+  and/or   
+ 
+a      fee.
+Request      permissions      from      permlssions@acin.org.
+
+--------------------
+
+【块索引 (Chunk 3) 元数据】:
+  - page_idx: 0
+  - tag: para
+  - level: 1
+
+【正文内容】:
+Keywords
+ 
+ 
+  Conference      acronym      ‘XX,      Woodstock,      NY  
+ 
+  2      2018-Copyright      held      by      the      owner/author(s).
+Publication      rights      licensed      to      ACM.  
+ 
+  ACM      ISBN      978-1-4503-XXXX-X/2018/06  
+ 
+  https://doLorg/XXXXXXX.XXXXXXX  
+ 
+  [ars]      m_EN      SS.
+
+--------------------
+
+【块索引 (Chunk 4) 元数据】:
+  - page_idx: 0
+  - tag: para
+  - level: 1
+
+【正文内容】:
+Developer
+a—+\\\'S   
+ 
+9 Attacker   
+ 
+1   
+ 
+9      ad he      dae   
+ 
+I      End      User Third-party      platform  
+ 
+  Figure      1:      When      developers      use      Spaces,      they      first      create   
+ 
+a       repository      and      upload      their      code      to      the      platform      @.
+Subse-  
+ 
+  quently,      Spaces      deploys      and      distributes      the      code      based      on  
+ 
+  its      contents      @.
+In      addition      to      accessing      the      hosted      large      lan-  
+ 
+  guage      models      (LLMs)      through      API      calls,      developers      can      also  
+ 
+  leverage      both      Hugging      Face      and      third-party      cloud      inference  
+ 
+  APIs      @.
+Finally,      end-users      can      interact      with      various      Al      appli-  
+ 
+  cations      via      web      interfaces      @}.
+However,      if      user      inadvertently  
+ 
+  hardcodes      secrets      in   
+ 
+a      public      Space,      attackers      can      exploit  
+ 
+  them,      leading      to      API      abuse      and      privacy      breaches.
+
+--------------------
+
+【块索引 (Chunk 5) 元数据】:
+  - page_idx: 0
+  - tag: para
+  - level: 1
+
+【正文内容】:
+Developer
+Al      applications,      providing      developers      with      an      efficient      and      user-  
+ 
+  friendly      environment      for      quickly      deploying      and      sharing      AI      models.
+ 
+ 
+  By      leveraging      Git-based      code      repositories      and      built-in      web      service  
+ 
+  deployment,      Spaces      enables      developers      to      build      and      showcase      AI  
+ 
+  applications      at      minimal      cost.
+As      of      now,      Spaces      has      hosted      more  
+ 
+  than      300,000      public      AI      web      applications,      forming   
+ 
+a      highly      cfficient  
+ 
+  Al      service      pipeline      (as      illustrated      in      Figure      1).
+Through      standard-  
+ 
+  ized      API      interfaces,      developers      can      seamlessly      integrate      third-party  
+ 
+  model      inference      services      to      perform      AI      tasks      such      as      text      generation  
+ 
+  and      image      recognition,      without      the      need      for      complex      computing  
+ 
+  resource      management      or      extensive      code      adaptation.
+ 
+ 
+  However,      this      convenience      also      introduces      serious      security      risks.
+ 
+ 
+  Recent      reports(7,      26]      have      revealed      that   
+ 
+a      large      number      of      API  
+ 
+  access      tokens,      databasc      credentials,      and      other      secret      information  
+ 
+  have      been      inadvertently      exposed      in      Spaces      code      repositories.      Such  
+ 
+  exposures      may      lead      to      unauthorized      API      abuse,      user      data      breaches,  
+ 
+  and      even      malicious      code      execution,      posing   
+ 
+a      significant      threat      to  
+ 
+  the      security      of      AI      applications[15].      However,      there      is      still   
+ 
+a      lack  
+ 
+  of      systematic      research      on      the      issue      of      secret      leakage      in      the      Spaces  
+ 
+  platform.      Compared      to      other      code      hosting      platforms,      secret      leak-  
+ 
+  age      in      Spaces      may      present      several      distinct      security      challenges:      (1)  
+ 
+  Since      Spaces      focuses      on      AI      applications      and      provides      built-in      web  
+ 
+  services,      the      volume,      types,      and      file      locations      of      leaked      secrets      may  
+ 
+  differ      significantly      from      those      observed      on      traditional      platforms  
+ 
+  such      as      GitHub      and      GitLab.
+(2)      The      rapid      expansion      of      the      Spaces  
+ 
+  ecosystem      may      have      led      to      inadequate      secret      detection      and      protec-  
+ 
+  tion      mechanisms      in      its      carly      stages,      resulting      in      variations      in      the
+
+--------------------
+

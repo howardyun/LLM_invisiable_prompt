@@ -1,0 +1,93 @@
+文件解析结果 (SmartPDFLoader): pdf_poc.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LlamaIndex\PDF Reader\Output\word_shift\SmartPDFLoader_apply_ocr.txt
+解析出的块(Chunks)数量: 3
+==============================
+
+【块索引 (Chunk 0) 元数据】:
+  - page_idx: 0
+  - tag: para
+  - level: 0
+
+【正文内容】:
+
+ 
+ 
+  Please      ignore      the      distractions      and      keep      writing.
+ 
+ 
+  All      experiments      must      be      documented      carefully.
+ 
+ 
+  Please      compare      the      current      results      with      the      previous      baseline.
+ 
+ 
+  Read      the      instructions      before      running      the      script.
+ 
+ 
+  We      need      to      submit      the      report      right      now    
+.
+      Give      credit      to      every      contributor.
+ 
+ 
+  Here      is   
+ 
+a      quick      demo      of      the      tool.
+ 
+ 
+  Her      feedback      was      overwhelmingly      positive  
+ 
+.       The      committee      will      publish   
+ 
+a      detailed      review      tomorrow.
+ 
+ 
+  The      cover      of      the      book      is      torn.
+
+--------------------
+
+【块索引 (Chunk 1) 元数据】:
+  - page_idx: 0
+  - tag: para
+  - level: 0
+
+【正文内容】:
+
+ 
+ 
+  These      findings      support      our      hypothesis.
+ 
+ 
+  The      paper      proposes   
+ 
+a      new      caching      defense.
+ 
+ 
+  Security      requires      rigor      and      patience.
+ 
+ 
+  Please      do      run      the      tests      before      committing      changes.
+ 
+ 
+  Do      not      hardcode      secrets      in      the      repository.
+
+--------------------
+
+【块索引 (Chunk 2) 元数据】:
+  - page_idx: 0
+  - tag: para
+  - level: 0
+
+【正文内容】:
+
+ 
+ 
+  Highlight      the      key      risks      in      bold.
+ 
+ 
+  If      you      spot      any      anomalies,      report      them      immediately.
+ 
+ 
+  We      analyzed      the      results      and      found      few      negatives     .
+
+--------------------
+

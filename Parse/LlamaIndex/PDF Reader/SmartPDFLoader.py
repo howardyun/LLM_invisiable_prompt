@@ -90,12 +90,14 @@ def load_pdf_smart(input_path, output_path, api_url):
         traceback.print_exc()
 
 
+
 if __name__ == "__main__":
     # 初始化参数解析器
     parser = argparse.ArgumentParser(description="SmartPDFLoader 解析工具")
 
     parser.add_argument("-i", "--input", type=str, default="../../PDF/Double_Layer/double_layer.pdf", help="输入 PDF 路径")
     parser.add_argument("-o", "--output", type=str, default="Output/SmartPDFLoader.txt", help="输出 txt 路径")
+    # http://localhost:5001/api/parseDocument?renderFormat=all&applyOcr=yes
     parser.add_argument("--api", type=str, default="http://localhost:5001/api/parseDocument?renderFormat=all",
                         help="API 地址")
 
