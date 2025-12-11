@@ -1,0 +1,15 @@
+文件解析结果 (Haystack PyPDFToDocument): double_layer.pdf
+保存位置: D:\PycharmProject\LLM_Parser\HayStack\PDF Loader\Output\double_layer\PyPDFToDocument.txt
+文档片段数: 1
+==============================
+
+【元数据 (Metadata)】:
+  - file_path: double_layer.pdf
+
+【正文内容】:
+This is the text layer.
+This is the text layer.
+
+
+--------------------
+

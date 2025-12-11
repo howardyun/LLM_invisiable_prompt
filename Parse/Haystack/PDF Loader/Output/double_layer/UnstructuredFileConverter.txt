@@ -1,0 +1,16 @@
+文件解析结果 (Unstructured-Docker): double_layer.pdf
+保存位置: D:\PycharmProject\LLM_Parser\HayStack\PDF Loader\Output\double_layer\UnstructuredFileConverter.txt
+文档片段数: 1
+API URL: http://localhost:8000/general/v0/general
+==============================
+
+【片段 1 元数据 (Meta)】:
+  - file_path: D:\PycharmProject\LLM_Parser\PDF\Double_Layer\double_layer.pdf
+
+【正文内容】:
+This is the text layer. 
+
+This is the text layer. 
+
+--------------------
+
