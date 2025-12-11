@@ -1,5 +1,5 @@
 文件解析结果 (Haystack PDFMinerToDocument): zero_width.pdf
-保存位置: D:\PycharmProject\LLM_Parser\HayStack\PDF Loader\Output\Haystack_PDFMiner.txt
+保存位置: D:\PycharmProject\LLM_Parser\HayStack\PDF Loader\Output\zero_width\metadata\PDFMinerToDocument.txt
 文档片段数: 1
 ==============================
 

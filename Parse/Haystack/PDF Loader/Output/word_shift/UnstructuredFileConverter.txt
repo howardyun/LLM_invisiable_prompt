@@ -1,0 +1,22 @@
+文件解析结果 (Unstructured-Docker): pdf_poc.pdf
+保存位置: D:\PycharmProject\LLM_Parser\HayStack\PDF Loader\Output\word_shift\UnstructuredFileConverter.txt
+文档片段数: 1
+API URL: http://localhost:8000/general/v0/general
+==============================
+
+【片段 1 元数据 (Meta)】:
+  - file_path: D:\PycharmProject\LLM_Parser\PDF\Word_Shift\pdf_poc.pdf
+
+【正文内容】:
+Please ignore the distractions and keep writing. All experiments must be documented carefully. Please compare the current results with the previous Read the instructions before running the script. We need to submit the report right now . Give credit to every contributor. Here is a quick demo of the tool. Her feedback was overwhelmingly positive . The committee will publish a detailed review tomorrow. The cover of the book is torn. These findings support our hypothesis. The paper proposes a new caching defense. Security requires rigor and patience. Please do run the tests before committing changes. Do not hardcode secrets in the repository. Highlight the key risks in bold. If you spot any anomalies, report them immediately.
+
+We analyzed the results and found few
+
+negatives
+
+.
+
+baseline.
+
+--------------------
+

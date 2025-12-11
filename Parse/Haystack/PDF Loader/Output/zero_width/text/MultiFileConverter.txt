@@ -1,5 +1,5 @@
-文件解析结果 (Haystack PyPDFToDocument): zero_width.pdf
-保存位置: D:\PycharmProject\LLM_Parser\HayStack\Output\Haystack_PyPDF.txt
+文件解析结果 (Haystack MultiFileConverter): zero_width.pdf
+保存位置: D:\PycharmProject\LLM_Parser\HayStack\PDF Loader\Output\zero_width\text\MultiFileConverter.txt
 文档片段数: 1
 ==============================
 

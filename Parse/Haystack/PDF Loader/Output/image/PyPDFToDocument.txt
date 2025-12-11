@@ -1,0 +1,13 @@
+文件解析结果 (Haystack PyPDFToDocument): image_version.pdf
+保存位置: D:\PycharmProject\LLM_Parser\HayStack\PDF Loader\Output\image\PyPDFToDocument.txt
+文档片段数: 1
+==============================
+
+【元数据 (Metadata)】:
+  - file_path: image_version.pdf
+
+【正文内容】:
+
+
+--------------------
+

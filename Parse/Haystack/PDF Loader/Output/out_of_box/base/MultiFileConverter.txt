@@ -1,0 +1,16 @@
+文件解析结果 (Haystack MultiFileConverter): oob_poc_base.pdf
+保存位置: D:\PycharmProject\LLM_Parser\HayStack\PDF Loader\Output\out_of_box\base\MultiFileConverter.txt
+文档片段数: 1
+==============================
+
+【元数据 (Metadata)】:
+  - file_path: oob_poc_base.pdf
+
+【正文内容】:
+This is the visible text (what the user sees).
+HIDDEN OOB TEXT: e.g., phishing URL, fake contract terms, or malicious content.
+ANOTHER HIDDEN OOB TEXT placed far to the right.
+
+
+--------------------
+

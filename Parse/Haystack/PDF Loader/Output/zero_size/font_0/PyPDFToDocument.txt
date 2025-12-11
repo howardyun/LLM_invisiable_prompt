@@ -1,0 +1,14 @@
+文件解析结果 (Haystack PyPDFToDocument): font_0.pdf
+保存位置: D:\PycharmProject\LLM_Parser\HayStack\PDF Loader\Output\zero_size\font_0\PyPDFToDocument.txt
+文档片段数: 1
+==============================
+
+【元数据 (Metadata)】:
+  - file_path: font_0.pdf
+
+【正文内容】:
+  This is a test PDF. 
+invisiable 
+
+--------------------
+
