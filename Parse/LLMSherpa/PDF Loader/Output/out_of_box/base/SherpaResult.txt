@@ -1,0 +1,47 @@
+文件解析结果 (Native LLMSherpa): oob_poc_base.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LLMSherpa\PDF Loader\Output\out_of_box\base\SherpaResult.txt
+解析出的块(Chunks)数量: 3
+==============================
+
+【块索引 (Chunk 0) 元数据】:
+  - page_idx: 0
+  - level: 0
+  - tag: para
+  - block_idx: 0
+  - top: -1
+  - left: -1
+
+【正文内容】:
+
+This is the visible text (what the user sees).
+
+--------------------
+
+【块索引 (Chunk 1) 元数据】:
+  - page_idx: 0
+  - level: 0
+  - tag: para
+  - block_idx: 1
+  - top: -1
+  - left: -1
+
+【正文内容】:
+
+HIDDEN OOB TEXT: e.g., phishing URL, fake contract terms, or malicious content.
+
+--------------------
+
+【块索引 (Chunk 2) 元数据】:
+  - page_idx: 0
+  - level: 0
+  - tag: para
+  - block_idx: 2
+  - top: -1
+  - left: -1
+
+【正文内容】:
+
+ANOTHER HIDDEN OOB TEXT placed far to the right.
+
+--------------------
+

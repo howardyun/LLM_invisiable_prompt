@@ -1,0 +1,133 @@
+文件解析报告 (Native)
+文件名: font_1.pdf
+耗时: 4.39 秒
+策略: OCR=自动
+========================================
+
+【Metadata】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\Zero_Size\font_1.pdf
+  - dl_meta:
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.8.0",
+  "name": "font_1",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 18428620504571805316,
+    "filename": "font_1.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 30.0,
+            "t": 812.6380439453126,
+            "r": 36.502,
+            "b": 811.7130439453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "at ack invisible",
+      "text": "at ack invisible",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 90.024,
+            "t": 767.6540439453125,
+            "r": 181.283,
+            "b": 756.6500439453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "This is a test PDF.",
+      "text": "This is a test PDF."
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.2000122070312,
+        "height": 841.9200439453125
+      },
+      "page_no": 1
+    }
+  }
+}
+
+【文本内容】:
+- at ack invisible
+
+This is a test PDF.
+

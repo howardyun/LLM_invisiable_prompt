@@ -1,0 +1,84 @@
+文件解析报告 (Native)
+文件名: oob_poc_base.pdf
+耗时: 4.96 秒
+策略: OCR=自动
+========================================
+
+【Metadata】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\Out_of_Box\oob_poc_base.pdf
+  - dl_meta:
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.8.0",
+  "name": "oob_poc_base",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 4473028569594320960,
+    "filename": "oob_poc_base.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 85.039,
+            "t": 745.6239705078125,
+            "r": 361.039,
+            "b": 734.5239705078125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            46
+          ]
+        }
+      ],
+      "orig": "This is the visible text (what the user sees).",
+      "text": "This is the visible text (what the user sees)."
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.275634765625,
+        "height": 841.8897705078125
+      },
+      "page_no": 1
+    }
+  }
+}
+
+【文本内容】:
+This is the visible text (what the user sees).
+

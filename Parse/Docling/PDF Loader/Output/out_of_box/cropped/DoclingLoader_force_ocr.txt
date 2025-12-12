@@ -1,0 +1,52 @@
+文件解析报告 (Native)
+文件名: oob_poc_cropped.pdf
+耗时: 5.25 秒
+策略: OCR=开启
+========================================
+
+【Metadata】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\Out_of_Box\oob_poc_cropped.pdf
+  - dl_meta:
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.8.0",
+  "name": "oob_poc_cropped",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 11293455699736504605,
+    "filename": "oob_poc_cropped.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.275634765625,
+        "height": 589.3228759765625
+      },
+      "page_no": 1
+    }
+  }
+}
+
+【文本内容】:
+
+

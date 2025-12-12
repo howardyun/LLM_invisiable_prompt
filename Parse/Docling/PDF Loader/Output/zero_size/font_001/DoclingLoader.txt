@@ -1,0 +1,116 @@
+文件解析报告 (Native)
+文件名: font_001.pdf
+耗时: 4.37 秒
+策略: OCR=自动
+========================================
+
+【Metadata】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\Zero_Size\font_001.pdf
+  - dl_meta:
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.8.0",
+  "name": "font_001",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 9651530972573072957,
+    "filename": "font_001.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 30.0,
+            "t": 811.9270439453126,
+            "r": 30.036,
+            "b": 811.9180439453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "inv s ble",
+      "text": "inv s ble"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 90.024,
+            "t": 767.6540439453125,
+            "r": 181.283,
+            "b": 756.6500439453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "This is a test PDF.",
+      "text": "This is a test PDF."
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.2000122070312,
+        "height": 841.9200439453125
+      },
+      "page_no": 1
+    }
+  }
+}
+
+【文本内容】:
+inv s ble
+
+This is a test PDF.
+

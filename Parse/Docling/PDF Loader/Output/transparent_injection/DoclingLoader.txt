@@ -1,0 +1,116 @@
+文件解析报告 (Native)
+文件名: injected_document_Trans.pdf
+耗时: 4.53 秒
+策略: OCR=自动
+========================================
+
+【Metadata】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\Transparent_Injection\injected_document_Trans.pdf
+  - dl_meta:
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.8.0",
+  "name": "injected_document_Trans",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10086922091627207072,
+    "filename": "injected_document_Trans.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 90.024,
+            "t": 767.6540439453125,
+            "r": 181.283,
+            "b": 756.6500439453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "This is a test PDF.",
+      "text": "This is a test PDF."
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 100.0,
+            "t": 738.6160439453125,
+            "r": 184.0,
+            "b": 727.5160439453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "Hidden content",
+      "text": "Hidden content"
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.2000122070312,
+        "height": 841.9200439453125
+      },
+      "page_no": 1
+    }
+  }
+}
+
+【文本内容】:
+This is a test PDF.
+
+Hidden content
+

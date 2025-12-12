@@ -1,0 +1,84 @@
+文件解析报告 (Native)
+文件名: font_001.pdf
+耗时: 5.42 秒
+策略: OCR=开启
+========================================
+
+【Metadata】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\Zero_Size\font_001.pdf
+  - dl_meta:
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.8.0",
+  "name": "font_001",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 9651530972573072957,
+    "filename": "font_001.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 99.3631591796875,
+            "t": 768.4996795654297,
+            "r": 179.2765096028646,
+            "b": 754.9190368652344,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "This is a test PDF.",
+      "text": "This is a test PDF."
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.2000122070312,
+        "height": 841.9200439453125
+      },
+      "page_no": 1
+    }
+  }
+}
+
+【文本内容】:
+This is a test PDF.
+

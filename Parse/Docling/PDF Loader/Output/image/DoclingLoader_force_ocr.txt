@@ -1,0 +1,4171 @@
+文件解析报告 (Native)
+文件名: image_version.pdf
+耗时: 27.04 秒
+策略: OCR=开启
+========================================
+
+【Metadata】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\image_version.pdf
+  - dl_meta:
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.8.0",
+  "name": "image_version",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 452125258795243937,
+    "filename": "image_version.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/texts/28"
+      },
+      {
+        "$ref": "#/texts/29"
+      },
+      {
+        "$ref": "#/texts/30"
+      },
+      {
+        "$ref": "#/texts/31"
+      },
+      {
+        "$ref": "#/texts/32"
+      },
+      {
+        "$ref": "#/texts/33"
+      },
+      {
+        "$ref": "#/texts/34"
+      },
+      {
+        "$ref": "#/texts/35"
+      },
+      {
+        "$ref": "#/texts/36"
+      },
+      {
+        "$ref": "#/texts/37"
+      },
+      {
+        "$ref": "#/texts/38"
+      },
+      {
+        "$ref": "#/texts/39"
+      },
+      {
+        "$ref": "#/texts/40"
+      },
+      {
+        "$ref": "#/texts/41"
+      },
+      {
+        "$ref": "#/texts/42"
+      },
+      {
+        "$ref": "#/texts/43"
+      },
+      {
+        "$ref": "#/texts/44"
+      },
+      {
+        "$ref": "#/texts/45"
+      },
+      {
+        "$ref": "#/texts/46"
+      },
+      {
+        "$ref": "#/texts/47"
+      },
+      {
+        "$ref": "#/texts/48"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/58"
+      },
+      {
+        "$ref": "#/texts/59"
+      },
+      {
+        "$ref": "#/texts/60"
+      },
+      {
+        "$ref": "#/texts/61"
+      },
+      {
+        "$ref": "#/texts/62"
+      },
+      {
+        "$ref": "#/texts/63"
+      },
+      {
+        "$ref": "#/texts/64"
+      },
+      {
+        "$ref": "#/texts/65"
+      },
+      {
+        "$ref": "#/texts/66"
+      },
+      {
+        "$ref": "#/texts/67"
+      },
+      {
+        "$ref": "#/texts/68"
+      },
+      {
+        "$ref": "#/texts/69"
+      },
+      {
+        "$ref": "#/texts/70"
+      },
+      {
+        "$ref": "#/texts/71"
+      },
+      {
+        "$ref": "#/texts/72"
+      },
+      {
+        "$ref": "#/texts/73"
+      },
+      {
+        "$ref": "#/texts/74"
+      },
+      {
+        "$ref": "#/texts/75"
+      },
+      {
+        "$ref": "#/texts/76"
+      },
+      {
+        "$ref": "#/texts/77"
+      },
+      {
+        "$ref": "#/texts/78"
+      },
+      {
+        "$ref": "#/texts/79"
+      },
+      {
+        "$ref": "#/texts/80"
+      },
+      {
+        "$ref": "#/texts/81"
+      },
+      {
+        "$ref": "#/texts/82"
+      },
+      {
+        "$ref": "#/texts/83"
+      },
+      {
+        "$ref": "#/texts/84"
+      },
+      {
+        "$ref": "#/texts/85"
+      },
+      {
+        "$ref": "#/texts/86"
+      },
+      {
+        "$ref": "#/texts/87"
+      },
+      {
+        "$ref": "#/texts/88"
+      },
+      {
+        "$ref": "#/texts/89"
+      },
+      {
+        "$ref": "#/texts/90"
+      },
+      {
+        "$ref": "#/texts/91"
+      },
+      {
+        "$ref": "#/texts/92"
+      },
+      {
+        "$ref": "#/texts/93"
+      },
+      {
+        "$ref": "#/texts/94"
+      },
+      {
+        "$ref": "#/texts/95"
+      },
+      {
+        "$ref": "#/texts/96"
+      },
+      {
+        "$ref": "#/texts/97"
+      },
+      {
+        "$ref": "#/texts/98"
+      },
+      {
+        "$ref": "#/texts/99"
+      },
+      {
+        "$ref": "#/texts/100"
+      },
+      {
+        "$ref": "#/texts/101"
+      },
+      {
+        "$ref": "#/texts/102"
+      },
+      {
+        "$ref": "#/texts/103"
+      },
+      {
+        "$ref": "#/texts/104"
+      },
+      {
+        "$ref": "#/texts/105"
+      },
+      {
+        "$ref": "#/texts/106"
+      },
+      {
+        "$ref": "#/texts/107"
+      },
+      {
+        "$ref": "#/texts/108"
+      },
+      {
+        "$ref": "#/texts/109"
+      },
+      {
+        "$ref": "#/texts/110"
+      },
+      {
+        "$ref": "#/texts/111"
+      },
+      {
+        "$ref": "#/texts/112"
+      },
+      {
+        "$ref": "#/texts/113"
+      },
+      {
+        "$ref": "#/texts/114"
+      },
+      {
+        "$ref": "#/texts/115"
+      },
+      {
+        "$ref": "#/texts/116"
+      },
+      {
+        "$ref": "#/texts/117"
+      },
+      {
+        "$ref": "#/texts/118"
+      },
+      {
+        "$ref": "#/texts/119"
+      },
+      {
+        "$ref": "#/texts/120"
+      },
+      {
+        "$ref": "#/texts/121"
+      },
+      {
+        "$ref": "#/texts/122"
+      },
+      {
+        "$ref": "#/texts/123"
+      },
+      {
+        "$ref": "#/texts/124"
+      },
+      {
+        "$ref": "#/texts/125"
+      },
+      {
+        "$ref": "#/texts/126"
+      },
+      {
+        "$ref": "#/texts/127"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 41.413350423177086,
+            "t": 707.4667358398438,
+            "r": 46.484375,
+            "b": 701.5251973470052,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "2",
+      "text": "2"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.99076588948568,
+            "t": 665.0272216796875,
+            "r": 44.79403177897135,
+            "b": 660.7832641601562,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "6",
+      "text": "6"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.56818135579427,
+            "t": 655.6905314127604,
+            "r": 45.639200846354164,
+            "b": 649.7489827473959,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "7",
+      "text": "7"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.56818135579427,
+            "t": 645.0806477864584,
+            "r": 46.061787923177086,
+            "b": 638.7147216796875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "S",
+      "text": "S"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.56818135579427,
+            "t": 624.7096761067709,
+            "r": 48.174713134765625,
+            "b": 617.9193522135416,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "10",
+      "text": "10"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.56818135579427,
+            "t": 613.6753946940104,
+            "r": 46.9069569905599,
+            "b": 607.7338663736979,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "11",
+      "text": "11"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.99076588948568,
+            "t": 603.0655314127604,
+            "r": 47.32954406738281,
+            "b": 597.1239827473959,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "12",
+      "text": "12"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.14559427897135,
+            "t": 593.304443359375,
+            "r": 47.32954406738281,
+            "b": 586.0897216796875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "13",
+      "text": "13"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.14559427897135,
+            "t": 583.1189575195312,
+            "r": 47.32954406738281,
+            "b": 575.9042358398438,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "14",
+      "text": "14"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.14559427897135,
+            "t": 572.5090738932292,
+            "r": 47.32954406738281,
+            "b": 565.2943522135417,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "15",
+      "text": "15"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.14559427897135,
+            "t": 561.899190266927,
+            "r": 47.32954406738281,
+            "b": 554.6844685872395,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "16",
+      "text": "16"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 39.723009745279946,
+            "t": 550.8649088541667,
+            "r": 47.32954406738281,
+            "b": 544.0745849609375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "17",
+      "text": "17"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.56818135579427,
+            "t": 539.8306477864583,
+            "r": 46.9069569905599,
+            "b": 533.8891194661458,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "16",
+      "text": "16"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.56818135579427,
+            "t": 529.2207641601562,
+            "r": 46.9069569905599,
+            "b": 523.2792358398438,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "19",
+      "text": "19"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.56818135579427,
+            "t": 518.1864827473958,
+            "r": 46.9069569905599,
+            "b": 512.2449544270833,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "20",
+      "text": "20"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.56818135579427,
+            "t": 508.00099690755206,
+            "r": 46.9069569905599,
+            "b": 502.05946858723956,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "21",
+      "text": "21"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.14559427897135,
+            "t": 487.2056477864583,
+            "r": 47.75213114420573,
+            "b": 480.4153238932292,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "23",
+      "text": "23"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.14559427897135,
+            "t": 477.0201416015625,
+            "r": 47.75213114420573,
+            "b": 469.3810628255208,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "24",
+      "text": "24"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.14559427897135,
+            "t": 466.4102783203125,
+            "r": 47.75213114420573,
+            "b": 459.195556640625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "25",
+      "text": "25"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.14559427897135,
+            "t": 455.3760172526042,
+            "r": 47.75213114420573,
+            "b": 448.585693359375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "2h",
+      "text": "2h"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.56818135579427,
+            "t": 444.3417154947917,
+            "r": 46.9069569905599,
+            "b": 438.4001871744792,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "Z7",
+      "text": "Z7"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.14559427897135,
+            "t": 434.5806477864583,
+            "r": 48.174713134765625,
+            "b": 427.3659261067708,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "28",
+      "text": "28"
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.14559427897135,
+            "t": 423.54638671875,
+            "r": 47.75213114420573,
+            "b": 416.7560628255208,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "29",
+      "text": "29"
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.14559427897135,
+            "t": 413.3608805338542,
+            "r": 47.75213114420573,
+            "b": 406.1461588541667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "30",
+      "text": "30"
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 39.723009745279946,
+            "t": 391.7167154947917,
+            "r": 47.32954406738281,
+            "b": 384.5019938151042,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "Z2",
+      "text": "Z2"
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.14559427897135,
+            "t": 381.53125,
+            "r": 47.32954406738281,
+            "b": 373.8921305338542,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "33",
+      "text": "33"
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 39.723009745279946,
+            "t": 370.92138671875,
+            "r": 47.32954406738281,
+            "b": 363.2822672526042,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "元",
+      "text": "元"
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.14559427897135,
+            "t": 360.7358805338542,
+            "r": 47.32954406738281,
+            "b": 353.0967610677083,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "35",
+      "text": "35"
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 39.723009745279946,
+            "t": 349.7016194661458,
+            "r": 47.32954406738281,
+            "b": 342.4868977864583,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "36",
+      "text": "36"
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 39.30042521158854,
+            "t": 339.51611328125,
+            "r": 47.32954406738281,
+            "b": 332.3013916015625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "37",
+      "text": "37"
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 39.723009745279946,
+            "t": 328.90625,
+            "r": 47.32954406738281,
+            "b": 321.6915283203125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "36",
+      "text": "36"
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 39.723009745279946,
+            "t": 318.29638671875,
+            "r": 47.32954406738281,
+            "b": 311.0816650390625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "39",
+      "text": "39"
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.56818135579427,
+            "t": 306.83768717447913,
+            "r": 46.9069569905599,
+            "b": 301.320556640625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "40",
+      "text": "40"
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.56818135579427,
+            "t": 296.6522216796875,
+            "r": 46.484375,
+            "b": 290.710693359375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "I+",
+      "text": "I+"
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.99076588948568,
+            "t": 286.46671549479163,
+            "r": 47.32954406738281,
+            "b": 280.52518717447913,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "42",
+      "text": "42"
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.99076588948568,
+            "t": 276.70564778645837,
+            "r": 46.9069569905599,
+            "b": 270.3397216796875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "43",
+      "text": "43"
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.56818135579427,
+            "t": 256.33467610677087,
+            "r": 47.32954406738281,
+            "b": 248.695556640625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "45",
+      "text": "45"
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.99076588948568,
+            "t": 234.26611328125,
+            "r": 46.9069569905599,
+            "b": 228.3245849609375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "47",
+      "text": "47"
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.99076588948568,
+            "t": 223.65625,
+            "r": 46.9069569905599,
+            "b": 217.7147216796875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "48",
+      "text": "48"
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.99076588948568,
+            "t": 213.47074381510413,
+            "r": 46.9069569905599,
+            "b": 207.52921549479163,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "49",
+      "text": "49"
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 40.56818135579427,
+            "t": 203.2852783203125,
+            "r": 46.9069569905599,
+            "b": 197.34375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "S0",
+      "text": "S0"
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 39.723009745279946,
+            "t": 193.524169921875,
+            "r": 47.32954406738281,
+            "b": 186.30948893229163,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "51",
+      "text": "51"
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 39.723009745279946,
+            "t": 172.304443359375,
+            "r": 47.75213114420573,
+            "b": 165.0897216796875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "53",
+      "text": "53"
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 39.723009745279946,
+            "t": 151.08463541666663,
+            "r": 47.75213114420573,
+            "b": 143.86995442708337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "55",
+      "text": "55"
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 39.30042521158854,
+            "t": 140.899169921875,
+            "r": 47.32954406738281,
+            "b": 133.68448893229163,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "56",
+      "text": "56"
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 39.30042521158854,
+            "t": 130.71370442708337,
+            "r": 46.9069569905599,
+            "b": 123.07462565104163,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "57",
+      "text": "57"
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 39.723009745279946,
+            "t": 120.52823893229163,
+            "r": 47.32954406738281,
+            "b": 112.88907877604163,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "56",
+      "text": "56"
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 65.92329406738281,
+            "t": 724.0181477864584,
+            "r": 540.4864908854166,
+            "b": 688.3689473470052,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            70
+          ]
+        }
+      ],
+      "orig": "A Large-Scale Empirical Study of Secret Leakage in Hugging Face Spaces",
+      "text": "A Large-Scale Empirical Study of Secret Leakage in Hugging Face Spaces",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 251.43819173177084,
+            "t": 680.3054402669271,
+            "r": 353.7038167317708,
+            "b": 666.3003946940104,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "Anonymous Author(s)",
+      "text": "Anonymous Author(s)"
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 438.2208658854167,
+            "t": 648.0514119466146,
+            "r": 475.8309326171875,
+            "b": 635.7439575195312,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "B Spaces",
+      "text": "B Spaces"
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 321.1647542317708,
+            "t": 616.2217814127604,
+            "r": 356.2393391927083,
+            "b": 605.1875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Developer",
+      "text": "Developer"
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 346.0972900390625,
+            "t": 591.1824544270834,
+            "r": 361.3103434244792,
+            "b": 583.1189575195312,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "steal",
+      "text": "steal"
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 416.6690266927083,
+            "t": 586.0897216796875,
+            "r": 436.953125,
+            "b": 568.265116373698,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "S",
+      "text": "S"
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 372.7201741536458,
+            "t": 564.445556640625,
+            "r": 391.3138834635417,
+            "b": 555.9576619466145,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "Abuso",
+      "text": "Abuso"
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 416.2464192708333,
+            "t": 565.2943522135417,
+            "r": 436.1079508463542,
+            "b": 547.469746907552,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "9",
+      "text": "9"
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 324.968017578125,
+            "t": 555.9576619466145,
+            "r": 360.8877766927083,
+            "b": 545.7721761067708,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Attacker",
+      "text": "Attacker"
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 491.8892008463542,
+            "t": 552.9868977864583,
+            "r": 531.6121826171875,
+            "b": 541.5282185872395,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "End User",
+      "text": "End User"
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 396.8074951171875,
+            "t": 537.7086588541667,
+            "r": 483.4374593098958,
+            "b": 526.6743977864583,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "Third-partyplatform",
+      "text": "Third-partyplatform"
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 312.29046630859375,
+            "t": 521.157246907552,
+            "r": 542.5994059244791,
+            "b": 415.9072672526042,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            536
+          ]
+        }
+      ],
+      "orig": "Figure 1:When developers useSpaces,theyfirstcreate a repositoryand upload theircode to theplatform O.Subsequently,Spaces deploys and distributes the code based on itscontents②.Inadditiontoaccessingthehostedlargelanguage models (LLMs)through API calls,developers can also levcrageboth HuggingFace and third-party cloud inference APIs.Finally,end-users can interactwithvariousAI applicationsviawebinterfaces.However,ifuserinadvertently hardcodes secrets in a public Space, attackers can exploit them,leadingtoAPI abusc andprivacybreaches.",
+      "text": "Figure 1:When developers useSpaces,theyfirstcreate a repositoryand upload theircode to theplatform O.Subsequently,Spaces deploys and distributes the code based on itscontents②.Inadditiontoaccessingthehostedlargelanguage models (LLMs)through API calls,developers can also levcrageboth HuggingFace and third-party cloud inference APIs.Finally,end-users can interactwithvariousAI applicationsviawebinterfaces.However,ifuserinadvertently hardcodes secrets in a public Space, attackers can exploit them,leadingtoAPI abusc andprivacybreaches."
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 312.7130533854167,
+            "t": 404.4485677083333,
+            "r": 542.1768391927084,
+            "b": 290.28629557291663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            635
+          ]
+        }
+      ],
+      "orig": "AIapplications,providingdeveloperswith anefficientanduserfriendlyenvironmentforquicklydeployingandsharingAImodels. ByleveragingGit-basedcoderepositoriesandbuilt-inwebservice deployment,Spaccs cnablesdeveloperstobuildandshowcascAI applications at minimal cost.As of now,Spaccs has hosted morc than300.000publicAIweb applications,formingahighlycfficicnt AI servicepipeline(asillustrated inFigure 1).Through standardizedAPIinterfaces,developerscanseamlesslyintegratethird-party modelinferenceservicestoperformAItaskssuchastextgeneration andimage rccognition,without theneedforcomplex computing resourcemanagementorextensivecodeadaptation.",
+      "text": "AIapplications,providingdeveloperswith anefficientanduserfriendlyenvironmentforquicklydeployingandsharingAImodels. ByleveragingGit-basedcoderepositoriesandbuilt-inwebservice deployment,Spaccs cnablesdeveloperstobuildandshowcascAI applications at minimal cost.As of now,Spaccs has hosted morc than300.000publicAIweb applications,formingahighlycfficicnt AI servicepipeline(asillustrated inFigure 1).Through standardizedAPIinterfaces,developerscanseamlesslyintegratethird-party modelinferenceservicestoperformAItaskssuchastextgeneration andimage rccognition,without theneedforcomplex computing resourcemanagementorextensivecodeadaptation."
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 311.8678792317708,
+            "t": 288.58870442708337,
+            "r": 541.7542317708334,
+            "b": 120.95263671875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            912
+          ]
+        }
+      ],
+      "orig": "However,thisconveniencealsointroducesserioussecurityrisks. Recent reports[7,26]have revealcd thatalarge number ofAPI accesstokens,databasc crcdentials,andothcrsecretinformation exposures may lead to unauthorized API abuse,user data breaches, and evenmaliciouscodeexecution,posingasignificant threato thcsecurity of AI applications[15].Howcvcr,thcre is still a lack ofsystematicresearchon thcissue ofsecretleakageintheSpaces platform.Comparedtoothercodehostingplatforms,secretleakage in Spaces may prescnt several distinct security challenges:(1) SinceSpaccsfocuscs onAIapplications andprovidesbuilt-inwcb serviccs,thevolumc,types,and filclocations of lcakcd sccretsmay differsignificantlyfrom thoscobscrvedontraditionalplatforms such as GitHub and GitLab.(2) Therapid expansion of theSpaces ccosystemmay havcled to inadcquatc secrct dctection andprotection mcchanismsinitscarlystagcs,resultinginvariations in the",
+      "text": "However,thisconveniencealsointroducesserioussecurityrisks. Recent reports[7,26]have revealcd thatalarge number ofAPI accesstokens,databasc crcdentials,andothcrsecretinformation exposures may lead to unauthorized API abuse,user data breaches, and evenmaliciouscodeexecution,posingasignificant threato thcsecurity of AI applications[15].Howcvcr,thcre is still a lack ofsystematicresearchon thcissue ofsecretleakageintheSpaces platform.Comparedtoothercodehostingplatforms,secretleakage in Spaces may prescnt several distinct security challenges:(1) SinceSpaccsfocuscs onAIapplications andprovidesbuilt-inwcb serviccs,thevolumc,types,and filclocations of lcakcd sccretsmay differsignificantlyfrom thoscobscrvedontraditionalplatforms such as GitHub and GitLab.(2) Therapid expansion of theSpaces ccosystemmay havcled to inadcquatc secrct dctection andprotection mcchanismsinitscarlystagcs,resultinginvariations in the"
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 66.76846313476562,
+            "t": 657.8125,
+            "r": 106.06888834635417,
+            "b": 648.9002075195312,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Abstract",
+      "text": "Abstract",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 63.81036885579427,
+            "t": 645.0806477864584,
+            "r": 292.85154215494794,
+            "b": 368.7993977864583,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1560
+          ]
+        }
+      ],
+      "orig": "HuggingFace Spaces(Spaces) has become a leading platform for hostingAIapplications,offcringdevclopersscamlessintcgrationof Git-basedrcpositorics and out-of-the-boxweb service deployment. Howcvcr,asits adoption continues to expand,security concerns havc comc tolight.Rcccntreports havepointed to thcissuc of accidcntal cxposurcof scnsitiveinformation,such asAPI tokcns anddatabasecrcdentials,withinSpaces-hostedcode.Despitcthese concerns,theresearch communitystill lacks a comprehensive understandingof thescopeandimpactof thescsecurityrisks.To bridgc this gap,wepresent thcfirst large-scalc and systcmatic empirical study to quantifythc extent ofsecret leakage inSpaces. Webeginbycompilingacomprehensive dataset of313,647public SpacesrepositoriescrcatcdbctweenMarch2022andDecember 2024.To detect cxposedsccrets,weintroduceSecretReviewer,an advancedframcworkthatcombincsstaticanalysisandLargeLanguage Model (LLM)-assisted detection to identify leaked credentials. ApplyingSecretRevicwer,weidentified9.149withsecretleakage vulnerabilities and11,557 uniquekeys-76% of which from leading AIscrviccproviderssuchasOpcnAIand Groq.Ourfindingsindicatethat30%ofleakswereembeddedincommithistories,andover 1,000non-codefilescontainedsensitive data.Furthervalidation revealed that30%of detected keysremained active,including140 validdatabasecredentialsand50%ofAPItokenswithwritepermissions,underscoringsignificant securityrisks.Our studyshcds light on critical security challengesinAl platform ecosystems and advocatesfor stronger security practices to mitigate theserisks.",
+      "text": "HuggingFace Spaces(Spaces) has become a leading platform for hostingAIapplications,offcringdevclopersscamlessintcgrationof Git-basedrcpositorics and out-of-the-boxweb service deployment. Howcvcr,asits adoption continues to expand,security concerns havc comc tolight.Rcccntreports havepointed to thcissuc of accidcntal cxposurcof scnsitiveinformation,such asAPI tokcns anddatabasecrcdentials,withinSpaces-hostedcode.Despitcthese concerns,theresearch communitystill lacks a comprehensive understandingof thescopeandimpactof thescsecurityrisks.To bridgc this gap,wepresent thcfirst large-scalc and systcmatic empirical study to quantifythc extent ofsecret leakage inSpaces. Webeginbycompilingacomprehensive dataset of313,647public SpacesrepositoriescrcatcdbctweenMarch2022andDecember 2024.To detect cxposedsccrets,weintroduceSecretReviewer,an advancedframcworkthatcombincsstaticanalysisandLargeLanguage Model (LLM)-assisted detection to identify leaked credentials. ApplyingSecretRevicwer,weidentified9.149withsecretleakage vulnerabilities and11,557 uniquekeys-76% of which from leading AIscrviccproviderssuchasOpcnAIand Groq.Ourfindingsindicatethat30%ofleakswereembeddedincommithistories,andover 1,000non-codefilescontainedsensitive data.Furthervalidation revealed that30%of detected keysremained active,including140 validdatabasecredentialsand50%ofAPItokenswithwritepermissions,underscoringsignificant securityrisks.Our studyshcds light on critical security challengesinAl platform ecosystems and advocatesfor stronger security practices to mitigate theserisks."
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 65.50070699055989,
+            "t": 359.4626871744792,
+            "r": 111.98507690429688,
+            "b": 349.2772216796875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Keywords",
+      "text": "Keywords",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 65.07811991373698,
+            "t": 346.3064371744792,
+            "r": 253.5511271158854,
+            "b": 334.8477783203125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            45
+          ]
+        }
+      ],
+      "orig": "Secretleakage,ecurity,rivacy，HuggingFaceSpacs",
+      "text": "Secretleakage,ecurity,rivacy，HuggingFaceSpacs"
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 65.92329406738281,
+            "t": 330.179443359375,
+            "r": 148.74998982747397,
+            "b": 321.6915283203125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "ACMRefercnccFormat:",
+      "text": "ACMRefercnccFormat:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 64.23295084635417,
+            "t": 321.26713053385413,
+            "r": 292.428955078125,
+            "b": 283.07157389322913,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            263
+          ]
+        }
+      ],
+      "orig": "Anonymous Author(s).2018.A Large-ScaleEmpirical Study of Secret LeakageinHuggingFaccSpaces.InProcecdings ofMakc sure toenter the correct ACM.NewYorkNY.USA,11pages.https://doiorg/XXXXXXX.XXXXXXX conferencetitlefromyourrighisconfirmationemail(Conferenceacronym'Xx).",
+      "text": "Anonymous Author(s).2018.A Large-ScaleEmpirical Study of Secret LeakageinHuggingFaccSpaces.InProcecdings ofMakc sure toenter the correct ACM.NewYorkNY.USA,11pages.https://doiorg/XXXXXXX.XXXXXXX conferencetitlefromyourrighisconfirmationemail(Conferenceacronym'Xx)."
+    },
+    {
+      "self_ref": "#/texts/67",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 63.81036885579427,
+            "t": 273.73486328125,
+            "r": 141.5660400390625,
+            "b": 261.00301106770837,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "1Introduction",
+      "text": "1Introduction",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/68",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 64.23295084635417,
+            "t": 258.88106282552087,
+            "r": 292.85154215494794,
+            "b": 215.1683349609375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            245
+          ]
+        }
+      ],
+      "orig": "With the rapidadvancement of artificialintelligence(Al) applications,thedemandforconvenientandscalabledeploymentsolutions hasincreased significantly[3o].HuggingFace Spaces (hereafter referred to asSpaces)has emerged as aleadingplatformforhosting",
+      "text": "With the rapidadvancement of artificialintelligence(Al) applications,thedemandforconvenientandscalabledeploymentsolutions hasincreased significantly[3o].HuggingFace Spaces (hereafter referred to asSpaces)has emerged as aleadingplatformforhosting"
+    },
+    {
+      "self_ref": "#/texts/69",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 63.38778177897135,
+            "t": 208.37801106770837,
+            "r": 292.428955078125,
+            "b": 151.08463541666663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            445
+          ]
+        }
+      ],
+      "orig": "Permissionto makedigitalorhardcopiesofall orpartof thisworkforpersonalor classroom usesgrantedwithoutfecprovidedthatcopiesarenotmadcordlstributed forprofitorcommercialadvantageandthatcopiesbearthisnoticcandthefullcitation onthefirstpageCopyrighisforcomponentsof thisworkownedbyothersthanhe author（s）mustbehonoredAbstractingwithcreditispermitted.Tocopyotherwise,or republhostnsverdisqresims and/ora feeRequestpermissions from permissions@acin.org",
+      "text": "Permissionto makedigitalorhardcopiesofall orpartof thisworkforpersonalor classroom usesgrantedwithoutfecprovidedthatcopiesarenotmadcordlstributed forprofitorcommercialadvantageandthatcopiesbearthisnoticcandthefullcitation onthefirstpageCopyrighisforcomponentsof thisworkownedbyothersthanhe author（s）mustbehonoredAbstractingwithcreditispermitted.Tocopyotherwise,or republhostnsverdisqresims and/ora feeRequestpermissions from permissions@acin.org"
+    },
+    {
+      "self_ref": "#/texts/70",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "footnote",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 63.38778177897135,
+            "t": 147.26513671875,
+            "r": 288.6256917317708,
+            "b": 134.95768229166663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            73
+          ]
+        }
+      ],
+      "orig": "2018-Copyrightheld by thcowner/author（s）.Publication rightslcensed toACM.",
+      "text": "2018-Copyrightheld by thcowner/author（s）.Publication rightslcensed toACM."
+    },
+    {
+      "self_ref": "#/texts/71",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "footnote",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 64.23295084635417,
+            "t": 155.32861328125,
+            "r": 174.95027669270834,
+            "b": 143.02115885416663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "ConferenceacronymXXWoodstock,NY",
+      "text": "ConferenceacronymXXWoodstock,NY"
+    },
+    {
+      "self_ref": "#/texts/72",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 64.65553792317708,
+            "t": 139.6259765625,
+            "r": 175.37286376953125,
+            "b": 121.37703450520837,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            63
+          ]
+        }
+      ],
+      "orig": "ACMLSBN978-1-4503-XXXX-X/2018/06 https://doiorg/XXXXXXX.XXXXXXX",
+      "text": "ACMLSBN978-1-4503-XXXX-X/2018/06 https://doiorg/XXXXXXX.XXXXXXX"
+    },
+    {
+      "self_ref": "#/texts/73",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 557.389892578125,
+            "t": 718.5010070800781,
+            "r": 564.5738525390625,
+            "b": 711.2862854003906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "n",
+      "text": "n"
+    },
+    {
+      "self_ref": "#/texts/74",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 557.8124593098959,
+            "t": 708.7399190266927,
+            "r": 565.4190266927084,
+            "b": 701.1008097330729,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "s",
+      "text": "s"
+    },
+    {
+      "self_ref": "#/texts/75",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 557.8124593098959,
+            "t": 698.554433186849,
+            "r": 564.9964192708334,
+            "b": 691.3397216796875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "61",
+      "text": "61"
+    },
+    {
+      "self_ref": "#/texts/76",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 557.8124593098959,
+            "t": 687.9445597330729,
+            "r": 565.8415934244791,
+            "b": 680.7298380533854,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "62",
+      "text": "62"
+    },
+    {
+      "self_ref": "#/texts/77",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.2350667317709,
+            "t": 678.1834716796875,
+            "r": 565.8415934244791,
+            "b": 670.5443522135416,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "61",
+      "text": "61"
+    },
+    {
+      "self_ref": "#/texts/78",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.6576334635416,
+            "t": 667.9979858398438,
+            "r": 565.8415934244791,
+            "b": 660.3588663736979,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "H",
+      "text": "H"
+    },
+    {
+      "self_ref": "#/texts/79",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.6576334635416,
+            "t": 657.8125,
+            "r": 565.8415934244791,
+            "b": 650.1733805338541,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "65",
+      "text": "65"
+    },
+    {
+      "self_ref": "#/texts/80",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 559.0802408854166,
+            "t": 636.1683553059896,
+            "r": 565.4190266927084,
+            "b": 630.226806640625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "67",
+      "text": "67"
+    },
+    {
+      "self_ref": "#/texts/81",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.6576334635416,
+            "t": 625.9828694661459,
+            "r": 565.8415934244791,
+            "b": 618.7681477864584,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "68",
+      "text": "68"
+    },
+    {
+      "self_ref": "#/texts/82",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.6576334635416,
+            "t": 605.6118977864584,
+            "r": 565.8415934244791,
+            "b": 598.3971761067709,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "70",
+      "text": "70"
+    },
+    {
+      "self_ref": "#/texts/83",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 559.0802408854166,
+            "t": 594.5776163736979,
+            "r": 565.4190266927084,
+            "b": 588.6360880533854,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "71",
+      "text": "71"
+    },
+    {
+      "self_ref": "#/texts/84",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.6576334635416,
+            "t": 584.8165283203125,
+            "r": 566.26416015625,
+            "b": 577.601806640625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "72",
+      "text": "72"
+    },
+    {
+      "self_ref": "#/texts/85",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 559.0802408854166,
+            "t": 573.3578694661458,
+            "r": 565.4190266927084,
+            "b": 567.4163208007812,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "73",
+      "text": "73"
+    },
+    {
+      "self_ref": "#/texts/86",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.2350667317709,
+            "t": 563.5967814127605,
+            "r": 566.26416015625,
+            "b": 556.382059733073,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "74",
+      "text": "74"
+    },
+    {
+      "self_ref": "#/texts/87",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.2350667317709,
+            "t": 553.4112955729167,
+            "r": 566.26416015625,
+            "b": 545.7721761067708,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "75",
+      "text": "75"
+    },
+    {
+      "self_ref": "#/texts/88",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.2350667317709,
+            "t": 542.8014119466145,
+            "r": 566.26416015625,
+            "b": 535.586690266927,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "76",
+      "text": "76"
+    },
+    {
+      "self_ref": "#/texts/89",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.2350667317709,
+            "t": 532.1915283203125,
+            "r": 565.8415934244791,
+            "b": 524.5524088541667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "77",
+      "text": "77"
+    },
+    {
+      "self_ref": "#/texts/90",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.2350667317709,
+            "t": 521.5816446940105,
+            "r": 565.8415934244791,
+            "b": 513.9425455729167,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "78",
+      "text": "78"
+    },
+    {
+      "self_ref": "#/texts/91",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.2350667317709,
+            "t": 510.97178141276044,
+            "r": 566.26416015625,
+            "b": 502.90826416015625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "79",
+      "text": "79"
+    },
+    {
+      "self_ref": "#/texts/92",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.6576334635416,
+            "t": 499.9375,
+            "r": 565.8415934244791,
+            "b": 492.7227783203125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "80",
+      "text": "80"
+    },
+    {
+      "self_ref": "#/texts/93",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.6576334635416,
+            "t": 489.32763671875,
+            "r": 566.26416015625,
+            "b": 482.1129150390625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "81",
+      "text": "81"
+    },
+    {
+      "self_ref": "#/texts/94",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.6576334635416,
+            "t": 478.7177327473958,
+            "r": 566.26416015625,
+            "b": 471.07861328125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "82",
+      "text": "82"
+    },
+    {
+      "self_ref": "#/texts/95",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.6576334635416,
+            "t": 468.1078694661458,
+            "r": 566.26416015625,
+            "b": 460.46875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "83",
+      "text": "83"
+    },
+    {
+      "self_ref": "#/texts/96",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 559.0802408854166,
+            "t": 457.0735677083333,
+            "r": 566.26416015625,
+            "b": 449.85888671875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "B4",
+      "text": "B4"
+    },
+    {
+      "self_ref": "#/texts/97",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.6576334635416,
+            "t": 446.4637044270833,
+            "r": 566.26416015625,
+            "b": 439.6733805338542,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "85",
+      "text": "85"
+    },
+    {
+      "self_ref": "#/texts/98",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 559.0802408854166,
+            "t": 435.0050455729167,
+            "r": 565.4190266927084,
+            "b": 429.0635172526042,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "86",
+      "text": "86"
+    },
+    {
+      "self_ref": "#/texts/99",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.6576334635416,
+            "t": 425.2439371744792,
+            "r": 565.8415934244791,
+            "b": 418.0292154947917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "87",
+      "text": "87"
+    },
+    {
+      "self_ref": "#/texts/100",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.6576334635416,
+            "t": 404.0242106119792,
+            "r": 566.26416015625,
+            "b": 396.3850911458333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "89",
+      "text": "89"
+    },
+    {
+      "self_ref": "#/texts/101",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.6576334635416,
+            "t": 393.414306640625,
+            "r": 566.26416015625,
+            "b": 386.1995849609375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "90",
+      "text": "90"
+    },
+    {
+      "self_ref": "#/texts/102",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.6576334635416,
+            "t": 382.804443359375,
+            "r": 565.8415934244791,
+            "b": 375.1653238932292,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "91",
+      "text": "91"
+    },
+    {
+      "self_ref": "#/texts/103",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.2350667317709,
+            "t": 372.6189371744792,
+            "r": 565.8415934244791,
+            "b": 364.9798177083333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "92",
+      "text": "92"
+    },
+    {
+      "self_ref": "#/texts/104",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.2350667317709,
+            "t": 361.5846761067708,
+            "r": 566.26416015625,
+            "b": 354.3699544270833,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "93",
+      "text": "93"
+    },
+    {
+      "self_ref": "#/texts/105",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.2350667317709,
+            "t": 351.3992106119792,
+            "r": 565.8415934244791,
+            "b": 344.1844889322917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "24",
+      "text": "24"
+    },
+    {
+      "self_ref": "#/texts/106",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.2350667317709,
+            "t": 340.789306640625,
+            "r": 565.8415934244791,
+            "b": 333.1501871744792,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "95",
+      "text": "95"
+    },
+    {
+      "self_ref": "#/texts/107",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.2350667317709,
+            "t": 330.179443359375,
+            "r": 565.8415934244791,
+            "b": 322.54032389322913,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "9%6",
+      "text": "9%6"
+    },
+    {
+      "self_ref": "#/texts/108",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.2350667317709,
+            "t": 319.56953938802087,
+            "r": 565.8415934244791,
+            "b": 311.93046061197913,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "97",
+      "text": "97"
+    },
+    {
+      "self_ref": "#/texts/109",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.2350667317709,
+            "t": 308.95967610677087,
+            "r": 565.8415934244791,
+            "b": 301.74495442708337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "98",
+      "text": "98"
+    },
+    {
+      "self_ref": "#/texts/110",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 557.8124593098959,
+            "t": 298.774169921875,
+            "r": 565.8415934244791,
+            "b": 291.55948893229163,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "99",
+      "text": "99"
+    },
+    {
+      "self_ref": "#/texts/111",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.6576334635416,
+            "t": 288.164306640625,
+            "r": 567.5319417317709,
+            "b": 280.9495849609375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "100",
+      "text": "100"
+    },
+    {
+      "self_ref": "#/texts/112",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.6576334635416,
+            "t": 277.97884114583337,
+            "r": 567.9545084635416,
+            "b": 270.76411946614587,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "101",
+      "text": "101"
+    },
+    {
+      "self_ref": "#/texts/113",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.6576334635416,
+            "t": 266.94453938802087,
+            "r": 567.9545084635416,
+            "b": 259.72981770833337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "102",
+      "text": "102"
+    },
+    {
+      "self_ref": "#/texts/114",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.6576334635416,
+            "t": 256.75907389322913,
+            "r": 567.5319417317709,
+            "b": 249.54435221354163,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "$01",
+      "text": "$01"
+    },
+    {
+      "self_ref": "#/texts/115",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.2350667317709,
+            "t": 245.72481282552087,
+            "r": 567.5319417317709,
+            "b": 238.51009114583337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "104",
+      "text": "104"
+    },
+    {
+      "self_ref": "#/texts/116",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.2350667317709,
+            "t": 235.11490885416663,
+            "r": 567.5319417317709,
+            "b": 228.3245849609375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "105",
+      "text": "105"
+    },
+    {
+      "self_ref": "#/texts/117",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.2350667317709,
+            "t": 224.50504557291663,
+            "r": 567.5319417317709,
+            "b": 217.7147216796875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "106",
+      "text": "106"
+    },
+    {
+      "self_ref": "#/texts/118",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.2350667317709,
+            "t": 214.31953938802087,
+            "r": 567.1093343098959,
+            "b": 207.10481770833337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "107",
+      "text": "107"
+    },
+    {
+      "self_ref": "#/texts/119",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.6576334635416,
+            "t": 203.70967610677087,
+            "r": 567.5319417317709,
+            "b": 196.91935221354163,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "10S",
+      "text": "10S"
+    },
+    {
+      "self_ref": "#/texts/120",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.6576334635416,
+            "t": 193.524169921875,
+            "r": 567.9545084635416,
+            "b": 186.30948893229163,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "109",
+      "text": "109"
+    },
+    {
+      "self_ref": "#/texts/121",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.2350667317709,
+            "t": 182.914306640625,
+            "r": 568.3771158854166,
+            "b": 175.27518717447913,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "110",
+      "text": "110"
+    },
+    {
+      "self_ref": "#/texts/122",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.2350667317709,
+            "t": 172.72884114583337,
+            "r": 567.9545084635416,
+            "b": 164.24092610677087,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "111",
+      "text": "111"
+    },
+    {
+      "self_ref": "#/texts/123",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.6576334635416,
+            "t": 161.69453938802087,
+            "r": 567.9545084635416,
+            "b": 154.47981770833337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "112",
+      "text": "112"
+    },
+    {
+      "self_ref": "#/texts/124",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.6576334635416,
+            "t": 150.66023763020837,
+            "r": 567.9545084635416,
+            "b": 143.445556640625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "113",
+      "text": "113"
+    },
+    {
+      "self_ref": "#/texts/125",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.6576334635416,
+            "t": 140.05037434895837,
+            "r": 567.9545084635416,
+            "b": 132.835693359375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "11-4",
+      "text": "11-4"
+    },
+    {
+      "self_ref": "#/texts/126",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 558.2350667317709,
+            "t": 130.289306640625,
+            "r": 568.3771158854166,
+            "b": 121.80143229166663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "115",
+      "text": "115"
+    },
+    {
+      "self_ref": "#/texts/127",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 559.0802408854166,
+            "t": 119.25504557291663,
+            "r": 567.9545084635416,
+            "b": 112.46468098958337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "116",
+      "text": "116"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/49"
+        },
+        {
+          "$ref": "#/texts/50"
+        },
+        {
+          "$ref": "#/texts/51"
+        },
+        {
+          "$ref": "#/texts/52"
+        },
+        {
+          "$ref": "#/texts/53"
+        },
+        {
+          "$ref": "#/texts/54"
+        },
+        {
+          "$ref": "#/texts/55"
+        },
+        {
+          "$ref": "#/texts/56"
+        },
+        {
+          "$ref": "#/texts/57"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 321.6017150878906,
+            "t": 649.2760925292969,
+            "r": 534.8424072265625,
+            "b": 527.2221984863281,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.0,
+        "height": 842.0
+      },
+      "page_no": 1
+    }
+  }
+}
+
+【文本内容】:
+2
+
+6
+
+7
+
+S
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+16
+
+19
+
+20
+
+21
+
+23
+
+24
+
+25
+
+2h
+
+Z7
+
+28
+
+29
+
+30
+
+Z2
+
+33
+
+元
+
+35
+
+36
+
+37
+
+36
+
+39
+
+40
+
+I+
+
+42
+
+43
+
+45
+
+47
+
+48
+
+49
+
+S0
+
+51
+
+53
+
+55
+
+56
+
+57
+
+56
+
+## A Large-Scale Empirical Study of Secret Leakage in Hugging Face Spaces
+
+Anonymous Author(s)
+
+<!-- image -->
+
+Figure 1:When developers useSpaces,theyfirstcreate a repositoryand upload theircode to theplatform O.Subsequently,Spaces deploys and distributes the code based on itscontents②.Inadditiontoaccessingthehostedlargelanguage models (LLMs)through API calls,developers can also levcrageboth HuggingFace and third-party cloud inference APIs.Finally,end-users can interactwithvariousAI applicationsviawebinterfaces.However,ifuserinadvertently hardcodes secrets in a public Space, attackers can exploit them,leadingtoAPI abusc andprivacybreaches.
+
+AIapplications,providingdeveloperswith anefficientanduserfriendlyenvironmentforquicklydeployingandsharingAImodels. ByleveragingGit-basedcoderepositoriesandbuilt-inwebservice deployment,Spaccs cnablesdeveloperstobuildandshowcascAI applications at minimal cost.As of now,Spaccs has hosted morc than300.000publicAIweb applications,formingahighlycfficicnt AI servicepipeline(asillustrated inFigure 1).Through standardizedAPIinterfaces,developerscanseamlesslyintegratethird-party modelinferenceservicestoperformAItaskssuchastextgeneration andimage rccognition,without theneedforcomplex computing resourcemanagementorextensivecodeadaptation.
+
+However,thisconveniencealsointroducesserioussecurityrisks. Recent reports[7,26]have revealcd thatalarge number ofAPI accesstokens,databasc crcdentials,andothcrsecretinformation exposures may lead to unauthorized API abuse,user data breaches, and evenmaliciouscodeexecution,posingasignificant threato thcsecurity of AI applications[15].Howcvcr,thcre is still a lack ofsystematicresearchon thcissue ofsecretleakageintheSpaces platform.Comparedtoothercodehostingplatforms,secretleakage in Spaces may prescnt several distinct security challenges:(1) SinceSpaccsfocuscs onAIapplications andprovidesbuilt-inwcb serviccs,thevolumc,types,and filclocations of lcakcd sccretsmay differsignificantlyfrom thoscobscrvedontraditionalplatforms such as GitHub and GitLab.(2) Therapid expansion of theSpaces ccosystemmay havcled to inadcquatc secrct dctection andprotection mcchanismsinitscarlystagcs,resultinginvariations in the
+
+## Abstract
+
+HuggingFace Spaces(Spaces) has become a leading platform for hostingAIapplications,offcringdevclopersscamlessintcgrationof Git-basedrcpositorics and out-of-the-boxweb service deployment. Howcvcr,asits adoption continues to expand,security concerns havc comc tolight.Rcccntreports havepointed to thcissuc of accidcntal cxposurcof scnsitiveinformation,such asAPI tokcns anddatabasecrcdentials,withinSpaces-hostedcode.Despitcthese concerns,theresearch communitystill lacks a comprehensive understandingof thescopeandimpactof thescsecurityrisks.To bridgc this gap,wepresent thcfirst large-scalc and systcmatic empirical study to quantifythc extent ofsecret leakage inSpaces. Webeginbycompilingacomprehensive dataset of313,647public SpacesrepositoriescrcatcdbctweenMarch2022andDecember 2024.To detect cxposedsccrets,weintroduceSecretReviewer,an advancedframcworkthatcombincsstaticanalysisandLargeLanguage Model (LLM)-assisted detection to identify leaked credentials. ApplyingSecretRevicwer,weidentified9.149withsecretleakage vulnerabilities and11,557 uniquekeys-76% of which from leading AIscrviccproviderssuchasOpcnAIand Groq.Ourfindingsindicatethat30%ofleakswereembeddedincommithistories,andover 1,000non-codefilescontainedsensitive data.Furthervalidation revealed that30%of detected keysremained active,including140 validdatabasecredentialsand50%ofAPItokenswithwritepermissions,underscoringsignificant securityrisks.Our studyshcds light on critical security challengesinAl platform ecosystems and advocatesfor stronger security practices to mitigate theserisks.
+
+## Keywords
+
+Secretleakage,ecurity,rivacy，HuggingFaceSpacs
+
+## ACMRefercnccFormat:
+
+Anonymous Author(s).2018.A Large-ScaleEmpirical Study of Secret LeakageinHuggingFaccSpaces.InProcecdings ofMakc sure toenter the correct ACM.NewYorkNY.USA,11pages.https://doiorg/XXXXXXX.XXXXXXX conferencetitlefromyourrighisconfirmationemail(Conferenceacronym'Xx).
+
+## 1Introduction
+
+With the rapidadvancement of artificialintelligence(Al) applications,thedemandforconvenientandscalabledeploymentsolutions hasincreased significantly[3o].HuggingFace Spaces (hereafter referred to asSpaces)has emerged as aleadingplatformforhosting
+
+Permissionto makedigitalorhardcopiesofall orpartof thisworkforpersonalor classroom usesgrantedwithoutfecprovidedthatcopiesarenotmadcordlstributed forprofitorcommercialadvantageandthatcopiesbearthisnoticcandthefullcitation onthefirstpageCopyrighisforcomponentsof thisworkownedbyothersthanhe author（s）mustbehonoredAbstractingwithcreditispermitted.Tocopyotherwise,or republhostnsverdisqresims and/ora feeRequestpermissions from permissions@acin.org
+
+2018-Copyrightheld by thcowner/author（s）.Publication rightslcensed toACM.
+
+ConferenceacronymXXWoodstock,NY
+
+ACMLSBN978-1-4503-XXXX-X/2018/06 https://doiorg/XXXXXXX.XXXXXXX
+
+n
+
+s
+
+61
+
+62
+
+61
+
+H
+
+65
+
+67
+
+68
+
+70
+
+71
+
+72
+
+73
+
+74
+
+75
+
+76
+
+77
+
+78
+
+79
+
+80
+
+81
+
+82
+
+83
+
+B4
+
+85
+
+86
+
+87
+
+89
+
+90
+
+91
+
+92
+
+93
+
+24
+
+95
+
+9%6
+
+97
+
+98
+
+99
+
+100
+
+101
+
+102
+
+$01
+
+104
+
+105
+
+106
+
+107
+
+10S
+
+109
+
+110
+
+111
+
+112
+
+113
+
+11-4
+
+115
+
+116
+

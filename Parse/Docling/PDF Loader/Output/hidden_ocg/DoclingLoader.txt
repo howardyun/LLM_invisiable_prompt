@@ -1,0 +1,116 @@
+文件解析报告 (Native)
+文件名: ocg_poc.pdf
+耗时: 4.74 秒
+策略: OCR=自动
+========================================
+
+【Metadata】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\Hidden_OCG\ocg_poc.pdf
+  - dl_meta:
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.8.0",
+  "name": "ocg_poc",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 12715094776499212139,
+    "filename": "ocg_poc.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 72.0,
+            "t": 753.488,
+            "r": 431.312,
+            "b": 738.688,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "VISIBLE A: this text is on the normal page content.",
+      "text": "VISIBLE A: this text is on the normal page content."
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 72.0,
+            "t": 723.488,
+            "r": 455.248,
+            "b": 708.688,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            52
+          ]
+        }
+      ],
+      "orig": "HIDDEN B: this text is attached to an OFF OCG layer.",
+      "text": "HIDDEN B: this text is attached to an OFF OCG layer."
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.0,
+        "height": 842.0
+      },
+      "page_no": 1
+    }
+  }
+}
+
+【文本内容】:
+VISIBLE A: this text is on the normal page content.
+
+HIDDEN B: this text is attached to an OFF OCG layer.
+

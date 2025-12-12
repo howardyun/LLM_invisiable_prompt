@@ -1,0 +1,19 @@
+文件解析结果 (Native LLMSherpa): font_001.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LLMSherpa\PDF Loader\Output\zero_size\font_001\SherpaResult.txt
+解析出的块(Chunks)数量: 1
+==============================
+
+【块索引 (Chunk 0) 元数据】:
+  - page_idx: 0
+  - level: 0
+  - tag: para
+  - block_idx: 0
+  - top: -1
+  - left: -1
+
+【正文内容】:
+
+This is a test PDF.
+
+--------------------
+

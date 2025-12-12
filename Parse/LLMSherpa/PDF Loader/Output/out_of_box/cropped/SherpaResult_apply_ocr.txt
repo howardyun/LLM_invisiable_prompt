@@ -1,0 +1,5 @@
+文件解析结果 (Native LLMSherpa): oob_poc_cropped.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LLMSherpa\PDF Loader\Output\out_of_box\cropped\SherpaResult_apply_ocr.txt
+解析出的块(Chunks)数量: 0
+==============================
+
