@@ -1,0 +1,47 @@
+文件解析结果: attacked_1765867970442.pdf
+切分块数: 1
+==============================
+
+【Metadata】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\new\attacked_1765867970442.pdf
+  - dl_meta:
+{
+  "schema_name": "docling_core.transforms.chunker.DocMeta",
+  "version": "1.0.0",
+  "doc_items": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 50.0,
+            "t": 751.117,
+            "r": 168.019,
+            "b": 739.117,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ]
+    }
+  ],
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 12091951235637750683,
+    "filename": "attacked_1765867970442.pdf"
+  }
+}
+
+【文本内容】:
+s x t c t e s k PD y F atta
+

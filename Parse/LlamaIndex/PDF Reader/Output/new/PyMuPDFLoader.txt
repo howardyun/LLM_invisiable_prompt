@@ -1,0 +1,31 @@
+文件解析结果 (PyMuPDFReader): attacked_1765867970442.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LlamaIndex\PDF Reader\Output\new\PyMuPDFLoader.txt
+解析出的页面数量: 1
+说明: 使用 PyMuPDF (fitz) 引擎，速度快，适合提取纯文本
+==============================
+
+【页面 (Page 0) 元数据】:
+  - total_pages: 1
+  - file_path: D:\PycharmProject\LLM_Parser\PDF\new\attacked_1765867970442.pdf
+  - source: 1
+
+【正文内容】:
+s
+t
+x
+c
+ 
+t
+e
+s
+k
+PD
+ 
+y
+atta
+ 
+F
+
+
+--------------------
+

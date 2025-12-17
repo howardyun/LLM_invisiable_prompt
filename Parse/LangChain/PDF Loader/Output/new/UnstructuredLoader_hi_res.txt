@@ -1,0 +1,23 @@
+本地解析结果 (Unstructured Local): attacked_1765867970442.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LangChain\PDF Loader\Output\new\UnstructuredLoader_hi_res.txt
+识别元素数量: 1
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: Header] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\new\attacked_1765867970442.pdf
+  - detection_class_prob: 0.3775714635848999
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(137.9132843017578), np.float64(112.98070526123047)), (np.float64(137.9132843017578), np.float64(146.89670222222225)), (np.float64(473.0391540527344), np.float64(146.89670222222225)), (np.float64(473.0391540527344), np.float64(112.98070526123047))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - last_modified: 2025-12-16T16:20:37
+  - filetype: application/pdf
+  - languages: ['eng', 'spa']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\new
+  - filename: attacked_1765867970442.pdf
+  - category: Header
+  - element_id: ae7b0f2cf80d74cfc23cbbc078ea0505
+【内容】:
+y s stx te PD F atta c k
+

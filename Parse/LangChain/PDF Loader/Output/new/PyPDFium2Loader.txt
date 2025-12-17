@@ -1,0 +1,23 @@
+文件解析结果 (PyPDFium2): attacked_1765867970442.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LangChain\PDF Loader\Output\new\PyPDFium2Loader.txt
+总页数: 1
+特点: 高性能文本提取，基于 C++ PDFium 库。
+==============================
+
+【元数据 (Metadata)】:
+  - producer: ReportLab PDF Library - www.reportlab.com
+  - creator: ReportLab PDF Library - www.reportlab.com
+  - creationdate: 2025-12-16T07:52:50+01:00
+  - title: untitled
+  - author: anonymous
+  - subject: unspecified
+  - keywords: 
+  - moddate: 2025-12-16T07:52:50+01:00
+  - source: D:\PycharmProject\LLM_Parser\PDF\new\attacked_1765867970442.pdf
+  - total_pages: 1
+  - page: 0
+
+【正文内容】:
+ysx test PDF attack
+
+

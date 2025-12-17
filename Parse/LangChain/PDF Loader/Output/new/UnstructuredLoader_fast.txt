@@ -1,0 +1,126 @@
+本地解析结果 (Unstructured Local): attacked_1765867970442.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LangChain\PDF Loader\Output\new\UnstructuredLoader_fast.txt
+识别元素数量: 8
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: Header] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\new\attacked_1765867970442.pdf
+  - coordinates: {'points': ((50.0, 40.88281280000001), (50.0, 52.88281280000001), (56.7792968, 52.88281280000001), (56.7792968, 40.88281280000001)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\new
+  - filename: attacked_1765867970442.pdf
+  - last_modified: 2025-12-16T16:20:37
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Header
+  - element_id: bbf1b9d2b045e68d0155667fcb038ccc
+【内容】:
+y
+
+--- Element 2 [页码: 1 | 类型: Header] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\new\attacked_1765867970442.pdf
+  - coordinates: {'points': ((56.7793, 40.88281280000001), (56.7793, 52.88281280000001), (62.937503199999995, 52.88281280000001), (62.937503199999995, 40.88281280000001)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\new
+  - filename: attacked_1765867970442.pdf
+  - last_modified: 2025-12-16T16:20:37
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Header
+  - element_id: 8599f0b7c42ff994ab73b4e69975b31c
+【内容】:
+s
+
+--- Element 3 [页码: 1 | 类型: Header] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\new\attacked_1765867970442.pdf
+  - coordinates: {'points': ((62.9375, 40.88281280000001), (62.9375, 52.88281280000001), (96.423826, 52.88281280000001), (96.423826, 40.88281280000001)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\new
+  - filename: attacked_1765867970442.pdf
+  - last_modified: 2025-12-16T16:20:37
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Header
+  - element_id: bac608615fde6915ee30f835c54c89a8
+【内容】:
+te stx
+
+--- Element 4 [页码: 1 | 类型: Header] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\new\attacked_1765867970442.pdf
+  - coordinates: {'points': ((96.42383, 40.88281280000001), (96.42383, 52.88281280000001), (117.9335936, 52.88281280000001), (117.9335936, 40.88281280000001)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\new
+  - filename: attacked_1765867970442.pdf
+  - last_modified: 2025-12-16T16:20:37
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Header
+  - element_id: ebb8ae28a7bc1d382055546a9a632150
+【内容】:
+PD
+
+--- Element 5 [页码: 1 | 类型: Header] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\new\attacked_1765867970442.pdf
+  - coordinates: {'points': ((117.9336, 40.88281280000001), (117.9336, 52.88281280000001), (130.0742532, 52.88281280000001), (130.0742532, 40.88281280000001)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\new
+  - filename: attacked_1765867970442.pdf
+  - last_modified: 2025-12-16T16:20:37
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Header
+  - element_id: 64bc5c6936f9c1d90cbc2e8261112eda
+【内容】:
+F
+
+--- Element 6 [页码: 1 | 类型: Header] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\new\attacked_1765867970442.pdf
+  - coordinates: {'points': ((130.0742, 40.88281280000001), (130.0742, 52.88281280000001), (154.0272968, 52.88281280000001), (154.0272968, 40.88281280000001)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\new
+  - filename: attacked_1765867970442.pdf
+  - last_modified: 2025-12-16T16:20:37
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Header
+  - element_id: 9cb92fd7877dabee97d037ad4146a5b4
+【内容】:
+atta
+
+--- Element 7 [页码: 1 | 类型: Header] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\new\attacked_1765867970442.pdf
+  - coordinates: {'points': ((154.0273, 40.88281280000001), (154.0273, 52.88281280000001), (160.7480032, 52.88281280000001), (160.7480032, 40.88281280000001)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\new
+  - filename: attacked_1765867970442.pdf
+  - last_modified: 2025-12-16T16:20:37
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Header
+  - element_id: 15843f0b57aed64596e9147ef601d7aa
+【内容】:
+c
+
+--- Element 8 [页码: 1 | 类型: Header] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\new\attacked_1765867970442.pdf
+  - coordinates: {'points': ((160.748, 40.88281280000001), (160.748, 52.88281280000001), (168.01948399999998, 52.88281280000001), (168.01948399999998, 40.88281280000001)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\new
+  - filename: attacked_1765867970442.pdf
+  - last_modified: 2025-12-16T16:20:37
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Header
+  - element_id: 643dbb57229b8cf34ab852940bbf0b3f
+【内容】:
+k
+

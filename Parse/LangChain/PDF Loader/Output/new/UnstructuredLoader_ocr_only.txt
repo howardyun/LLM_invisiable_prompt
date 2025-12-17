@@ -1,0 +1,21 @@
+本地解析结果 (Unstructured Local): attacked_1765867970442.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LangChain\PDF Loader\Output\new\UnstructuredLoader_ocr_only.txt
+识别元素数量: 1
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\new\attacked_1765867970442.pdf
+  - coordinates: {'points': ((np.float64(139.0), np.float64(113.0)), (np.float64(139.0), np.float64(145.0)), (np.float64(467.0), np.float64(145.0)), (np.float64(467.0), np.float64(113.0))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - filetype: application/pdf
+  - languages: ['eng']
+  - last_modified: 2025-12-16T16:20:37
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\new
+  - filename: attacked_1765867970442.pdf
+  - category: Title
+  - element_id: f8b9b229709e1e016057afcf9764231a
+【内容】:
+ysx test PDF attack
+
