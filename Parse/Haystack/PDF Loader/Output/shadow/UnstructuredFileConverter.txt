@@ -1,0 +1,1752 @@
+文件解析结果 (Unstructured-Docker): 32953_EGGS_Expert_Guided_Frame.pdf
+保存位置: D:\PycharmProject\LLM_Parser\HayStack\PDF Loader\Output\shadow\UnstructuredFileConverter.txt
+文档片段数: 1
+API URL: http://localhost:8000/general/v0/general
+==============================
+
+【片段 1 元数据 (Meta)】:
+  - file_path: D:\PycharmProject\LLM_Parser\PDF\Shadow\32953_EGGS_Expert_Guided_Frame.pdf
+
+【正文内容】:
+REDACTED
+
+EGGS: Expert-Guided Framework Constructed from Semantic Priors for Large-Scale Scene Reconstruction
+
+Anonymous CVPR submission
+
+REDACTED
+
+Octree-'GS‘ PSNR:25.13
+
+CityGSv2 PSNR:28/37%
+
+EGGS (ours), PSNR:30.56 \'
+
+
+
+
+
+
+
+Figure 1. Comparison of EGGS (ours) with OctreeGS and CityGSv2. EGGS achieves clearer and more faithful detail reconstruction across large scene. (Higher PSNR values reflect higher-fidelity reconstruction)
+
+Abstract
+
+Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have demonstrated strong capability in reconstructing 3D scenes ranging from indoor to outdoor environments. For large- scale scenes, reconstruction is often accelerated through paral- lelization based on geographic partitioning. However, excessive scene size introduces viewpoint locality, leading to two major chal- lenges: reconstruction isolation and redundant computation. The former causes significant inconsistency in rendering quality across viewpoints and the latter leads to repetitive optimization of similar elements, resulting in wasted computational resources. Inspired by the expert optimization principle in Mixture-of-Experts (MoEs), we propose EGGS (Expert-Guided Framework Constructed from Semantic Priors for Large-Scale Scene Reconstruction), an expert- guided framework that replaces geographic partitioning with ex- pert collaboration constructed from semantic priors. EGGS as- signs experts to scene elements based on semantic and feature similarity, enabling semantic-aware collaboration that effectively
+
+001
+
+002
+
+003
+
+004
+
+005
+
+006
+
+007
+
+008
+
+009
+
+010
+
+011
+
+012
+
+013
+
+014
+
+015
+
+016
+
+alleviates isolation and redundancy. Extensive experiments on both synthetic and real-world datasets demonstrate that EGGS achieves state-of-the-art reconstruction quality, outperforming ex- isting methods by up to 5% in PSNR. Code and datasets will be released upon acceptance.
+
+1. Introduction
+
+NeRF [1, 25] and 3DGS [9, 13] have demonstrated efficient 3D reconstruction capabilities across diverse scales, ranging from small indoor scenes [22] to large outdoor environments, sup- porting downstream tasks such as SLAM and AR content cre- ation [37]. Current large-scale reconstruction methods [17, 21, 38, 42, 45] typically adopt geographic region-based parallel algo- rithms, where each subregion is independently optimized to accel- erate reconstruction. However, these methods fail to address the viewpoint locality problem inherent in large-scale scenes. Unlike indoor settings with near-complete scene capture, each viewpoint 024 025 026 027 028 029 030 031 032 033
+
+017
+
+1
+
+018
+
+019
+
+020
+
+021
+
+022
+
+023
+
+REDACTED
+
+034 in outdoor scenes only observes a partial area, leading to three ma- 035 jor issues.
+
+036
+
+037
+
+038
+
+039
+
+040
+
+041
+
+042
+
+043
+
+First, Reconstruction Isolation. Each subregion reconstruc- tion relies on the viewpoints that observe its internal content. Since viewpoints only provide limited coverage within individ- ual regions, reconstruction quality varies significantly across sub- regions, an issue unique to large-scale reconstruction. Recent work [20] attempts to improve inter-region consistency via addi- tional loss constraints, yet viewpoint locality remains unresolved: high-quality subregions fail to enhance adjacent low-quality ones, ultimately degrading overall reconstruction fidelity.
+
+044
+
+045
+
+046
+
+047
+
+048
+
+049
+
+050
+
+051
+
+Second, Redundant Computation. Geographic partition- ing separates semantic entities such as buildings, vegetation, and roads; due to viewpoint locality, these elements are repeatedly “rediscovered” and “relearned”. This scheme overlooks seman- tic and structural redundancy, causing repetitive subregion recon- structions that raise computational costs and reduce overall recon- struction quality.
+
+052
+
+053
+
+054
+
+055
+
+056
+
+057
+
+058
+
+059
+
+Third, Multi-Expert Collaboration and Competition. Modular-GS [34] introduce MoEs [31] into 3DGS for semantic space decomposition. Inspired by the expert division strategy in MOEs for 3D reconstruction, we propose that an expert-guided structure can go beyond semantic segmentation and serve as an alternative to geographic partitioning. However, the multi-experts structure naturally involves expert competition and cooperation, which necessitates designing collaborative mechanisms to prevent boundary ambiguity that could impair rendering quality.
+
+060
+
+To address these challenges, we present EGGS, an Expert- Guided Framework Constructed from Semantic Priors for Large- Scale Scene Reconstruction, which replaces geographic partition- ing with a semantic prior multi-expert guided framework. EGGS significantly improves reconstruction balance across large-scale scenes and reducing computational cost for higher-quality recon- struction across the whole scene. At its core, EGGS leverages an expert-guided strategy to balance and accelerate scene recon- struction through three key parts: First, semantic segmentation di- vides the scene into multiple categories, each assigned to a cat- egory expert trained with semantically rich viewpoints for corre- sponding instance learning and reconstruction. Second, category experts further guide the reconstruction of unselected viewpoints, mitigating reconstruction isolation caused by viewpoint locality and achieving balanced, efficient reconstruction. Third, a collab- orative and constraint-based mechanism promotes expert cooper- ation and suppresses inter-expert conflicts, alleviating boundary- induced blurring.
+
+061
+
+062
+
+063
+
+064
+
+065
+
+066
+
+067
+
+068
+
+069
+
+070
+
+071
+
+072
+
+073
+
+074
+
+075
+
+076
+
+077
+
+078
+
+079
+
+080
+
+081
+
+082
+
+083
+
+084
+
+085
+
+Extensive experiments in Fig. 6 and Tab. 2 demonstrates that EGGS achieves more balanced and efficient reconstruction than spatial partitioning methods, improving overall reconstruction quality by up to 5% in PSNR. As presented in Fig. 1, EGGS provides more accurate and detailed reconstructions than existing large-scale approaches. Our main contributions are summarized as follows:
+
+086
+
+087
+
+088
+
+089
+
+090
+
+1. We propose a novel expert-guided framework for large-scale 3D reconstruction, addressing rendering isolation and redun- dant computation inherent in geographic partitioning methods. To our best knowledge, this is the first work to apply expert guidance for large-scale reconstruction.
+
+091
+
+2. We design a complete expert construction and training pipeline
+
+2
+
+that effectively improves reconstruction balance while reducing overall computational cost.
+
+3. We introduce a contribution-weighted expert collaboration al- gorithm that mitigates boundary ambiguity caused by inter- expert competition.
+
+4. Extensive experiments on both synthetic and real-world datasets validate that EGGS improving overall reconstruction quality by up to 5% in PSNR while improving balance and ef- ficiency.
+
+2. Related Work
+
+2.1. Large-scale Scene Reconstruction
+
+The conflict between high reconstruction costs and low accuracy in large-scale scene reconstruction, driven by scene complexity, re- mains a key challenge in 3D reconstruction. Recent NeRF variants using heuristic partitioning [38, 39, 44] or voxel grids [2, 6, 26, 45] have supported performance in large-scale scenes but are lim- ited by long training times. Alternatively, 3D Gaussian Splatting (3DGS) has introduced methods like progressive [14, 17, 49] and level-of-detail (LOD) schemes [21, 30] to balance quality and ef- ficiency. However, these geographically partitioned methods still suffer from inconsistent reconstruction quality due to viewpoint limitations, leading to degraded overall results. 103 104 105 106 107 108 109 110 111 112 113
+
+2.2. Semantic-awareness
+
+With advancements in 2D semantic understanding [15, 29], recent research has explored semantic integration in 3D reconstruction [3, 8, 28, 47]. Some methods embed semantic information into explicit 3D Gaussian representations by projecting 2D semantic features or aggregating semantic pools [7]. Others leverage ex- ternal semantic models to guide 3DGS training or inference [51], such as introducing semantic viewpoints consistency losses to mit- igate overfitting [11, 41]. These efforts highlight the potential of semantic-aware methods in 3D reconstruction [27], yet their appli- cation in complex, large-scale scenes requires further exploration. Inspired by the growing field of 3D spatial semantic awareness, we aim to leverage rich semantic information in large-scale scenes to overcome viewpoint limitations and enable optimization regard- less of spatial distance. 115 116 117 118 119 120 121 122 123 124 125 126 127 128
+
+2.3. MoEs and Multi-Expert Framework
+
+MoEs framework [10, 12, 35]enables parallel training through ex- pert specialization. Recent successes in visual imaging [31, 46] have inspired its application in 3D reconstruction. Existing work has combined MoEs with 3D reconstruction [4, 5, 19, 34] and made improvements for large-scale scenes [24, 50]. However, prior works have largely ignored the role of experts as reusable semantic priors capable of guiding similar objects that frequently appear in large-scale scenes. 130 131 132 133 134 135 136 137
+
+3. EGGS
+
+This section introduces the working mechanism of EGGS. Sec- tion 3.1 provides an overview of EGGS. Section 3.2 includ- ing the prioritized construction of expert models and their ap- proaches to addressing isolation defects and redundant compu- tation. Section 3.3 describes a fusion mechanism for integrating 139 140 141 142 143
+
+092
+
+093
+
+094
+
+095
+
+096
+
+097
+
+098
+
+099
+
+100
+
+101
+
+102
+
+114
+
+129
+
+138
+
+REDACTED
+
+Expert Collaborative Reconstruction 1 (sec.3.3)! General [Category| Expert Division|& Guidance Expert-Guided Module General [Category2) > (Sec.3.2.2) uondNIISU0IY General [Category: =) General Cluster
+
+Preparation PointCloud Pi > Top n%: Filter
+
+
+
+
+
+Segmented-Prior Filtering (Sec.3.2.1)
+
+
+
+
+
+Segmented Filter
+
+Viewpoint Clustering
+
+
+
+
+
+w/o Filter
+
+Preliminary Reconstruction
+
+Figure 2. EGGS includes a Semantic-Prior Filtering module for selecting expert models from semantically rich viewpoints and an Expert- Guided module that enhances overall reconstruction via stable matching and GNN.
+
+expert model structures, promoting collaboration and seamless in-
+
+145 tegration among expert models.
+
+flicts at expert boundaries, alleviating edge blurring and ensuring coherent global reconstruction.
+
+179
+
+180
+
+146 3.1. Overview
+
+3.2. Expert-Guided Framework
+
+181
+
+EGGS is a large-scale collaborative reconstruction framework based on a semantic partitioned multi-expert model. Instead of dividing scenes into geographic blocks, EGGS establishes a complete reconstruction pipeline through two major systems: an expert-guided framework and expert collaborative reconstruction. These correspond to three key modules: Semantic-Prior Filter- ing, Expert Division & Guidance and Expert Collaborative Re- construction.
+
+147
+
+148
+
+149
+
+150
+
+151
+
+152
+
+153
+
+154
+
+155
+
+156
+
+157
+
+158
+
+159
+
+160
+
+161
+
+The semantic prior filtering module employs a dual filtering mechanism based on semantics and clustering to select viewpoints and corresponding point clouds that are semantically rich and ex- hibit strong multi-view consistency from large-scale scenes. These selected viewpoints are prioritized during reconstruction, produc- ing high-quality Gaussian anchors that form category-specific ex- perts representing different semantic classes.
+
+The expert-guided reconstruction module treats these experts as reconstruction priors. During the preliminary reconstruction stage, EGGS performs stable matching between experts and spa- tially scattered yet semantically consistent elements across the scene, enabling one-to-one expert guidance. Through a graph neu- ral network, prior knowledge is propagated from experts to guide the reconstruction of these elements, achieving high-quality and balanced results. This design effectively mitigates the reconstruc- tion quality disparity and redundant computation “rediscovered” and “relearned”) caused by viewpoint locality and isolated render- ing of repeated structures.
+
+162
+
+163
+
+164
+
+165
+
+166
+
+167
+
+168
+
+169
+
+170
+
+171
+
+172
+
+173
+
+174
+
+175
+
+176
+
+177
+
+178
+
+Finally, the expert collaboration mechanism addresses the in- trinsic competition–cooperation problem introduced by replacing geographic partitioning with a multi-expert framework. By as- signing gradient weights based on rendering quality, EGGS pro- motes expert cooperation during reconstruction. Additionally, an opacity-based inter-expert constraint reduces optimization con-
+
+3.2.1. Semantic-Prior Filtering.
+
+Semantic-prior filtering module of EGGS takes camera view- points, point clouds, and semantic segmentation masks as input to generate a subset of viewpoints and point clouds prioritized for ex- pert reconstruction. This module incorporates a Segmented-Prior filtering mechanism consisting of Segmented Filter and viewpoint clustering. The semantic segmentation mask prior is obtained us- ing the CLIP+SAM[15, 29] model guided by textual prompts to capture semantic regions, as detailed in the supplementary mate- rial, including model parameters and settings. Semantic score fil- tering selects the viewpoints and point clouds that best represent expert-specific reconstruction regions, while viewpoint clustering ensures viewpoints consistency within each expert model. 183 184 185 186 187 188 189 190 191 192 193 194
+
+Step 1: Segmented Filter. To quantify the scene informa- tion richness of all semantic categories within each viewpoint and prioritize viewpoints that capture more structural details for high- quality expert reconstruction, we define the semantic score as a measure of the semantic richness captured by a single viewpoint. This score is computed through the interaction between the 3D point cloud constructed via SfM[33] and the semantic masks asso- ciated with each viewpoint.
+
+Each 3D point has a unique index pidj and associated 2D key- point coordinates xys ∈ RNi×2, where Ni denotes the number of viewpoints in which the point is visible. These coordinates repre- sent the projection positions and visibility of each 3D point across viewpoints. For a given viewpoint cami, its semantic score scami is obtained by intersecting all semantic masks of that viewpoint with its corresponding keypoint coordinates and summing over the projected counts:
+
+scami = k∈K j pidj when xysj ∈ Mk. (1) 211
+
+182
+
+195
+
+196
+
+197
+
+198
+
+199
+
+200
+
+201
+
+202
+
+203
+
+204
+
+205
+
+206
+
+207
+
+208
+
+209
+
+210
+
+3
+
+REDACTED
+
+212
+
+213
+
+214
+
+215
+
+216
+
+217
+
+218
+
+Here, K denotes the set of all semantic categories, k ∈ K represents the k-th semantic subcategory, and Mk is the seman- tic mask of category k in viewpoint cami. A higher semantic score scami indicates that the viewpoint contains richer seman- tic information across all categories, making it more favorable for high-quality reconstruction. Therefore, scami serves as a crucial criterion for selecting viewpoints assigned to expert models.
+
+219
+
+220
+
+221
+
+222
+
+223
+
+224
+
+225
+
+Step 2: Viewpoint Clustering. Relying solely on semantic richness to select viewpoints and point clouds for expert recon- struction may compromise viewpoints consistency, leading to se- vere viewpoint locality issues. To address this, we introduce an additional viewpoint clustering stage based on the K-Means al- gorithm, which partitions all viewpoints into multiple clusters ac- cording to their camera parameters.
+
+226
+
+227
+
+228
+
+229
+
+230
+
+231
+
+232
+
+Within each cluster, viewpoints are ranked by their semantic scores scami. A threshold hyperparameter Top_n% is then ap- plied to select the top n% viewpoints and their corresponding point clouds for expert-prior reconstruction. This process ensures that each expert receives semantically rich yet spatially diverse in- puts, thereby preserving viewpoints consistency and improving re- construction balance across large-scale scenes.
+
+233 3.2.2. Expert Division & Guidance.
+
+Expert Construction. The reconstruction isolation and redundant computation issues caused by viewpoint locality essentially stem from the absence of a unified global paradigm to guide and con- strain reconstruction across spatially distributed objects. Under limited viewpoint coverage, identical structures cannot be consis- tently captured from a global perspective, resulting in fragmented reconstructions.
+
+234
+
+235
+
+236
+
+237
+
+238
+
+239
+
+240
+
+241
+
+242
+
+243
+
+244
+
+245
+
+246
+
+247
+
+248
+
+To address this, EGGS constructs multiple category-specific experts using the semantically rich viewpoints and correspond- ing point clouds obtained from the semantic prior filtering mod- ule. These selected data are first reconstructed through a priority reconstruction process, generating high-quality Gaussian anchors that serve as the foundation of each expert. Each category expert is composed of Gaussian anchors corresponding to its semantic cat- egory and acts as a global prior to guide consistent reconstruction across the entire scene, as illustrated in Fig. 2.
+
+249
+
+250
+
+251
+
+252
+
+253
+
+254
+
+255
+
+256
+
+Stage 1: Multi-Scale Stable Matching. The stable matching algorithm connects the multi-category experts obtained from pri- ority reconstruction with their corresponding semantic instances across the scene, regardless of geographic separation. By estab- lishing associations purely based on feature similarity rather than spatial proximity, this process eliminates reconstruction isolation caused by inconsistent reconstruction of semantically identical ob- jects distributed across large-scale scenes.
+
+257
+
+258
+
+259
+
+260
+
+261
+
+262
+
+263
+
+264
+
+Considering that the classical stable matching algorithm has a computational complexity of O(n2), performing global feature association among all Gaussian anchors is computationally pro- hibitive. To address this, we propose a multi-scale stable matching scheme based on an Octree hierarchical structure, which reduces the overall time complexity from O(n2) to O(nlog n), thus meet- ing the efficiency requirements of expert-guided reconstruction in large-scale scenarios, as shown in Fig. 3.
+
+265
+
+266
+
+267
+
+268
+
+Specifically, for each semantic class, the algorithm iteratively performs stable matching within Octree sub-blocks, pairing Gaus- sian anchors from category-specific experts with those of scene
+
+4
+
+WEREE jser 2o . ==~ _ Global Matching [ wfen] _— rikile} Multi-Scale Stable-Matching
+
+Figure 3. The multi-scale stable matching starts within Octree sub- blocks. Unmatched anchors expand to wider or global scopes. Low-similarity matches are reset and re-evaluated across all ex- perts.
+
+instances exhibiting similar feature representations obtained from preliminary reconstruction, as illustrated in Fig. 2. This matching process can be formulated using a bijective function µunopt, ensur- ing that each Gaussian anchor a ∈ unopt from the scene-object Gaussian anchor set (unopt) is paired with a corresponding Gaus- sian anchor b ∈ opt from the expert (opt) of the same semantic category:
+
+µunopt(a) = arg max b∈Sopt sunopt(b), (2)
+
+subject to the following constraint:
+
+sopt(a) > sopt(µunopt(a)) ∩ sunopt(b) > sunopt(µ−1 unopt(a)), (3)
+
+where sopt and sunopt denote the similarity preference matrices for expert Gaussian anchors and scene Gaussian anchors of the same category, respectively. The similarity is measured based on the spatial feature embeddings captured by each Gaussian anchor. Since the distributions of opt and unopt anchors within Octree sub-blocks are not always uniform, the hierarchical multi-level matching ensures that any unmatched anchors in higher levels can still be matched in lower levels or during global matching, thereby maintaining completeness and stability of the expert guidance pro- cess.
+
+Stage 2: Graph Neural Network Optimization. EGGS equips each targeted expert model with a lightweight graph neural network[32, 36, 40] for parameter learning and guidance. Given a Graph Neural Network with node set Vgnn = Vo ∪ Vu, where Vo is the set of opt and Vu is the set of unopt, for nodes a ∈ Vu and b ∈ Vo, the edge set E is defined as:
+
+Egnn = {(b,a) ∈ Vo × Vu | ∃M ⊆ Vo × Vu s.t. (b,a) ∈ M}, (4)
+
+where Sba : Vo×Vu → R is the similarity preference function be- tween nodes b ∈ Vo and a ∈ Vu, and M is a stable matching rela- tion. Corresponding to the sparse graph relationships constructed for stable matching, a two-layer GAT network is employed, with each layer consisting of four attention heads. Further information and code will be presented in the supplementary material.
+
+269
+
+270
+
+271
+
+272
+
+273
+
+274
+
+275
+
+276
+
+277
+
+278
+
+279
+
+280
+
+281
+
+282
+
+283
+
+284
+
+285
+
+286
+
+287
+
+288
+
+289
+
+290
+
+291
+
+292
+
+293
+
+294
+
+295
+
+296
+
+297
+
+298
+
+299
+
+300
+
+301
+
+REDACTED
+
+In graph neural networks with node set Vgnn and edge set Egnn, the optimization of offsets, scales, and rotation matrices expert parameters can guide global scene gaussian anchors which are initialized throught preliminary reconstruction to approximate object geometry rapidly and adapt further to scene-specific varia- tions. The losses for the three parameters are defined as Loffsets, Lscaling, and Lrotation. Specifically, Loffsets is computed using Euclidean distance, Lscaling is measured via mean squared error (MSE), and Lrotation is based on cosine distance between expert and non-expert representations. The overall loss of the graph neu- ral network during expert model optimization is formulated as:
+
+302
+
+303
+
+304
+
+305
+
+306
+
+307
+
+308
+
+309
+
+310
+
+311
+
+312
+
+313
+
+Lg = Loffsets + Lscaling + Lrotation. (5)
+
+314 3.3. Expert Collaborative Reconstruction
+
+To address boundary ambiguity and collaboration challenges in multi-expert models, EGGS introduces two mechanisms that con- vert Gaussian anchors with ambiguous attribution into collabora- tive bridges across expert domains.
+
+315
+
+316
+
+317
+
+318
+
+319
+
+320
+
+321
+
+322
+
+323
+
+324
+
+325
+
+326
+
+327
+
+Gradient Contribution Allocation. All expert models share a total loss function, but in each iteration, the loss is distributed according to each expert’s rendering contribution weight to enable coordinated optimization. Suppose there are experts correspond- ing to K semantic categories, with the total loss function denoted as L. The contribution of expert k in each rendering is ay, rep- resented by Gaussian anchor weights, satisfying Zi\zl ar = 1. Each expert’s parameters are 0y, the effective update 1oss is Lexp, and the gradient of the total loss with respect to the parameters is Vo, L. The gradient assigned to each expert is Vg, Lexp:
+
+328
+
+329
+
+∇θkLexp = αk∇θkL. (6)
+
+Boundary Gaussian anchors Collaboration. For Gaussian an- chors at the boundaries of expert model view frustums, where mul- tiple experts may render and optimize these anchors differently, EGGS adopts a gravitational model from classical mechanics to quantify the influence of each expert’s boundary Gaussian anchors on others within the region, facilitating multi-expert collaboration. EGGS uses the Mahalanobis distance dMah(i,j) to consider the shape and rotation of Gaussian anchors, defining µj − µi as the direction vector:
+
+330
+
+331
+
+332
+
+333
+
+334
+
+335
+
+336
+
+337
+
+338
+
+339
+
+-1 daran (i §) = | (5 — )™ > (1y — i), @] ij
+
+which yields the formula for the influence Fi→j of an expert’s boundary Gaussian anchors on co-located Gaussian anchors of other experts:
+
+340
+
+341
+
+342
+
+343
+
+Fi→j = αi · αj dMah(i,j)2 · (µj − µi), (8)
+
+where αi and αj represent the opacity of two Gaussian anchors, here extended to denote their mass weights, and xi and xj are the center positions of these Gaussian anchors.
+
+344
+
+345
+
+346
+
+347 4. Experiment
+
+348
+
+This section presents the experimental evaluation of EGGS. Sec-
+
+tion 4.1 introduces the datasets, baseline algorithms and experi-
+
+350
+
+mental setup. Section 4.2 compares EGGS with existing methods
+
+5
+
+in terms of rendering quality across five datasets. Section 4.3 em- ploys radar charts to demonstrate EGGS’s improvements in bal- ancing per-view rendering quality and alleviating isolation caused by perspective locality. Section 4.4 explores the impact of key hy- perparameters and presents ablation studies to evaluate the contri- bution of each component. Finally, Section 4.5 discusses potential improvements and outlines directions for future work. 351 352 353 354 355 356 357
+
+4.1. Experimental Setup
+
+Dataset Configuration. EGGS is evaluated on five large-scale datasets, including one synthetic urban dataset (MatrixCity[16]), two real-world datasets (Hospital and P1 HuiTian), and two com- plex scenes (Residence and ArtSci) from the open-source Urban- Scene3D dataset[18]. MatrixCity is sampled from the SmallCity dataset, whereas Hospital and P1 HuiTian are real-world datasets collected from actual urban environments.
+
+For benchmarking, EGGS is compared against four SOTA large-scale reconstruction methods: OctreeGS, CityGSv2, Gren- delGS, and ScaffoldGS. All experiments for EGGS, ScaffoldGS, and GrendelGS are conducted on a single Nvidia V100 GPU, with 30,000 training iterations. Due to its two-stage design, CityGSv2 is trained using 15,000 coarse iterations followed by 15,000 fine- tuning iterations.
+
+For quantitative evaluation, we adopt PSNR, SSIM[43], and LPIPS[48] to comprehensively assess reconstruction performance. Additionally, to highlight EGGS’s effectiveness in addressing viewpoint-local coverage imbalance and redundant computa- tion, we further report the standard deviation (Std) of PSNR across viewpoints as a measure of reconstruction consistency, and the total training time (min) over 30,000 iterations as an indicator of computational efficiency. For a fair comparison, all models are trained with identical hyperparameter settings, which are detailed in the supplementary material.
+
+4.2. Rendering Quality
+
+EGGS achieves superior rendering performance on both the syn- thetic MatrixCity and real-world datasets through multi-expert guided optimization. As shown in Tab. 1 and Fig. 4, its overall reconstruction quality matches or surpasses current SOTA meth- ods, with consistently higher PSNR values up to a 5% gain on the Hospital dataset. On the Residence dataset, EGGS’s SSIM and LPIPS are slightly lower than the best results. We attribute this to the dataset’s dense residential layout, where a single viewpoint already covers abundant scene content, yielding a natural effect similar to EGGS’s experts. This observation highlights the im- portance of viewpoint coverage in large-scale reconstruction and explains the close performance between EGGS and other SOTA baselines in this case. For the MatrixCity scene, the relatively low performance of OctreeGS may partially stem from conflicts caused by using unified hyperparameter settings across all methods. 384 385 386 387 388 389 390 391 392 393 394 395 396 397 398
+
+4.3. Perspective Balance Experiment
+
+The core idea of the EGGS expert guidance framework is to lever- age the Gaussian anchors of high-quality category experts to guide the optimization of corresponding anchors in the same semantic category, thereby improving the overall reconstruction quality of the entire scene. For large-scale scenes, if the rendering quality across all novel viewpoints is more uniform and maintains high
+
+358
+
+359
+
+360
+
+361
+
+362
+
+363
+
+364
+
+365
+
+366
+
+367
+
+368
+
+369
+
+370
+
+371
+
+372
+
+373
+
+374
+
+375
+
+376
+
+377
+
+378
+
+379
+
+380
+
+381
+
+382
+
+383
+
+399
+
+400
+
+401
+
+402
+
+403
+
+404
+
+405
+
+REDACTED
+
+Table 1. Performance comparison across five scenes for PSNR, SSIM, LPIPS with OctreeGS, Scaffold-GS, CityGSv2, Grendel-GS. Best results are in bold, and second-best are underlined.
+
+MatrixCity Hospital Scene Huitian P1 Scene Residence ART-SCI Method PSNR ↑ SSIM ↑ LPIPS ↓ PSNR ↑ SSIM ↑ LPIPS ↓ PSNR ↑ SSIM ↑ LPIPS ↓ PSNR ↑ SSIM ↑ LPIPS ↓ PSNR ↑ SSIM ↑ LPIPS ↓ Octree-GS[30] 26.39 0.727 0.439 16.28 0.371 0.605 20.46 0.577 0.503 21.59 0.788 0.202 21.57 0.780 0.268 Scaffold-GS[23] 30.53 0.882 0.234 16.21 0.364 0.615 20.38 0.561 0.529 21.19 0.764 0.233 21.14 0.772 0.276 CityGSv2[21] 31.70 0.910 0.202 16.27 0.336 0.768 20.13 0.497 0.710 21.28 0.780 0.193 20.35 0.761 0.283 Grendel-GS[49] 30.25 0.885 0.270 15.59 0.316 0.668 19.19 0.460 0.666 21.56 0.791 0.212 20.84 0.766 0.293 EGGS (ours) 31.91 0.912 0.198 17.14 0.432 0.434 20.53 0.594 0.468 21.89 0.789 0.224 22.28 0.827 0.215
+
+!
+
+EGGS(ours)
+
+CityGSv2
+
+Octree-GS
+
+Grendal-GS Scaffold-GS
+
+MatrixCity
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hospital
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+P1 Hui Tian
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Residence
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ART-SCI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 4. Rendering results of EGGS and baseline methods on MatrixCity and four real-world datasets Hospital, P1 Huitian, Residence and ART-SCI. The magnified regions in views highlight EGGS’s superior detail reconstruction, benefiting from expert-guided optimization and scene-wide consistency.
+
+fidelity compared to other methods, it indicates that the expert
+
+407 guidance enhances low-quality views and mitigates reconstruction
+
+408
+
+isolation, resulting in a more balanced and higher-quality recon-
+
+409 struction across the whole scene.
+
+To validate this, we visualize the reconstruction quality distri- bution of different methods on the MatrixCity dataset using a radar chart, as shown in Fig. 5. A radar plot closer to a circular shape in- dicates more consistent reconstruction quality across viewpoints. As shown in Fig. 5, CityGSv2 achieves relatively balanced qual- ity on the right-side views but suffers from significant variation on the left. OctreeGS and GrendelGS exhibit even larger deviations,
+
+410
+
+411
+
+412
+
+413
+
+414
+
+415
+
+416
+
+forming irregular, non-circular patterns, implying severe inconsis- tency between viewpoints. In contrast, EGGS maintains nearly uniform quality across all viewpoints demonstrating that the ex- pert guidance mechanism effectively improves the reconstruction of low quality viewpoints, alleviates viewpoint locality, and en- hances the overall reconstruction quality of large-scale scenes.
+
+Beyond qualitative visualization, we further quantify recon- struction consistency across all viewpoints by computing the std of PSNR over five datasets. As shown in Fig. 6 and Tab. 2, methods with high std values generally exhibit stronger recon- struction isolation, which directly manifests as lower or unsta-
+
+6
+
+417
+
+418
+
+419
+
+420
+
+421
+
+422
+
+423
+
+424
+
+425
+
+426
+
+427
+
+REDACTED
+
+Table 2. Performance comparison across five scenes for Std and training time. The standard deviation (std) metric is used to evaluate the consistency of reconstruction quality across viewpoints and training time is used to evaluate the reconstruction efficiency of each algorithm. A smaller or near-one std value indicates uniform rendering quality with minimal reconstruction isolation, while a larger std implies severe viewpoint discrepancy that degrades overall scene reconstruction quality. Best results are in bold, and second-best are underlined.
+
+MatrixCity Hospital Scene Huitian P1 Scene Residence ART-SCI Method Std ↓ time(min) ↓ Std ↓ time(min) ↓ Std ↓ time(min) ↓ Std ↓ time(min) ↓ Std ↓ time(min) ↓ Octree-GS 4.88 40 1.97 55 0.69 42 1.14 29 0.82 47 Scaffold-GS 2.27 24 2.00 46 0.70 34 1.28 17 1.14 34 CityGSv2 1.02 105 1.66 107 0.56 130 1.55 73 1.65 78 Grendel-GS 3.36 42 2.22 42 1.00 40 1.44 28 1.42 25 EGGS (ours) 0.91 38 1.07 40 0.47 36 1.01 30 0.47 32
+
+(a) EGGS Algorithm  (b) CityGSv2 Algorithm 
+
+Table 3. Ablation studies on Semantic Segmentation Prior and Semantic-Prior Filtering, Stable Matching, Boundary Collabora- tion modules.
+
+Method PSNR ↑ SSIM ↑ LPIPS ↓ EGGS (Full) 31.91 0.912 0.198 w/o Semantic Segmentation 31.89 0.901 0.192 w/o Semantic-Prior Filtering 30.32 0.859 0.347 w/o Stable Matching & GNN 31.28 0.894 0.285 w/o Boundary Collaboration 31.82 0.911 0.210
+
+delivers stable, high-quality reconstructions across diverse view- points and scene regions.
+
+(c) Octree-GS Algorithm (d) Grendel-GS Algorithm
+
+Figure 5. Radar charts of PSNR values across different viewpoints for various methods on the same MatrixCity scene. Each spoke represents a view direction, with distance from the center indi- cating reconstruction quality (higher is better). A more circular shape with smaller variations between points suggests more bal- anced performance across viewpoints.
+
+Additionally, Tab. 2 reports the training time of each method under 30,000 iterations. EGGS requires comparable or even less training time than competing methods, confirming that it not only mitigates redundant computation but also improves reconstruction efficiency in large-scale scenarios.
+
+4.4. Hyperparameter Analysis and Ablation
+
+In EGGS, the hyperparameter top_n controls the expert model’s scale. A lower value limits coverage of Gaussian anchors need- ing guidance, while a higher value causes redundancy and greater overhead. Fig. 7 shows optimal rendering occurs when top_n is between 0.15 and 0.2.
+
+428 ble overall reconstruction quality in Tab. 1. Conversely, meth- 429 ods with lower std tend to deliver more uniform viewpoint per- 430 formance and consequently more stable overall reconstruction re- 431 sults. CityGSv2 shows large std in the Residence, ART-SCI, and 432 Hospital scenes—indicating severe isolation—while its lower std 433 on MatrixCity aligns with its relatively stronger results in Tab. 1. 434 OctreeGS exhibits the highest std in MatrixCity, confirming sub- 435 stantial viewpoint inconsistency and matching its degraded recon- 436 struction performance. GrendelGS maintains high std across all 437 datasets, consistent with its uniformly suboptimal results and fur- 438 ther emphasizing the influence of reconstruction isolation. Scaf- 439 foldGS shows a similar pattern, with elevated std that correspond- 440 ingly limits reconstruction quality. In contrast, EGGS consistently 441 achieves std values close to or below 1 across both synthetic and 442 real-world datasets, reflecting exceptional cross-view uniformity. 443 This indicates that EGGS eliminates reconstruction isolation and
+
+To evaluate the role of each module in the EGGS algorithm, we conducted ablation experiments, and the results are shown in Tab. 3. We first investigate whether the semantic segmentation prior has a significant influence on the final reconstruction qual- ity. To this end, we remove the semantic segmentation module and replace it with a strategy that selects experts based on the in- formation richness between images and point clouds. As shown in the results, the difference is minor. We attribute this to the fact that semantic segmentation serves as a suggestive classification mechanism for category expert selection, while the final expert guidance relies on feature similarity and the multi-scale stable matching algorithm, which dynamically reassign semantic labels based on high-similarity features. Therefore, possible misclassifi- cations in semantic segmentation have limited impact on the final reconstruction, as the matching process corrects such errors during optimization.
+
+7
+
+444
+
+445
+
+446
+
+447
+
+448
+
+449
+
+450
+
+451
+
+452
+
+453
+
+454
+
+455
+
+456
+
+457
+
+458
+
+459
+
+460
+
+461
+
+462
+
+463
+
+464
+
+465
+
+466
+
+467
+
+468
+
+469
+
+470
+
+471
+
+472
+
+REDACTED
+
+PSNR Standard Deviation Comparison Across Scenes
+
+MatrixCity Hospital P1 rd Deviation (dB) Standa Standard Deviation (dB) Standard Deviation (dB) Standard Deviation (dB) Methods Bl =cGs (ours) ¥ ciyesi2 [ Grendeics = Octrescs [ Scafolics,
+
+Figure 6. This figure presents the standard deviation of pre-view rendering quality across five large-scale datasets for existing SOTA methods. The deviation values are consistent with the reconstruction quality radar charts and the overall PSNR metrics shown earlier. It can be observed that EGGS (ours) exhibits consistently low standard deviation across all scenes, demonstrating its stable and uniform reconstruction quality among different viewpoints.
+
+Next, we remove the semantic prior filtering mechanism and
+
+473
+
+instead randomly sample viewpoints and point clouds for expert construction. This causes a clear performance drop, showing that without semantic priors, the selected viewpoints lack scene infor- mation richness and multi-view consistency, resulting in ineffec-
+
+474 475 476 477 478
+
+tive experts. We then disable the expert guidance mechanism, al-
+
+lowing reconstruction without expert supervision. The decline in quality confirms that expert guidance is essential for stable opti- mization. Finally, removing the expert collaboration mechanism also degrades rendering quality, demonstrating that insufficient cooperation among experts weakens their collective effectiveness and lowers overall reconstruction performance. 479 480 481 482 483 484
+
+4.5. Future and Limitation
+
+PSNR (dB) with different Top-N Ratio 32.0 & 31 8318 173817679 317587 3 ghas v 31, & 4744 31.4 SSIM with different Top-N Ratio 0.9095 0.90391760 = 0 ) 0.856f 0.85] LPIPS with different Top-N Ratio 0.2751 0.255 0.250 < T | 90.225 03 0.20 0200712201981 0.1 0.2 0.3 0.4 Top-N Ratio
+
+Figure 7. PSNR, SSIM, and LPIPS performance across different Top-N Ratio values.
+
+EGGS demonstrates outstanding performance in addressing the two major challenges posed by the local coverage of large-scale scene perspectives. Currently, the evolving 3D spatial semantic segmentation technology[51] seems to be able to replace the orig- inal 2D semantic prior, which had limitations in accuracy, provid- ing EGGS with a more outstanding prior enhancement.
+
+5. Conclusion
+
+This paper presents EGGS, an expert-guided framework for large- scale scene reconstruction. EGGS identifies the viewpoint locality in large-scale scenes, which gives rise to two challenges: recon- struction isolation and redundant computation. By leveraging se- mantic priors to construct experts and employing an expert-guided reconstruction strategy, EGGS mitigates isolation-induced quality inconsistency and achieves competitive reconstruction efficiency. An expert collaboration mechanism further resolves the bound- ary ambiguity introduced by experts. Experiments show that ex- isting methods degrade under viewpoint locality, whereas EGGS maintains balanced cross-view reconstruction quality and achieves SOTA performance across diverse datasets, with improvements of up to 5% in PSNR. 493 494 495 496 497 498 499 500 501 502 503 504 505
+
+8
+
+485
+
+486
+
+487
+
+488
+
+489
+
+490
+
+491
+
+492
+
+REDACTED
+
+506 References
+
+[1] Jonathan T Barron, Ben Mildenhall, Matthew Tancik, Peter Hedman, Ricardo Martin-Brualla, and Pratul P Srinivasan. Mip-nerf: A multiscale representation for anti-aliasing neu- ral radiance fields. In Proceedings of the IEEE/CVF inter- national conference on computer vision, pages 5855–5864, 2021. 1
+
+507
+
+508
+
+509
+
+510
+
+511
+
+512
+
+513
+
+514
+
+515
+
+516
+
+517
+
+[2] Junyi Cao, Zhichao Li, Naiyan Wang, and Chao Ma. Light- ning nerf: Efficient hybrid scene representation for au- tonomous driving. In 2024 IEEE International Conference on Robotics and Automation (ICRA), pages 16803–16809. IEEE, 2024. 2
+
+518
+
+519
+
+520
+
+521
+
+[3] Jiazhong Cen, Jiemin Fang, Chen Yang, Lingxi Xie, Xi- aopeng Zhang, Wei Shen, and Qi Tian. Segment any 3d gaussians. In Proceedings of the AAAI Conference on Ar- tificial Intelligence, pages 1971–1979, 2025. 2
+
+522
+
+523
+
+524
+
+525
+
+526
+
+527
+
+[4] Wenyan Cong, Hanxue Liang, Peihao Wang, Zhiwen Fan, Tianlong Chen, Mukund Varma, Yi Wang, and Zhangyang Wang. Enhancing nerf akin to enhancing llms: Generalizable nerf transformer with mixture-of-view-experts. In Proceed- ings of the IEEE/CVF International Conference on Com- puter Vision, pages 3193–3204, 2023. 2
+
+528
+
+529
+
+530
+
+531
+
+532
+
+[5] Francesco Di Sario, Riccardo Renzulli, Enzo Tartaglione, and Marco Grangetto. Boost your nerf: A model-agnostic mixture of experts framework for high quality and efficient rendering. In European Conference on Computer Vision, pages 176–192. Springer, 2024. 2
+
+533
+
+534
+
+535
+
+536
+
+537
+
+[6] Sara Fridovich-Keil, Alex Yu, Matthew Tancik, Qinhong Chen, Benjamin Recht, and Angjoo Kanazawa. Plenoxels: Radiance fields without neural networks. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, pages 5501–5510, 2022. 2
+
+538
+
+539
+
+540
+
+541
+
+[7] Jun Guo, Xiaojian Ma, Yue Fan, Huaping Liu, and Qing Li. Semantic gaussians: Open-vocabulary scene understanding with 3d gaussian splatting. arXiv preprint arXiv:2403.15624, 2024. 2
+
+542
+
+543
+
+544
+
+545
+
+[8] Xu Hu, Yuxi Wang, Lue Fan, Junsong Fan, Junran Peng, Zhen Lei, Qing Li, and Zhaoxiang Zhang. Sagd: Boundary- enhanced segment anything in 3d gaussian via gaussian de- composition. arXiv preprint arXiv:2401.17857, 2024. 2
+
+546
+
+547
+
+548
+
+549
+
+[9] Binbin Huang, Zehao Yu, Anpei Chen, Andreas Geiger, and Shenghua Gao. 2d gaussian splatting for geometrically ac- curate radiance fields. In ACM SIGGRAPH 2024 conference papers, pages 1–11, 2024. 1
+
+550
+
+551
+
+552
+
+[10] Robert A Jacobs, Michael I Jordan, Steven J Nowlan, and Geoffrey E Hinton. Adaptive mixtures of local experts. Neu- ral computation, 3(1):79–87, 1991. 2
+
+553
+
+554
+
+555
+
+556
+
+[11] Ajay Jain, Matthew Tancik, and Pieter Abbeel. Putting nerf on a diet: Semantically consistent few-shot view synthesis. In Proceedings of the IEEE/CVF International Conference on Computer Vision, pages 5885–5894, 2021. 2
+
+557
+
+558
+
+559
+
+[12] Michael I Jordan and Robert A Jacobs. Hierarchical mixtures of experts and the em algorithm. Neural computation, 6(2): 181–214, 1994. 2
+
+560
+
+561
+
+[13] Bernhard Kerbl, Georgios Kopanas, Thomas Leimkühler, and George Drettakis. 3d gaussian splatting for real-time
+
+9
+
+radiance field rendering. ACM Trans. Graph., 42(4):139–1, 2023. 1 562 563
+
+[14] Bernhard Kerbl, Andreas Meuleman, Georgios Kopanas, Michael Wimmer, Alexandre Lanvin, and George Drettakis. A hierarchical 3d gaussian representation for real-time ren- dering of very large datasets. ACM Transactions on Graphics (TOG), 43(4):1–15, 2024. 2
+
+[15] Alexander Kirillov, Eric Mintun, Nikhila Ravi, Hanzi Mao, Chloe Rolland, Laura Gustafson, Tete Xiao, Spencer White- head, Alexander C Berg, Wan-Yen Lo, et al. Segment any- thing. In Proceedings of the IEEE/CVF international confer- ence on computer vision, pages 4015–4026, 2023. 2, 3
+
+[16] Yixuan Li, Lihan Jiang, Linning Xu, Yuanbo Xiangli, Zhen- zhi Wang, Dahua Lin, and Bo Dai. Matrixcity: A large-scale city dataset for city-scale neural rendering and beyond. In Proceedings of the IEEE/CVF International Conference on Computer Vision, pages 3205–3215, 2023. 5
+
+[17] Jiaqi Lin, Zhihao Li, Xiao Tang, Jianzhuang Liu, Shiyong Liu, Jiayue Liu, Yangdi Lu, Xiaofei Wu, Songcen Xu, You- liang Yan, et al. Vastgaussian: Vast 3d gaussians for large scene reconstruction. In Proceedings of the IEEE/CVF Con- ference on Computer Vision and Pattern Recognition, pages 5166–5175, 2024. 1, 2
+
+[18] Liqiang Lin, Yilin Liu, Yue Hu, Xingguang Yan, Ke Xie, and Hui Huang. Capturing, reconstructing, and simulating: the urbanscene3d dataset. In European Conference on Computer Vision, pages 93–109. Springer, 2022. 5
+
+[19] Lei Liu, Zhenghao Chen, and Dong Xu. 3d gaussian splat- ting data compression with mixture of priors. arXiv preprint arXiv:2505.03310, 2025. 2
+
+[20] Sidun Liu, Peng Qiao, Zongxin Ye, Wenyu Li, and Yong Dou. Distgrid: Scalable scene reconstruction with distributed multi-resolution hash grid. arXiv preprint arXiv:2405.04416, 2024. 2
+
+[21] Yang Liu, Chuanchen Luo, Zhongkai Mao, Junran Peng, and Zhaoxiang Zhang. Citygaussianv2: Efficient and geometri- cally accurate reconstruction for large-scale scenes. arXiv preprint arXiv:2411.00771, 2024. 1, 2, 6
+
+[22] Ping LU, Wenzhe SHI, and Xiuquan QIAO. Multi-view image-based 3d reconstruction in indoor scenes: A survey. ZTE Communications, 22(3):91, 2024. 1
+
+[23] Tao Lu, Mulin Yu, Linning Xu, Yuanbo Xiangli, Limin Wang, Dahua Lin, and Bo Dai. Scaffold-gs: Structured 3d gaussians for view-adaptive rendering. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 20654–20664, 2024. 6
+
+[24] Zhenxing Mi, Ping Yin, Xue Xiao, and Dan Xu. Learning heterogeneous mixture of scene experts for large-scale neural radiance fields. arXiv preprint arXiv:2505.02005, 2025. 2
+
+[25] Ben Mildenhall, Pratul P Srinivasan, Matthew Tancik, Jonathan T Barron, Ravi Ramamoorthi, and Ren Ng. Nerf: Representing scenes as neural radiance fields for view syn- thesis. Communications of the ACM, 65(1):99–106, 2021. 1
+
+[26] Thomas Müller, Alex Evans, Christoph Schied, and Alexan- der Keller. Instant neural graphics primitives with a mul- tiresolution hash encoding. ACM transactions on graphics (TOG), 41(4):1–15, 2022. 2
+
+564
+
+565
+
+566
+
+567
+
+568
+
+569
+
+570
+
+571
+
+572
+
+573
+
+574
+
+575
+
+576
+
+577
+
+578
+
+579
+
+580
+
+581
+
+582
+
+583
+
+584
+
+585
+
+586
+
+587
+
+588
+
+589
+
+590
+
+591
+
+592
+
+593
+
+594
+
+595
+
+596
+
+597
+
+598
+
+599
+
+600
+
+601
+
+602
+
+603
+
+604
+
+605
+
+606
+
+607
+
+608
+
+609
+
+610
+
+611
+
+612
+
+613
+
+614
+
+615
+
+616
+
+617
+
+618
+
+619
+
+REDACTED
+
+620
+
+621
+
+622
+
+623
+
+624
+
+[27] Thang-Anh-Quan Nguyen, Amine Bourki, M ˘A ˛Aty ˘A ˛As Macudzinski, Anthony Brunel, and Mohammed Ben- namoun. Semantically-aware neural radiance fields for vi- sual scene understanding: A comprehensive review. arXiv preprint arXiv:2402.11141, 2024. 2
+
+625
+
+626
+
+627
+
+628
+
+629
+
+[28] Minghan Qin, Wanhua Li, Jiawei Zhou, Haoqian Wang, and Hanspeter Pfister. Langsplat: 3d language gaussian splatting. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 20051–20060, 2024. 2
+
+630
+
+631
+
+632
+
+633
+
+634
+
+635
+
+[29] Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, et al. Learning transferable visual models from natural language supervi- sion. In International conference on machine learning, pages 8748–8763. PmLR, 2021. 2, 3
+
+636
+
+637
+
+638
+
+639
+
+[30] Kerui Ren, Lihan Jiang, Tao Lu, Mulin Yu, Linning Xu, Zhangkai Ni, and Bo Dai. Octree-gs: Towards consistent real-time rendering with lod-structured 3d gaussians. arXiv preprint arXiv:2403.17898, 2024. 2, 6
+
+640
+
+641
+
+642
+
+643
+
+644
+
+[31] Carlos Riquelme, Joan Puigcerver, Basil Mustafa, Maxim Neumann, Rodolphe Jenatton, André Susano Pinto, Daniel Keysers, and Neil Houlsby. Scaling vision with sparse mix- ture of experts. Advances in Neural Information Processing Systems, 34:8583–8595, 2021. 2
+
+645
+
+646
+
+647
+
+648
+
+[32] Franco Scarselli, Marco Gori, Ah Chung Tsoi, Markus Ha- genbuchner, and Gabriele Monfardini. The graph neural net- work model. IEEE transactions on neural networks, 20(1): 61–80, 2008. 4
+
+649
+
+650
+
+651
+
+652
+
+[33] Johannes L Schonberger and Jan-Michael Frahm. Structure- from-motion revisited. In Proceedings of the IEEE con- ference on computer vision and pattern recognition, pages 4104–4113, 2016. 3
+
+653
+
+654
+
+655
+
+656
+
+657
+
+658
+
+[34] Jiansong Sha, Haoyu Zhang, Qiangjuan Huang, and Guang Kou. Modular gaussian splatting: Instance decomposable learning and adaptive rendering of 3d scenes via mixture of experts. In ICASSP 2025-2025 IEEE International Confer- ence on Acoustics, Speech and Signal Processing (ICASSP), pages 1–5. IEEE, 2025. 2
+
+659
+
+660
+
+661
+
+662
+
+[35] Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, and Jeff Dean. Outra- geously large neural networks: The sparsely-gated mixture- of-experts layer. arXiv preprint arXiv:1701.06538, 2017. 2
+
+663
+
+664
+
+665
+
+666
+
+[36] Weijing Shi and Raj Rajkumar. Point-gnn: Graph neural net- work for 3d object detection in a point cloud. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, pages 1711–1719, 2020. 4
+
+667
+
+668
+
+669
+
+[37] Wenzhe SHI, Yanbin LIU, and Qinfen ZHOU. Local sce- nario perception and web ar navigation. ZTE Communica- tions, 21(4):54, 2023. 1
+
+670
+
+671
+
+672
+
+673
+
+674
+
+675
+
+[38] Matthew Tancik, Vincent Casser, Xinchen Yan, Sabeek Prad- han, Ben Mildenhall, Pratul P Srinivasan, Jonathan T Barron, and Henrik Kretzschmar. Block-nerf: Scalable large scene neural view synthesis. In Proceedings of the IEEE/CVF con- ference on computer vision and pattern recognition, pages 8248–8258, 2022. 1, 2
+
+676
+
+677
+
+[39] Haithem Turki, Deva Ramanan, and Mahadev Satya- narayanan. Mega-nerf: Scalable construction of large-
+
+10
+
+scale nerfs for virtual fly-throughs. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, pages 12922–12931, 2022. 2 678 679 680
+
+[40] Petar Veliˇckovi´c, Guillem Cucurull, Arantxa Casanova, Adriana Romero, Pietro Lio, and Yoshua Bengio. Graph at- tention networks. arXiv preprint arXiv:1710.10903, 2017. 4
+
+[41] Tengfei Wang, Xin Wang, Yongmao Hou, Yiwei Xu, Wendi Zhang, and Zongqian Zhan. Pg-sag: Parallel gaussian splatting for fine-grained large-scale urban buildings re- construction via semantic-aware grouping. arXiv preprint arXiv:2501.01677, 2025. 2
+
+[42] Zipeng Wang and Dan Xu. Pygs: Large-scale scene rep- resentation with pyramidal 3d gaussian splatting. arXiv preprint arXiv:2405.16829, 2024. 1
+
+[43] Zhou Wang, Alan C Bovik, Hamid R Sheikh, and Eero P Si- moncelli. Image quality assessment: from error visibility to structural similarity. IEEE transactions on image processing, 13(4):600–612, 2004. 5
+
+[44] Yuanbo Xiangli, Linning Xu, Xingang Pan, Nanxuan Zhao, Anyi Rao, Christian Theobalt, Bo Dai, and Dahua Lin. Bungeenerf: Progressive neural radiance field for extreme multi-scale scene rendering. In European conference on computer vision, pages 106–122. Springer, 2022. 2
+
+[45] Linning Xu, Yuanbo Xiangli, Sida Peng, Xingang Pan, Nanxuan Zhao, Christian Theobalt, Bo Dai, and Dahua Lin. Grid-guided neural radiance fields for large urban scenes. In Proceedings of the IEEE/CVF Conference on Computer Vi- sion and Pattern Recognition, pages 8296–8306, 2023. 1, 2
+
+[46] Hanrong Ye and Dan Xu. Taskexpert: Dynamically assem- bling multi-task representations with memorial mixture-of- experts. In Proceedings of the IEEE/CVF International Con- ference on Computer Vision, pages 21828–21837, 2023. 2
+
+[47] Mingqiao Ye, Martin Danelljan, Fisher Yu, and Lei Ke. Gaussian grouping: Segment and edit anything in 3d scenes. In European conference on computer vision, pages 162–179. Springer, 2024. 2
+
+[48] Richard Zhang, Phillip Isola, Alexei A Efros, Eli Shecht- man, and Oliver Wang. The unreasonable effectiveness of deep features as a perceptual metric. In Proceedings of the IEEE conference on computer vision and pattern recogni- tion, pages 586–595, 2018. 5
+
+[49] Hexu Zhao, Haoyang Weng, Daohan Lu, Ang Li, Jinyang Li, Aurojit Panda, and Saining Xie. On scaling up 3d gaussian splatting training. In European Conference on Computer Vi- sion, pages 14–36. Springer, 2024. 2, 6
+
+[50] MI Zhenxing and Dan Xu. Switch-nerf: Learning scene de- composition with mixture of experts for large-scale neural radiance fields. In The Eleventh International Conference on Learning Representations, 2022. 2
+
+[51] Shijie Zhou, Haoran Chang, Sicheng Jiang, Zhiwen Fan, Ze- hao Zhu, Dejia Xu, Pradyumna Chari, Suya You, Zhangyang Wang, and Achuta Kadambi. Feature 3dgs: Supercharging 3d gaussian splatting to enable distilled feature fields. In Pro- ceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 21676–21685, 2024. 2, 8
+
+681
+
+682
+
+683
+
+684
+
+685
+
+686
+
+687
+
+688
+
+689
+
+690
+
+691
+
+692
+
+693
+
+694
+
+695
+
+696
+
+697
+
+698
+
+699
+
+700
+
+701
+
+702
+
+703
+
+704
+
+705
+
+706
+
+707
+
+708
+
+709
+
+710
+
+711
+
+712
+
+713
+
+714
+
+715
+
+716
+
+717
+
+718
+
+719
+
+720
+
+721
+
+722
+
+723
+
+724
+
+725
+
+726
+
+727
+
+728
+
+729
+
+730
+
+731
+
+732
+
+733
+
+734
+
+--------------------
+
