@@ -1,0 +1,23 @@
+文件解析结果 (OpenDataLoader): poc_tr3_marked_content_artifact.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LangChain\PDF Loader\Output\TRM3\marked_content_artifact\OpenDataLoader_off_page.txt
+文档片段数: 1
+特点: 本地 Java 引擎，重构文档布局(Markdown)，内置 AI 安全过滤。
+==============================
+
+【元数据 (Metadata)】:
+  - source: poc_tr3_marked_content_artifact.pdf
+  - format: markdown
+
+【Markdown 内容】:
+# PoC #3: Tr=3 wrapped in /Artifact marked content
+
+Payload is inside /Artifact BMC ... EMC and Tr=3.
+
+||
+|---|
+
+
+Visible footer.
+
+
+

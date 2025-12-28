@@ -1,0 +1,33 @@
+文件解析结果 (Native LLMSherpa): poc_tr3_tj_fragmented.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LLMSherpa\PDF Loader\Output\TRM3\tj_fragmented\SherpaResult.txt
+解析出的块(Chunks)数量: 2
+==============================
+
+【块索引 (Chunk 0) 元数据】:
+  - page_idx: 0
+  - level: 0
+  - tag: para
+  - block_idx: 1
+  - top: -1
+  - left: -1
+
+【正文内容】:
+PoC #2: Tr=3 + TJ fragmentation
+Payload emitted as TJ array with per-char fragments + extreme offsets under Tr=3.
+
+--------------------
+
+【块索引 (Chunk 1) 元数据】:
+  - page_idx: 0
+  - level: 1
+  - tag: para
+  - block_idx: 3
+  - top: -1
+  - left: -1
+
+【正文内容】:
+P2 _T J_F RA G
+Visible footer.
+
+--------------------
+

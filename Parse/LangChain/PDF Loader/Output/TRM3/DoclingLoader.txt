@@ -1,0 +1,103 @@
+文件解析结果: text_render_mode_3_invisible_text_poc.pdf
+切分块数: 1
+==============================
+
+【Metadata】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\text_render_mode_3_invisible_text_poc.pdf
+  - dl_meta:
+{
+  "schema_name": "docling_core.transforms.chunker.DocMeta",
+  "version": "1.0.0",
+  "doc_items": [
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 72.0,
+            "t": 691.898,
+            "r": 556.0,
+            "b": 681.723,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            88
+          ]
+        }
+      ]
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 82.0,
+            "t": 604.452,
+            "r": 432.0,
+            "b": 591.502,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 72.0,
+            "t": 497.498,
+            "r": 446.0,
+            "b": 487.323,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            68
+          ]
+        }
+      ]
+    }
+  ],
+  "headings": [
+    "PDF PoC: Text rendering mode 3 (invisible text)"
+  ],
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 15309498086988090269,
+    "filename": "text_render_mode_3_invisible_text_poc.pdf"
+  }
+}
+
+【文本内容】:
+PDF PoC: Text rendering mode 3 (invisible text)
+Inside the rectangle below, there is invisible text (Tr=3). Try selecting/copying there.
+INVISIBLE_TEXT: If you can copy this, Tr=3 worked.
+Visible footer text: the invisible line above should not be visible.
+

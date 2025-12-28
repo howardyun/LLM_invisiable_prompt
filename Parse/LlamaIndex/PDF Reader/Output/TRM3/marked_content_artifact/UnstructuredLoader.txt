@@ -1,0 +1,26 @@
+文件解析结果 (UnstructuredReader): poc_tr3_marked_content_artifact.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LlamaIndex\PDF Reader\Output\TRM3\marked_content_artifact\UnstructuredLoader.txt
+解析出的元素数量: 1
+说明: Unstructured 擅长识别文档结构元素（标题、正文、列表等）
+==============================
+
+【元素 (Element 0) 元数据】:
+  - coordinates: {"points": [[72.0, 59.31200000000001], [72.0, 75.31200000000001], [447.64800000000014, 75.31200000000001], [447.64800000000014, 59.31200000000001]], "system": "PixelSpace", "layout_width": 612.0, "layout_height": 792.0}
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\TRM3
+  - filename: poc_tr3_marked_content_artifact.pdf
+  - last_modified: 2025-12-26T16:30:26
+  - page_number: 1
+  - languages: ["eng"]
+  - filetype: application/pdf
+
+【内容】:
+PoC #3: Tr=3 wrapped in /Artifact marked content
+
+Payload is inside /Artifact BMC ... EMC and Tr=3.
+
+P3_ARTIFACT_TR3: invisible text in /Artifact BMC ... EMC
+
+Visible footer.
+
+--------------------
+

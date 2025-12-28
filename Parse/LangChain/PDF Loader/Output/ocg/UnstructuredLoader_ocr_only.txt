@@ -1,0 +1,21 @@
+本地解析结果 (Unstructured Local): ocg_hidden_poc.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LangChain\PDF Loader\Output\ocg\UnstructuredLoader_ocr_only.txt
+识别元素数量: 1
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\OCG\ocg_hidden_poc.pdf
+  - coordinates: {'points': ((np.float64(200.0), np.float64(164.0)), (np.float64(200.0), np.float64(201.0)), (np.float64(520.0), np.float64(201.0)), (np.float64(520.0), np.float64(164.0))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - filetype: application/pdf
+  - languages: ['eng']
+  - last_modified: 2025-12-26T16:28:28
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\OCG
+  - filename: ocg_hidden_poc.pdf
+  - category: Title
+  - element_id: ba11d80b5c20c6555dde4cb320142d0b
+【内容】:
+VISIBLE: hello
+

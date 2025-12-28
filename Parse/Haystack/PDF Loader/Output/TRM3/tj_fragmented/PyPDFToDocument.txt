@@ -1,0 +1,17 @@
+文件解析结果 (Haystack PyPDFToDocument): poc_tr3_tj_fragmented.pdf
+保存位置: D:\PycharmProject\LLM_Parser\HayStack\PDF Loader\Output\TRM3\tj_fragmented\PyPDFToDocument.txt
+文档片段数: 1
+==============================
+
+【元数据 (Metadata)】:
+  - file_path: poc_tr3_tj_fragmented.pdf
+
+【正文内容】:
+PoC #2: Tr=3 + TJ fragmentation
+Payload emitted as TJ array with per-char fragments + extreme offsets under Tr=3.
+P 2 _ T J _ F R A G
+Visible footer.
+
+
+--------------------
+

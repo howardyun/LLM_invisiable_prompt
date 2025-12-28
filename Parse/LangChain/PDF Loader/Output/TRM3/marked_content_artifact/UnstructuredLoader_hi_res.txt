@@ -1,0 +1,74 @@
+本地解析结果 (Unstructured Local): poc_tr3_marked_content_artifact.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LangChain\PDF Loader\Output\TRM3\marked_content_artifact\UnstructuredLoader_hi_res.txt
+识别元素数量: 4
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\poc_tr3_marked_content_artifact.pdf
+  - detection_class_prob: 0.5349221229553223
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(195.20005798339844), np.float64(163.8670196533203)), (np.float64(195.20005798339844), np.float64(210.86415100097656)), (np.float64(1253.012451171875), np.float64(210.86415100097656)), (np.float64(1253.012451171875), np.float64(163.8670196533203))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - last_modified: 2025-12-26T16:30:26
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\TRM3
+  - filename: poc_tr3_marked_content_artifact.pdf
+  - category: Title
+  - element_id: 53972f55ac8ac90be2425ef72b8b152d
+【内容】:
+PoC #3: Tr=3 wrapped in /Artifact marked content
+
+--- Element 2 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\poc_tr3_marked_content_artifact.pdf
+  - detection_class_prob: 0.8032684922218323
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(200.0), np.float64(275.76944444444456)), (np.float64(200.0), np.float64(306.44854736328125)), (np.float64(868.2194444444447), np.float64(306.44854736328125)), (np.float64(868.2194444444447), np.float64(275.76944444444456))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - last_modified: 2025-12-26T16:30:26
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\TRM3
+  - filename: poc_tr3_marked_content_artifact.pdf
+  - parent_id: 53972f55ac8ac90be2425ef72b8b152d
+  - category: NarrativeText
+  - element_id: 59dfd7ac6426b857f619ca92c75c7f76
+【内容】:
+Payload is inside /Artifact BMC ... EMC and Tr=3.
+
+--- Element 3 [页码: 1 | 类型: Image] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\poc_tr3_marked_content_artifact.pdf
+  - detection_class_prob: 0.2593991160392761
+  - coordinates: {'points': ((np.float64(184.27828979492188), np.float64(458.0075988769531)), (np.float64(184.27828979492188), np.float64(641.7318725585938)), (np.float64(1531.2939453125), np.float64(641.7318725585938)), (np.float64(1531.2939453125), np.float64(458.0075988769531))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - last_modified: 2025-12-26T16:30:26
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\TRM3
+  - filename: poc_tr3_marked_content_artifact.pdf
+  - category: Image
+  - element_id: fba5a4847bc8b5c4f03388e8ba86d229
+【内容】:
+P3_ARTIFACT_TR3: invisible text in /Artifact BMC ... EMC 
+
+--- Element 4 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\poc_tr3_marked_content_artifact.pdf
+  - detection_class_prob: 0.7037633061408997
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(200.0), np.float64(835.7694444444444)), (np.float64(200.0), np.float64(866.325)), (np.float64(385.1055555555555), np.float64(866.325)), (np.float64(385.1055555555555), np.float64(835.7694444444444))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - last_modified: 2025-12-26T16:30:26
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\TRM3
+  - filename: poc_tr3_marked_content_artifact.pdf
+  - category: NarrativeText
+  - element_id: e059153f5f846e94061a5107600a02e0
+【内容】:
+Visible footer.
+

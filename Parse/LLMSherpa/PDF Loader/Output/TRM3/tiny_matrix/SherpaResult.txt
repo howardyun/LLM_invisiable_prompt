@@ -1,0 +1,34 @@
+文件解析结果 (Native LLMSherpa): poc_tr3_tiny_matrix.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LLMSherpa\PDF Loader\Output\TRM3\tiny_matrix\SherpaResult.txt
+解析出的块(Chunks)数量: 2
+==============================
+
+【块索引 (Chunk 0) 元数据】:
+  - page_idx: 0
+  - level: 0
+  - tag: para
+  - block_idx: 1
+  - top: -1
+  - left: -1
+
+【正文内容】:
+PoC #1: Tr=3 + tiny text matrix (bbox ~0)
+Invisible payload uses Tr=3 and Tm scale ~1e-5.
+Try selecting/copying inside the box.
+
+--------------------
+
+【块索引 (Chunk 1) 元数据】:
+  - page_idx: 0
+  - level: 0
+  - tag: para
+  - block_idx: 2
+  - top: -1
+  - left: -1
+
+【正文内容】:
+PoC #1: Tr=3 + tiny text matrix (bbox ~0)
+Visible footer.
+
+--------------------
+

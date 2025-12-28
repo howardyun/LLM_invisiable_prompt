@@ -1,0 +1,16 @@
+文件解析结果 (PDFMarkerReader): poc_tr3_tiny_matrix.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LlamaIndex\PDF Reader\Output\TRM3\tiny_matrix\PDFMarkerLoader.txt
+解析出的文档块数量: 1
+说明: Marker 会自动去除页眉页脚，并将公式转换为 LaTeX，输出标准 Markdown
+==============================
+
+【文档块 (Block 0) 元数据】:
+  - (无元数据)
+
+【Markdown 内容】:
+# Poc #1: Tr=3 + Tiny Text Matrix (Bbox ~0)
+
+Invisible payload uses Tr=3 and Tm scale ~1e-5. Try selecting/copying inside the box. Visible footer.
+
+--------------------
+

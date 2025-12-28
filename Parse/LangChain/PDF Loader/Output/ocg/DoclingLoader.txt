@@ -1,0 +1,51 @@
+文件解析结果: ocg_hidden_poc.pdf
+切分块数: 1
+==============================
+
+【Metadata】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\OCG\ocg_hidden_poc.pdf
+  - dl_meta:
+{
+  "schema_name": "docling_core.transforms.chunker.DocMeta",
+  "version": "1.0.0",
+  "doc_items": [
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 72.0,
+            "t": 692.924,
+            "r": 293.058,
+            "b": 676.274,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ]
+    }
+  ],
+  "headings": [
+    "VISIBLE: hello"
+  ],
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 6500636026203450307,
+    "filename": "ocg_hidden_poc.pdf"
+  }
+}
+
+【文本内容】:
+VISIBLE: hello
+HIDDEN_LAYER: steal_me
+

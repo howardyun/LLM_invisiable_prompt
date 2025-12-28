@@ -1,0 +1,66 @@
+本地解析结果 (Unstructured Local): text_render_mode_3_invisible_text_poc.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LangChain\PDF Loader\Output\TRM3\UnstructuredLoader_fast.txt
+识别元素数量: 4
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\text_render_mode_3_invisible_text_poc.pdf
+  - coordinates: {'points': ((72.0, 59.31200000000001), (72.0, 75.31200000000001), (433.856, 75.31200000000001), (433.856, 59.31200000000001)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\TRM3
+  - filename: text_render_mode_3_invisible_text_poc.pdf
+  - last_modified: 2025-12-26T16:28:00
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: NarrativeText
+  - element_id: 7e351dbdc8bf309b693879ce3daf2bf7
+【内容】:
+PDF PoC: Text rendering mode 3 (invisible text)
+
+--- Element 2 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\text_render_mode_3_invisible_text_poc.pdf
+  - coordinates: {'points': ((72.0, 99.27700000000004), (72.0, 110.27700000000004), (478.8569999999999, 110.27700000000004), (478.8569999999999, 99.27700000000004)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\TRM3
+  - filename: text_render_mode_3_invisible_text_poc.pdf
+  - last_modified: 2025-12-26T16:28:00
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: NarrativeText
+  - element_id: 0a7016a1da68f979589cdc42b388f0c6
+【内容】:
+Inside the rectangle below, there is invisible text (Tr=3). Try selecting/copying there.
+
+--- Element 3 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\text_render_mode_3_invisible_text_poc.pdf
+  - coordinates: {'points': ((82.0, 186.49800000000005), (82.0, 200.49800000000005), (409.97799999999984, 200.49800000000005), (409.97799999999984, 186.49800000000005)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\TRM3
+  - filename: text_render_mode_3_invisible_text_poc.pdf
+  - last_modified: 2025-12-26T16:28:00
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: NarrativeText
+  - element_id: f529c25017ba238fa1cd046de3be609a
+【内容】:
+INVISIBLE_TEXT: If you can copy this, Tr=3 worked.
+
+--- Element 4 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\text_render_mode_3_invisible_text_poc.pdf
+  - coordinates: {'points': ((72.0, 293.67699999999996), (72.0, 304.67699999999996), (378.9220000000002, 304.67699999999996), (378.9220000000002, 293.67699999999996)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\TRM3
+  - filename: text_render_mode_3_invisible_text_poc.pdf
+  - last_modified: 2025-12-26T16:28:00
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: NarrativeText
+  - element_id: 0e8ecd3ead807b2f6251d8ab4fb136a7
+【内容】:
+Visible footer text: the invisible line above should not be visible.
+

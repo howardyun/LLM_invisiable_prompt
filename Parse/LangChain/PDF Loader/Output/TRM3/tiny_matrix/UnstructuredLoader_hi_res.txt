@@ -1,0 +1,58 @@
+本地解析结果 (Unstructured Local): poc_tr3_tiny_matrix.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LangChain\PDF Loader\Output\TRM3\tiny_matrix\UnstructuredLoader_hi_res.txt
+识别元素数量: 3
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\poc_tr3_tiny_matrix.pdf
+  - detection_class_prob: 0.7527841329574585
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(200.0), np.float64(164.7555555555556)), (np.float64(200.0), np.float64(209.562255859375)), (np.float64(1050.8888888888891), np.float64(209.562255859375)), (np.float64(1050.8888888888891), np.float64(164.7555555555556))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - last_modified: 2025-12-26T16:30:25
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\TRM3
+  - filename: poc_tr3_tiny_matrix.pdf
+  - category: Title
+  - element_id: 68df228fe40ea5f135d0687228ea85f7
+【内容】:
+PoC #1: Tr=3 + tiny text matrix (bbox ~0)
+
+--- Element 2 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\poc_tr3_tiny_matrix.pdf
+  - detection_class_prob: 0.783003032207489
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(198.7544708251953), np.float64(275.5807800292969)), (np.float64(198.7544708251953), np.float64(306.3250000000001)), (np.float64(1359.9194444444443), np.float64(306.3250000000001)), (np.float64(1359.9194444444443), np.float64(275.5807800292969))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - last_modified: 2025-12-26T16:30:25
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\TRM3
+  - filename: poc_tr3_tiny_matrix.pdf
+  - parent_id: 68df228fe40ea5f135d0687228ea85f7
+  - category: NarrativeText
+  - element_id: f950cada400d98ed6b9f6ace78dc6ad8
+【内容】:
+Invisible payload uses Tr=3 and Tm scale ~1e-5. Try selecting/copying inside the box.
+
+--- Element 3 [页码: 1 | 类型: UncategorizedText] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\poc_tr3_tiny_matrix.pdf
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(200.0), np.float64(835.7694444444444)), (np.float64(200.0), np.float64(866.325)), (np.float64(385.1055555555555), np.float64(866.325)), (np.float64(385.1055555555555), np.float64(835.7694444444444))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - last_modified: 2025-12-26T16:30:25
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\TRM3
+  - filename: poc_tr3_tiny_matrix.pdf
+  - parent_id: 68df228fe40ea5f135d0687228ea85f7
+  - category: UncategorizedText
+  - element_id: 3823fe5aac0a4bfa7d47940e5d5617a9
+【内容】:
+Visible footer.
+

@@ -1,0 +1,22 @@
+文件解析结果 (UnstructuredReader): ocg_hidden_poc.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LlamaIndex\PDF Reader\Output\ocg\UnstructuredLoader.txt
+解析出的元素数量: 1
+说明: Unstructured 擅长识别文档结构元素（标题、正文、列表等）
+==============================
+
+【元素 (Element 0) 元数据】:
+  - coordinates: {"points": [[72.0, 57.726], [72.0, 75.726], [188.064, 75.726], [188.064, 57.726]], "system": "PixelSpace", "layout_width": 612.0, "layout_height": 792.0}
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\OCG
+  - filename: ocg_hidden_poc.pdf
+  - last_modified: 2025-12-26T16:28:28
+  - page_number: 1
+  - languages: ["eng"]
+  - filetype: application/pdf
+
+【内容】:
+VISIBLE: hello
+
+HIDDEN_LAYER: steal_me
+
+--------------------
+

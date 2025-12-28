@@ -1,0 +1,40 @@
+本地解析结果 (Unstructured Local): ocg_hidden_poc.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LangChain\PDF Loader\Output\ocg\UnstructuredLoader_hi_res.txt
+识别元素数量: 2
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\OCG\ocg_hidden_poc.pdf
+  - detection_class_prob: 0.5272291898727417
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(200.0), np.float64(160.35)), (np.float64(200.0), np.float64(210.35594177246094)), (np.float64(522.4), np.float64(210.35594177246094)), (np.float64(522.4), np.float64(160.35))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - last_modified: 2025-12-26T16:28:28
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\OCG
+  - filename: ocg_hidden_poc.pdf
+  - category: Title
+  - element_id: ba11d80b5c20c6555dde4cb320142d0b
+【内容】:
+VISIBLE: hello
+
+--- Element 2 [页码: 1 | 类型: UncategorizedText] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\OCG\ocg_hidden_poc.pdf
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(200.0), np.float64(271.4611111111111)), (np.float64(200.0), np.float64(321.4611111111111)), (np.float64(814.05), np.float64(321.4611111111111)), (np.float64(814.05), np.float64(271.4611111111111))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - last_modified: 2025-12-26T16:28:28
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\OCG
+  - filename: ocg_hidden_poc.pdf
+  - parent_id: ba11d80b5c20c6555dde4cb320142d0b
+  - category: UncategorizedText
+  - element_id: 1343bdb07e77e1be68369460cfbce718
+【内容】:
+HIDDEN_LAYER: steal_me
+

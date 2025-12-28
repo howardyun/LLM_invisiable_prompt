@@ -1,0 +1,99 @@
+批量解析结果 (PyPDFDirectory): TRM3
+保存位置: D:\PycharmProject\LLM_Parser\LangChain\PDF Loader\Output\TRM3\marked_content_artifact\PyPDFDirectoryLoader.txt
+涉及文件数: 4
+总页数 (所有文件合计): 4
+特点: 批量加载目录下所有 PDF，底层使用 pypdf 解析。
+==============================
+
+poc_tr3_marked_content_artifact.pdf
+--- 序号 1 | 文件: poc_tr3_marked_content_artifact.pdf | 第 1 页 ---
+【元数据 (Metadata)】:
+  - producer: ReportLab PDF Library - www.reportlab.com
+  - creator: ReportLab PDF Library - www.reportlab.com
+  - creationdate: 2025-12-26T16:29:43+08:00
+  - author: anonymous
+  - keywords: 
+  - moddate: 2025-12-26T16:29:43+08:00
+  - subject: unspecified
+  - title: untitled
+  - trapped: /False
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\poc_tr3_marked_content_artifact.pdf
+  - total_pages: 1
+  - page: 0
+  - page_label: 1
+
+【正文内容】:
+PoC #3: Tr=3 wrapped in /Artifact marked content
+Payload is inside /Artifact BMC ... EMC and Tr=3.
+P3_ARTIFACT_TR3: invisible text in /Artifact BMC ... EMC
+Visible footer.
+
+poc_tr3_tiny_matrix.pdf
+--- 序号 2 | 文件: poc_tr3_tiny_matrix.pdf | 第 1 页 ---
+【元数据 (Metadata)】:
+  - producer: ReportLab PDF Library - www.reportlab.com
+  - creator: ReportLab PDF Library - www.reportlab.com
+  - creationdate: 2025-12-26T16:29:43+08:00
+  - author: anonymous
+  - keywords: 
+  - moddate: 2025-12-26T16:29:43+08:00
+  - subject: unspecified
+  - title: untitled
+  - trapped: /False
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\poc_tr3_tiny_matrix.pdf
+  - total_pages: 1
+  - page: 0
+  - page_label: 1
+
+【正文内容】:
+PoC #1: Tr=3 + tiny text matrix (bbox ~0)
+Invisible payload uses Tr=3 and Tm scale ~1e-5. Try selecting/copying inside the box.
+P1_INVISIBLE_TINY_TM: Tr=3 + Tm scale ~1e-5.
+Visible footer.
+
+poc_tr3_tj_fragmented.pdf
+--- 序号 3 | 文件: poc_tr3_tj_fragmented.pdf | 第 1 页 ---
+【元数据 (Metadata)】:
+  - producer: ReportLab PDF Library - www.reportlab.com
+  - creator: ReportLab PDF Library - www.reportlab.com
+  - creationdate: 2025-12-26T16:29:43+08:00
+  - author: anonymous
+  - keywords: 
+  - moddate: 2025-12-26T16:29:43+08:00
+  - subject: unspecified
+  - title: untitled
+  - trapped: /False
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\poc_tr3_tj_fragmented.pdf
+  - total_pages: 1
+  - page: 0
+  - page_label: 1
+
+【正文内容】:
+PoC #2: Tr=3 + TJ fragmentation
+Payload emitted as TJ array with per-char fragments + extreme offsets under Tr=3.
+P 2 _ T J _ F R A G
+Visible footer.
+
+text_render_mode_3_invisible_text_poc.pdf
+--- 序号 4 | 文件: text_render_mode_3_invisible_text_poc.pdf | 第 1 页 ---
+【元数据 (Metadata)】:
+  - producer: ReportLab PDF Library - www.reportlab.com
+  - creator: ReportLab PDF Library - www.reportlab.com
+  - creationdate: 2025-12-26T15:34:28+08:00
+  - author: anonymous
+  - keywords: 
+  - moddate: 2025-12-26T15:34:28+08:00
+  - subject: unspecified
+  - title: untitled
+  - trapped: /False
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\text_render_mode_3_invisible_text_poc.pdf
+  - total_pages: 1
+  - page: 0
+  - page_label: 1
+
+【正文内容】:
+PDF PoC: Text rendering mode 3 (invisible text)
+Inside the rectangle below, there is invisible text (Tr=3). Try selecting/copying there.
+INVISIBLE_TEXT: If you can copy this, Tr=3 worked.
+Visible footer text: the invisible line above should not be visible.
+

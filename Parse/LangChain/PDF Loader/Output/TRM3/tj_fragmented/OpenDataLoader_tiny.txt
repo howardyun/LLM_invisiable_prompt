@@ -1,0 +1,23 @@
+文件解析结果 (OpenDataLoader): poc_tr3_tj_fragmented.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LangChain\PDF Loader\Output\TRM3\tj_fragmented\OpenDataLoader_tiny.txt
+文档片段数: 1
+特点: 本地 Java 引擎，重构文档布局(Markdown)，内置 AI 安全过滤。
+==============================
+
+【元数据 (Metadata)】:
+  - source: poc_tr3_tj_fragmented.pdf
+  - format: markdown
+
+【Markdown 内容】:
+# PoC #2: Tr=3 + TJ fragmentation
+
+Payload emitted as TJ array with per-char fragments + extreme offsets under Tr=3.
+
+||
+|---|
+
+
+Visible footer.
+
+
+

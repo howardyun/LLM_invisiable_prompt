@@ -1,0 +1,181 @@
+文件解析报告 (Native)
+文件名: poc_tr3_marked_content_artifact.pdf
+耗时: 4.77 秒
+策略: OCR=自动
+========================================
+
+【Metadata】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\poc_tr3_marked_content_artifact.pdf
+  - dl_meta:
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.8.0",
+  "name": "poc_tr3_marked_content_artifact",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 16326826609714384438,
+    "filename": "poc_tr3_marked_content_artifact.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 72.0,
+            "t": 731.488,
+            "r": 456.0,
+            "b": 716.688,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            48
+          ]
+        }
+      ],
+      "orig": "PoC #3: Tr=3 wrapped in /Artifact marked content",
+      "text": "PoC #3: Tr=3 wrapped in /Artifact marked content",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 72.0,
+            "t": 691.898,
+            "r": 341.5,
+            "b": 681.723,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            49
+          ]
+        }
+      ],
+      "orig": "Payload is inside /Artifact BMC ... EMC and Tr=3.",
+      "text": "Payload is inside /Artifact BMC ... EMC and Tr=3."
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 82.0,
+            "t": 606.052,
+            "r": 474.0,
+            "b": 593.102,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            56
+          ]
+        }
+      ],
+      "orig": "P3_ARTIFACT_TR3: invisible text in /Artifact BMC ... EMC",
+      "text": "P3_ARTIFACT_TR3: invisible text in /Artifact BMC ... EMC"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 72.0,
+            "t": 490.298,
+            "r": 154.5,
+            "b": 480.123,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Visible footer.",
+      "text": "Visible footer."
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 612.0,
+        "height": 792.0
+      },
+      "page_no": 1
+    }
+  }
+}
+
+【文本内容】:
+## PoC #3: Tr=3 wrapped in /Artifact marked content
+
+Payload is inside /Artifact BMC ... EMC and Tr=3.
+
+P3\_ARTIFACT\_TR3: invisible text in /Artifact BMC ... EMC
+
+Visible footer.
+

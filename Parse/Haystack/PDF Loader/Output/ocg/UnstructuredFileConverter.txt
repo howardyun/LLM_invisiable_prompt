@@ -1,0 +1,16 @@
+文件解析结果 (Unstructured-Docker): ocg_hidden_poc.pdf
+保存位置: D:\PycharmProject\LLM_Parser\HayStack\PDF Loader\Output\ocg\UnstructuredFileConverter.txt
+文档片段数: 1
+API URL: http://localhost:8000/general/v0/general
+==============================
+
+【片段 1 元数据 (Meta)】:
+  - file_path: D:\PycharmProject\LLM_Parser\PDF\OCG\ocg_hidden_poc.pdf
+
+【正文内容】:
+VISIBLE: hello
+
+HIDDEN_LAYER: steal_me
+
+--------------------
+

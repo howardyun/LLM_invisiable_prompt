@@ -1,0 +1,85 @@
+文件解析报告 (Native)
+文件名: ocg_hidden_poc.pdf
+耗时: 6.09 秒
+策略: OCR=开启
+========================================
+
+【Metadata】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\OCG\ocg_hidden_poc.pdf
+  - dl_meta:
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.8.0",
+  "name": "ocg_hidden_poc",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 6500636026203450307,
+    "filename": "ocg_hidden_poc.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 70.921875,
+            "t": 734.116933186849,
+            "r": 188.4609375,
+            "b": 716.5524139404297,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "VISIBLE: hello",
+      "text": "VISIBLE: hello",
+      "level": 1
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 612.0,
+        "height": 792.0
+      },
+      "page_no": 1
+    }
+  }
+}
+
+【文本内容】:
+## VISIBLE: hello
+

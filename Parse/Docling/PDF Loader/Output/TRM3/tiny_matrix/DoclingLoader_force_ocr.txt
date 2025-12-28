@@ -1,0 +1,85 @@
+文件解析报告 (Native)
+文件名: poc_tr3_tiny_matrix.pdf
+耗时: 7.32 秒
+策略: OCR=开启
+========================================
+
+【Metadata】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\poc_tr3_tiny_matrix.pdf
+  - dl_meta:
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.8.0",
+  "name": "poc_tr3_tiny_matrix",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 5462091260377166101,
+    "filename": "poc_tr3_tiny_matrix.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 70.921875,
+            "t": 734.9153188069662,
+            "r": 377.71875,
+            "b": 715.3548380533854,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            41
+          ]
+        }
+      ],
+      "orig": "PoC #1: Tr=3 + tiny text matrix (bbox ~0)",
+      "text": "PoC #1: Tr=3 + tiny text matrix (bbox ~0)",
+      "level": 1
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 612.0,
+        "height": 792.0
+      },
+      "page_no": 1
+    }
+  }
+}
+
+【文本内容】:
+## PoC #1: Tr=3 + tiny text matrix (bbox ~0)
+

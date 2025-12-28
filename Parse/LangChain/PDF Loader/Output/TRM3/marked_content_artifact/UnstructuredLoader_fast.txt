@@ -1,0 +1,66 @@
+本地解析结果 (Unstructured Local): poc_tr3_marked_content_artifact.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LangChain\PDF Loader\Output\TRM3\marked_content_artifact\UnstructuredLoader_fast.txt
+识别元素数量: 4
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\poc_tr3_marked_content_artifact.pdf
+  - coordinates: {'points': ((72.0, 59.31200000000001), (72.0, 75.31200000000001), (447.64800000000014, 75.31200000000001), (447.64800000000014, 59.31200000000001)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\TRM3
+  - filename: poc_tr3_marked_content_artifact.pdf
+  - last_modified: 2025-12-26T16:30:26
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: NarrativeText
+  - element_id: 53972f55ac8ac90be2425ef72b8b152d
+【内容】:
+PoC #3: Tr=3 wrapped in /Artifact marked content
+
+--- Element 2 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\poc_tr3_marked_content_artifact.pdf
+  - coordinates: {'points': ((72.0, 99.27700000000004), (72.0, 110.27700000000004), (312.5590000000001, 110.27700000000004), (312.5590000000001, 99.27700000000004)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\TRM3
+  - filename: poc_tr3_marked_content_artifact.pdf
+  - last_modified: 2025-12-26T16:30:26
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: NarrativeText
+  - element_id: 59dfd7ac6426b857f619ca92c75c7f76
+【内容】:
+Payload is inside /Artifact BMC ... EMC and Tr=3.
+
+--- Element 3 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\poc_tr3_marked_content_artifact.pdf
+  - coordinates: {'points': ((82.0, 184.89800000000002), (82.0, 198.89800000000002), (445.31399999999996, 198.89800000000002), (445.31399999999996, 184.89800000000002)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\TRM3
+  - filename: poc_tr3_marked_content_artifact.pdf
+  - last_modified: 2025-12-26T16:30:26
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Title
+  - element_id: 6bb00f95a84264a71a84d099412e45cc
+【内容】:
+P3_ARTIFACT_TR3: invisible text in /Artifact BMC ... EMC
+
+--- Element 4 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\poc_tr3_marked_content_artifact.pdf
+  - coordinates: {'points': ((72.0, 300.877), (72.0, 311.877), (138.63799999999998, 311.877), (138.63799999999998, 300.877)), 'system': 'PixelSpace', 'layout_width': 612.0, 'layout_height': 792.0}
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\TRM3
+  - filename: poc_tr3_marked_content_artifact.pdf
+  - last_modified: 2025-12-26T16:30:26
+  - page_number: 1
+  - languages: ['eng']
+  - filetype: application/pdf
+  - category: Title
+  - element_id: e059153f5f846e94061a5107600a02e0
+【内容】:
+Visible footer.
+

@@ -1,0 +1,74 @@
+本地解析结果 (Unstructured Local): poc_tr3_tj_fragmented.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LangChain\PDF Loader\Output\TRM3\tj_fragmented\UnstructuredLoader_hi_res.txt
+识别元素数量: 4
+解析策略: 
+==============================
+
+--- Element 1 [页码: 1 | 类型: Title] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\poc_tr3_tj_fragmented.pdf
+  - detection_class_prob: 0.7715812921524048
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(195.51528930664062), np.float64(164.7555555555556)), (np.float64(195.51528930664062), np.float64(209.68006896972656)), (np.float64(890.5123291015625), np.float64(209.68006896972656)), (np.float64(890.5123291015625), np.float64(164.7555555555556))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - last_modified: 2025-12-26T16:30:25
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\TRM3
+  - filename: poc_tr3_tj_fragmented.pdf
+  - category: Title
+  - element_id: c130a4977ab6003d342b0e0956433194
+【内容】:
+PoC #2: Tr=3 + TJ fragmentation
+
+--- Element 2 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\poc_tr3_tj_fragmented.pdf
+  - detection_class_prob: 0.7896227240562439
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(200.0), np.float64(275.3150634765625)), (np.float64(200.0), np.float64(306.3250000000001)), (np.float64(1320.8083333333332), np.float64(306.3250000000001)), (np.float64(1320.8083333333332), np.float64(275.3150634765625))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - last_modified: 2025-12-26T16:30:25
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\TRM3
+  - filename: poc_tr3_tj_fragmented.pdf
+  - parent_id: c130a4977ab6003d342b0e0956433194
+  - category: NarrativeText
+  - element_id: e537dbcea31904b0d612bcaf51e75f63
+【内容】:
+Payload emitted as TJ array with per-char fragments + extreme offsets under Tr=3.
+
+--- Element 3 [页码: 1 | 类型: Image] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\poc_tr3_tj_fragmented.pdf
+  - detection_class_prob: 0.27570053935050964
+  - coordinates: {'points': ((np.float64(186.7455596923828), np.float64(457.2310791015625)), (np.float64(186.7455596923828), np.float64(641.8812255859375)), (np.float64(1531.9327392578125), np.float64(641.8812255859375)), (np.float64(1531.9327392578125), np.float64(457.2310791015625))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - last_modified: 2025-12-26T16:30:25
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\TRM3
+  - filename: poc_tr3_tj_fragmented.pdf
+  - category: Image
+  - element_id: ebc739b434531ccbb783a95dca986b89
+【内容】:
+P2 _T J_F RA G 
+
+--- Element 4 [页码: 1 | 类型: NarrativeText] ---
+【元数据】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\TRM3\poc_tr3_tj_fragmented.pdf
+  - detection_class_prob: 0.7019241452217102
+  - is_extracted: true
+  - coordinates: {'points': ((np.float64(200.0), np.float64(835.7694444444444)), (np.float64(200.0), np.float64(866.325)), (np.float64(385.1055555555555), np.float64(866.325)), (np.float64(385.1055555555555), np.float64(835.7694444444444))), 'system': 'PixelSpace', 'layout_width': 1700, 'layout_height': 2200}
+  - last_modified: 2025-12-26T16:30:25
+  - filetype: application/pdf
+  - languages: ['eng']
+  - page_number: 1
+  - file_directory: D:\PycharmProject\LLM_Parser\PDF\TRM3
+  - filename: poc_tr3_tj_fragmented.pdf
+  - category: NarrativeText
+  - element_id: d577509a6c7650aa6444d673df307947
+【内容】:
+Visible footer.
+

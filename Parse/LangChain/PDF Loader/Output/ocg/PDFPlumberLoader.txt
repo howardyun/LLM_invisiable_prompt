@@ -1,0 +1,17 @@
+文件解析结果 (PDFPlumber): ocg_hidden_poc.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LangChain\PDF Loader\Output\ocg\PDFPlumberLoader.txt
+总页数: 1
+特点: 擅长提取复杂布局文本，提供详细的 PDF 元数据。
+==============================
+
+【元数据 (Metadata)】:
+  - source: D:\PycharmProject\LLM_Parser\PDF\OCG\ocg_hidden_poc.pdf
+  - file_path: D:\PycharmProject\LLM_Parser\PDF\OCG\ocg_hidden_poc.pdf
+  - page: 0
+  - total_pages: 1
+
+【正文内容】:
+VISIBLE: hello
+HIDDEN_LAYER: steal_me
+
+

@@ -1,0 +1,21 @@
+文件解析结果 (SmartPDFLoader): poc_tr3_tiny_matrix.pdf
+保存位置: D:\PycharmProject\LLM_Parser\LlamaIndex\PDF Reader\Output\TRM3\tiny_matrix\SmartPDFLoader_apply_ocr.txt
+解析出的块(Chunks)数量: 1
+==============================
+
+【块索引 (Chunk 0) 元数据】:
+  - page_idx: 0
+  - tag: para
+  - level: 0
+
+【正文内容】:
+
+PoC      #1:      Tr=3   
+ 
++      tiny      text      matrix      (bbox      ~0)  
+ 
+  Invisible      payload      uses      Tr=3      and      Tm      scale      ~1e-5.
+Try      selecting/copying      inside      the      box.
+
+--------------------
+
