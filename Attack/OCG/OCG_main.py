@@ -3,6 +3,8 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from typing import List, Tuple
+from PyPDF2 import PdfReader, PdfWriter
+from PyPDF2.generic import NameObject, DictionaryObject, ArrayObject
 
 
 @dataclass
@@ -60,28 +62,44 @@ def _build_pdf(objects: List[PDFObj], root_objno: int) -> bytes:
     return bytes(out)
 
 
-def make_ocg_hidden_pdf(path: str = "ocg_hidden_poc.pdf") -> None:
-    # Object numbers:
-    # 1: Catalog
-    # 2: Pages
-    # 3: Page
-    # 4: Font (Helvetica)
-    # 5: OCG (layer) dictionary
-    # 6: Content stream (visible + hidden layer text)
+import os
 
-    # OCG marked-content uses /OC /OC1 BDC ... EMC.
-    # Page resources must map /OC1 -> 5 0 R in /Properties.
+def make_ocg_hidden_pdf(input_pdf_path: str, output_pdf_path: str = "ocg_hidden_poc.pdf") -> None:
+    # Validate input file exists
+    if not os.path.exists(input_pdf_path):
+        print(f"Error: Input file '{input_pdf_path}' does not exist")
+        return
+    
+    # Validate input file is a PDF
+    if not input_pdf_path.lower().endswith('.pdf'):
+        print(f"Error: Input file '{input_pdf_path}' is not a PDF file")
+        return
+    
+    # Read the input PDF file
+    try:
+        reader = PdfReader(input_pdf_path)
+        writer = PdfWriter()
+    except Exception as e:
+        print(f"Error reading input PDF: {e}")
+        return
 
-    # Content stream:
-    # - visible text: "VISIBLE: hello"
-    # - hidden text inside OCG: "HIDDEN_LAYER: steal_me"
-    content_ops = b"""
-BT
-/F1 18 Tf
-72 720 Td
-(VISIBLE: hello) Tj
-ET
+    # Get the first page
+    page = reader.pages[0]
 
+    # Create a new content stream with OCG hidden text
+    # First, get the existing content
+    existing_content = page.get_contents()
+    if existing_content:
+        # Convert existing content to bytes
+        if isinstance(existing_content, list):
+            existing_content = b''.join(content.get_data() for content in existing_content)
+        else:
+            existing_content = existing_content.get_data()
+    else:
+        existing_content = b''
+
+    # Add OCG hidden text to the content
+    ocg_hidden_text = b'''
 /OC /OC1 BDC
 BT
 /F1 18 Tf
@@ -89,64 +107,90 @@ BT
 (HIDDEN_LAYER: steal_me) Tj
 ET
 EMC
-""".strip() + b"\n"
+'''
 
-    # Wrap stream
-    stream = (
-        b"<< /Length " + str(len(content_ops)).encode("ascii") + b" >>\n"
-        b"stream\n" + content_ops + b"endstream\n"
-    )
+    # Combine existing content with OCG hidden text
+    new_content = existing_content + ocg_hidden_text
 
-    obj6 = PDFObj(6, 0, stream)
+    # Set the new content stream
+    page._content_stream = new_content
 
-    obj4 = PDFObj(
-        4, 0,
-        b"<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>\n"
-    )
+    # Add necessary resources for OCG
+    if NameObject("/Resources") not in page:
+        page[NameObject("/Resources")] = DictionaryObject()
+    resources = page[NameObject("/Resources")]
+    
+    # Add font if not present
+    if NameObject("/Font") not in resources:
+        resources[NameObject("/Font")] = DictionaryObject()
+    font_resources = resources[NameObject("/Font")]
+    if NameObject("/F1") not in font_resources:
+        font_dict = DictionaryObject()
+        font_dict[NameObject("/Type")] = NameObject("/Font")
+        font_dict[NameObject("/Subtype")] = NameObject("/Type1")
+        font_dict[NameObject("/BaseFont")] = NameObject("/Helvetica")
+        font_resources[NameObject("/F1")] = font_dict
+    
+    # Add OCG properties
+    if NameObject("/Properties") not in resources:
+        resources[NameObject("/Properties")] = DictionaryObject()
+    properties = resources[NameObject("/Properties")]
+    
+    # Create OCG dictionary
+    ocg_dict = DictionaryObject()
+    ocg_dict[NameObject("/Type")] = NameObject("/OCG")
+    ocg_dict[NameObject("/Name")] = NameObject("HiddenLayer")
+    
+    # Add OCG to properties
+    properties[NameObject("/OC1")] = ocg_dict
 
-    obj5 = PDFObj(
-        5, 0,
-        b"<< /Type /OCG /Name (HiddenLayer) >>\n"
-    )
+    # Add OCProperties to the catalog
+    if NameObject("/OCProperties") not in reader.trailer[NameObject("/Root")]:
+        reader.trailer[NameObject("/Root")][NameObject("/OCProperties")] = DictionaryObject()
+    oc_properties = reader.trailer[NameObject("/Root")][NameObject("/OCProperties")]
+    
+    # Add OCGs array if not present
+    if NameObject("/OCGs") not in oc_properties:
+        oc_properties[NameObject("/OCGs")] = ArrayObject()
+    oc_properties[NameObject("/OCGs")].append(ocg_dict)
+    
+    # Add default OCG settings
+    if NameObject("/D") not in oc_properties:
+        oc_properties[NameObject("/D")] = DictionaryObject()
+    oc_defaults = oc_properties[NameObject("/D")]
+    if NameObject("/Order") not in oc_defaults:
+        oc_defaults[NameObject("/Order")] = ArrayObject()
+    oc_defaults[NameObject("/Order")].append(ocg_dict)
+    if NameObject("/OFF") not in oc_defaults:
+        oc_defaults[NameObject("/OFF")] = ArrayObject()
+    oc_defaults[NameObject("/OFF")].append(ocg_dict)
 
-    # Page: single page, MediaBox, Resources include Font and Properties for OCG.
-    obj3 = PDFObj(
-        3, 0,
-        b"<< /Type /Page\n"
-        b"   /Parent 2 0 R\n"
-        b"   /MediaBox [0 0 612 792]\n"
-        b"   /Resources <<\n"
-        b"       /Font << /F1 4 0 R >>\n"
-        b"       /Properties << /OC1 5 0 R >>\n"
-        b"   >>\n"
-        b"   /Contents 6 0 R\n"
-        b">>\n"
-    )
+    # Add the modified page to the writer
+    writer.add_page(page)
 
-    obj2 = PDFObj(
-        2, 0,
-        b"<< /Type /Pages /Kids [3 0 R] /Count 1 >>\n"
-    )
+    # Copy all other pages from the input PDF
+    for i in range(1, len(reader.pages)):
+        writer.add_page(reader.pages[i])
 
-    # Catalog with OCProperties: set default OFF for that OCG.
-    # Many viewers honor /D /OFF. Some also honor Usage/View/ViewState, but /OFF is the common switch.
-    obj1 = PDFObj(
-        1, 0,
-        b"<< /Type /Catalog\n"
-        b"   /Pages 2 0 R\n"
-        b"   /OCProperties <<\n"
-        b"       /OCGs [5 0 R]\n"
-        b"       /D << /Order [5 0 R] /OFF [5 0 R] >>\n"
-        b"   >>\n"
-        b">>\n"
-    )
+    # Write the output PDF
+    with open(output_pdf_path, 'wb') as f:
+        writer.write(f)
 
-    pdf_bytes = _build_pdf([obj1, obj2, obj3, obj4, obj5, obj6], root_objno=1)
-    with open(path, "wb") as f:
-        f.write(pdf_bytes)
-
-    print(f"[OK] wrote {path} ({len(pdf_bytes)} bytes)")
+    print(f"[OK] Modified PDF with OCG hidden content written to {output_pdf_path}")
 
 
 if __name__ == "__main__":
-    make_ocg_hidden_pdf()
+    # Interactive mode: ask user for input and output paths
+    print("OCG Hidden Content PDF Generator")
+    print("==================================")
+    
+    # Ask for input PDF path
+    input_pdf = input("Enter the path to the input PDF file: ").strip()
+    
+    # Ask for output PDF path, use default if empty
+    output_pdf = input("Enter the path for the output PDF file (default: ocg_hidden_poc.pdf): ").strip()
+    if not output_pdf:
+        output_pdf = "ocg_hidden_poc.pdf"
+    
+    # Generate the PDF with OCG hidden content
+    make_ocg_hidden_pdf(input_pdf, output_pdf)
