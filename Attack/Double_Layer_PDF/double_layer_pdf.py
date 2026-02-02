@@ -34,10 +34,10 @@ def merge_pdfs(text_pdf, image_pdf, output_file):
     page_text = reader_text.pages[0]
     page_image = reader_image.pages[0]
 
-    # 合并页面：先是文字层，再是图片层
-    page_image.merge_page(page_text)
+    # 合并页面：先是文字层，再是图片层（图片层在文字层之上）
+    page_text.merge_page(page_image)
 
-    writer.add_page(page_image)
+    writer.add_page(page_text)
 
     # 写入输出文件
     with open(output_file, "wb") as f:

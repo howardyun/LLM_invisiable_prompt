@@ -51,7 +51,7 @@ PDF攻击工具自动运行系统
 5. TRM
 6. Zero-Size-Font
 7. Zero-Width
-8. PDF-Mirage
+8. PDF-Mirage（请在linux下执行）
 0. 退出
 ==================================================
 请选择攻击方法编号: 

@@ -1,4 +1,0 @@
-\ProvidesFile{T1CC.fd}
-\DeclareFontFamily{T1}{CC}{}
-\DeclareFontShape{T1}{CC}{m}{n}{ <-> CC}{}
-\pdfmapline{+CC <CC.ttf <T1-WGL4.enc}

@@ -16,7 +16,7 @@ ATTACK_METHODS = {
     5: "TRM",
     6: "Zero-Size-Font",
     7: "Zero-Width",
-    8: "PDF-Mirage"
+    8: "PDF-Mirage(请在linux下执行)"
 }
 
 
