@@ -11,15 +11,31 @@ from reportlab.pdfbase.ttfonts import TTFont
 from PyPDF2 import PdfReader, PdfWriter
 
 
-# 创建PDF文件：从图片创建PDF
-
-def create_image_pdf(image_path, output_file):
+# 创建PDF文件：从图片创建PDF（支持多张图片）
+def create_image_pdf(image_pages, output_file):
+    """
+    创建包含多张图片的PDF文件
+    :param image_pages: 列表，每个元素是 (image_path, page_num) 元组
+    :param output_file: 输出PDF文件路径
+    """
     c = canvas.Canvas(output_file, pagesize=letter)
     
-    # 添加图片到PDF
-    c.drawImage(str(image_path), 50, 500, width=500, height=500)
+    # 按页码排序
+    sorted_image_pages = sorted(image_pages, key=lambda x: x[1])
     
-    c.showPage()
+    # 为每张图片创建对应的页面
+    current_page = 1
+    for image_path, page_num in sorted_image_pages:
+        # 如果当前页码小于目标页码，创建空白页面
+        while current_page < page_num:
+            c.showPage()
+            current_page += 1
+        
+        # 在目标页面添加图片
+        c.drawImage(str(image_path), 50, 500, width=500, height=500)
+        c.showPage()
+        current_page += 1
+    
     c.save()
 
 
@@ -30,14 +46,21 @@ def merge_pdfs(text_pdf, image_pdf, output_file):
 
     writer = PdfWriter()
 
-    # 假设两个PDF页面相同，合并它们
-    page_text = reader_text.pages[0]
-    page_image = reader_image.pages[0]
+    # 获取文字层PDF的页数
+    num_pages = len(reader_text.pages)
 
-    # 合并页面：先是文字层，再是图片层（图片层在文字层之上）
-    page_text.merge_page(page_image)
-
-    writer.add_page(page_text)
+    # 遍历所有页面，进行合并
+    for i in range(num_pages):
+        # 获取文字层页面
+        page_text = reader_text.pages[i]
+        
+        # 检查图片层PDF是否有对应的页面
+        if i < len(reader_image.pages):
+            page_image = reader_image.pages[i]
+            # 合并页面：图片层在文字层之上
+            page_text.merge_page(page_image)
+        
+        writer.add_page(page_text)
 
     # 写入输出文件
     with open(output_file, "wb") as f:
@@ -48,11 +71,16 @@ def merge_pdfs(text_pdf, image_pdf, output_file):
 if __name__ == "__main__":
     print("===== 双层PDF生成工具 =====")
     print("该工具将帮助您将图片和文字层PDF合并为双层PDF文件")
+    print("支持添加多张图片并指定每张图片对应的页码")
     print()
     
-    # 交互式输入图片路径
+    # 交互式输入图片和页码
+    image_pages = []
     while True:
-        image_path_str = input("请输入图片文件路径: ").strip()
+        image_path_str = input("请输入图片文件路径 (输入 'done' 结束): ").strip()
+        if image_path_str.lower() == "done":
+            break
+        
         if not image_path_str:
             print("错误: 图片路径不能为空，请重新输入")
             continue
@@ -61,7 +89,28 @@ if __name__ == "__main__":
         if not image_path.exists():
             print(f"错误: 图片文件 '{image_path}' 不存在，请重新输入")
             continue
-        break
+        
+        # 输入页码
+        while True:
+            page_num_str = input(f"请输入 '{image_path.name}' 对应的页码: ").strip()
+            if not page_num_str.isdigit():
+                print("错误: 页码必须是数字，请重新输入")
+                continue
+            page_num = int(page_num_str)
+            if page_num < 1:
+                print("错误: 页码必须大于等于 1，请重新输入")
+                continue
+            break
+        
+        image_pages.append((image_path, page_num))
+        print(f"已添加: {image_path.name} -> 第 {page_num} 页")
+        print()
+    
+    # 检查是否添加了至少一张图片
+    if not image_pages:
+        print("错误: 至少需要添加一张图片，请重新运行程序")
+        input("\n按回车键退出...")
+        exit(1)
     
     print()
     
@@ -96,7 +145,7 @@ if __name__ == "__main__":
     temp_image_pdf = current_dir / "temp_image_layer.pdf"
     
     # 为图片创建PDF
-    create_image_pdf(image_path, str(temp_image_pdf))
+    create_image_pdf(image_pages, str(temp_image_pdf))
     
     # 合并PDF
     merge_pdfs(str(text_pdf_path), str(temp_image_pdf), str(output_pdf_path))

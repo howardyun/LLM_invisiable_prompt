@@ -75,7 +75,6 @@ python parse.py
 
 ### 基础PDF（oob_poc_base.pdf）
 
-- **可见文本**：页面中间显示 "This is the visible text (what the user sees)."
 - **越界隐藏文本**：
   - 页面顶部外显示 "HIDDEN OOB TEXT: e.g., phishing URL, fake contract terms, or malicious content."
   - 页面右侧外显示 "ANOTHER HIDDEN OOB TEXT placed far to the right."

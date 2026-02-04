@@ -80,9 +80,13 @@ def run_double_layer_pdf(input_pdf, output_pdf):
     
     print()
     
-    # 交互式输入图片路径
+    # 交互式输入图片和页码
+    image_pages = []
     while True:
-        image_path_str = input("请输入图片文件路径: ").strip()
+        image_path_str = input("请输入图片文件路径 (输入 'done' 结束): ").strip()
+        if image_path_str.lower() == "done":
+            break
+        
         if not image_path_str:
             print("错误: 图片路径不能为空，请重新输入")
             continue
@@ -91,7 +95,28 @@ def run_double_layer_pdf(input_pdf, output_pdf):
         if not image_path.exists():
             print(f"错误: 图片文件 '{image_path}' 不存在，请重新输入")
             continue
-        break
+        
+        # 输入页码
+        while True:
+            page_num_str = input(f"请输入 '{image_path.name}' 对应的页码: ").strip()
+            if not page_num_str.isdigit():
+                print("错误: 页码必须是数字，请重新输入")
+                continue
+            page_num = int(page_num_str)
+            if page_num < 1:
+                print("错误: 页码必须大于等于 1，请重新输入")
+                continue
+            break
+        
+        image_pages.append((image_path, page_num))
+        print(f"已添加: {image_path.name} -> 第 {page_num} 页")
+        print()
+    
+    # 检查是否添加了至少一张图片
+    if not image_pages:
+        print("错误: 至少需要添加一张图片，请重新运行程序")
+        input("\n按回车键退出...")
+        return
     
     print()
     
@@ -118,7 +143,7 @@ def run_double_layer_pdf(input_pdf, output_pdf):
     temp_image_pdf = current_dir / "temp_image_layer.pdf"
     
     # 为图片创建PDF
-    dlp.create_image_pdf(image_path, str(temp_image_pdf))
+    dlp.create_image_pdf(image_pages, str(temp_image_pdf))
     
     # 合并PDF
     dlp.merge_pdfs(str(text_pdf_path), str(temp_image_pdf), str(final_pdf))
