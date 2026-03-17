@@ -1,5 +1,8 @@
 from difflib import SequenceMatcher
 from typing import List, Dict
+
+from click import pause
+
 from Detection.utils import normalize_text, render_pdf_to_images, extract_pdf_text_by_page, ocr_images_with_surya
 import json
 from pathlib import Path
@@ -28,7 +31,7 @@ def get_pdf_only_segments(pdf_text: str, ocr_text: str, min_len: int = 8) -> Lis
 def compare_page_texts(
     pdf_page_texts: List[Dict],
     ocr_page_texts: List[Dict],
-    suspicious_ratio_threshold: float = 0.75,
+    suspicious_ratio_threshold: float = 0.95,
     min_segment_len: int = 8
 ) -> List[Dict]:
     """
@@ -96,8 +99,18 @@ def run_pdf_implicit_injection_check(pdf_path: str, work_dir: str = "pdf_check_o
 
 
 if __name__ == "__main__":
+    from pathlib import Path
 
+    root_dir = Path(r"D:\workspace\LLM_invisiable_prompt\Parse\PDF")
+    pdf_files = [file for file in root_dir.rglob("*") if file.is_file() and file.suffix.lower() == ".pdf"]
 
-    pdf_path = "text_version.pdf"
-    results = run_pdf_implicit_injection_check(pdf_path)
-
+    print(f"一共找到 {len(pdf_files)} 个 PDF")
+    for pdf in pdf_files:
+        print(pdf)
+        name = str(pdf).split('\\')[-1]
+        type = str(pdf).split('\\')[5]
+        print(type)
+        print(name)
+        pdf_path = f"{pdf}"
+        results = run_pdf_implicit_injection_check(pdf_path,'output/'+type+'-'+name)
+        pause()
