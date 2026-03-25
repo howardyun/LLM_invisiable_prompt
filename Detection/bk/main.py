@@ -1,11 +1,17 @@
+import os
 from difflib import SequenceMatcher
 from typing import List, Dict
-
+import torch
 from click import pause
-
 from Detection.utils import normalize_text, render_pdf_to_images, extract_pdf_text_by_page, ocr_images_with_surya
 import json
 from pathlib import Path
+os.environ["TORCH_DEVICE"] = "cuda"   # 放在导入 predictor 前后一般都可，但尽量提前设
+
+print("cuda available:", torch.cuda.is_available())
+if torch.cuda.is_available():
+    print("gpu:", torch.cuda.get_device_name(0))
+
 
 def similarity(a: str, b: str) -> float:
     return SequenceMatcher(None, a, b).ratio()
@@ -101,7 +107,7 @@ def run_pdf_implicit_injection_check(pdf_path: str, work_dir: str = "pdf_check_o
 if __name__ == "__main__":
     from pathlib import Path
 
-    root_dir = Path(r"D:\workspace\LLM_invisiable_prompt\Parse\PDF")
+    root_dir = Path(r"/Parse/PDF")
     pdf_files = [file for file in root_dir.rglob("*") if file.is_file() and file.suffix.lower() == ".pdf"]
 
     print(f"一共找到 {len(pdf_files)} 个 PDF")
