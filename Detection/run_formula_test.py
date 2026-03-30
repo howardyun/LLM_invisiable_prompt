@@ -22,8 +22,8 @@ spec.loader.exec_module(module)
 
 
 def main() -> None:
-    pdf_path = "testData/formula.pdf"
-    work_dir = "output_bbox_align/formula"
+    pdf_path = "testData/pdf_poc.pdf"
+    work_dir = "output_bbox_align/pdf_poc"
     dpi = 200
     pdf_granularity = "line"
     batch_size = 8
@@ -36,16 +36,19 @@ def main() -> None:
     print(f"[RUN] pdf_path={pdf_path}")
     print(f"[RUN] work_dir={work_dir}")
 
-    module.run_pdf_implicit_injection_check_bbox(
+    module.run_pdf_bbox_match_and_compare(
         pdf_path=pdf_path,
         work_dir=work_dir,
         dpi=dpi,
         pdf_granularity=pdf_granularity,
         batch_size=batch_size,
         geom_threshold=geom_threshold,
-        text_threshold=text_threshold,
-        min_text_len=min_text_len,
-        ignore_formula_regions=ignore_formula_regions,
+        # debug_page= [1],
+        # debug_pdf_region_ids=[83],
+        # debug_ocr_region_ids= 5,
+        # text_threshold=text_threshold,
+        # min_text_len=min_text_len,
+        # ignore_formula_regions=ignore_formula_regions,
     )
 
 
