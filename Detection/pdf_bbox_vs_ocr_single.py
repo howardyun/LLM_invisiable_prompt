@@ -947,19 +947,19 @@ def match_pdf_and_ocr_bboxes(
 
         for cand in candidates:
             ocr_id = (page_num, cand["ocr_region"]["region_id"])
-            if cand["ocr_region"]["region_id"]  == 40 or cand["ocr_region"]["region_id"]  == 104:
-                print('pause')
+            # if cand["ocr_region"]["region_id"]  == 40 or cand["ocr_region"]["region_id"]  == 104:
+            #     print('pause')
             comp_ids = tuple(cand["pdf_candidate"].get("component_region_ids", []))
             if ocr_id in matched_ocr_ids:
                 continue
             blocked_cids = [cid for cid in comp_ids if (page_num, cid) in used_pdf_component_ids]
             if blocked_cids:
-                print(
-                    f"[BLOCKED_BY_PDF_COMPONENT] page={page_num}, "
-                    f"ocr_region={cand['ocr_region']['region_id']}, "
-                    f"candidate={cand['pdf_candidate']['candidate_id']}, "
-                    f"comp_ids={comp_ids}, blocked_cids={blocked_cids}"
-                )
+                # print(
+                #     f"[BLOCKED_BY_PDF_COMPONENT] page={page_num}, "
+                #     f"ocr_region={cand['ocr_region']['region_id']}, "
+                #     f"candidate={cand['pdf_candidate']['candidate_id']}, "
+                #     f"comp_ids={comp_ids}, blocked_cids={blocked_cids}"
+                # )
                 continue
             # if any((page_num, cid) in used_pdf_component_ids for cid in comp_ids):
             #     continue
