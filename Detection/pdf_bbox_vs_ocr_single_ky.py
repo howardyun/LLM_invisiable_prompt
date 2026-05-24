@@ -5,6 +5,7 @@ import csv
 import json
 import math
 import re
+import shutil
 import unicodedata
 from itertools import combinations
 from pathlib import Path
@@ -333,6 +334,51 @@ def bbox_overlap_over_ocr(pdf_bbox: List[float], ocr_bbox: List[float]) -> float
     return inter / max(bbox_area(ocr_bbox), 1e-8)
 
 
+def add_unique_bbox(boxes: List[List[float]], bbox: Optional[List[float]]) -> None:
+    if bbox is None or bbox_area(bbox) <= 1.0:
+        return
+    key = tuple(round(float(v), 2) for v in bbox)
+    for existing in boxes:
+        if key == tuple(round(float(v), 2) for v in existing):
+            return
+    boxes.append([float(v) for v in bbox])
+
+
+def extract_pdf_image_bboxes(page: Any) -> List[List[float]]:
+    image_bboxes: List[List[float]] = []
+
+    try:
+        page_dict = page.get_text("dict")
+        for block in page_dict.get("blocks", []) or []:
+            if block.get("type") == 1:
+                add_unique_bbox(image_bboxes, normalize_bbox(block.get("bbox")))
+    except Exception:
+        pass
+
+    try:
+        for image_info in page.get_images(full=True):
+            xref = image_info[0]
+            for rect in page.get_image_rects(xref):
+                add_unique_bbox(image_bboxes, [float(rect.x0), float(rect.y0), float(rect.x1), float(rect.y1)])
+    except Exception:
+        pass
+
+    return image_bboxes
+
+
+def is_ocr_bbox_inside_pdf_image(
+    ocr_bbox: List[float],
+    image_bboxes: List[List[float]],
+    overlap_threshold: float = 0.85,
+) -> bool:
+    if not image_bboxes:
+        return False
+    for image_bbox in image_bboxes:
+        if bbox_overlap_over_ocr(image_bbox, ocr_bbox) >= overlap_threshold:
+            return True
+    return False
+
+
 def center_distance_score(a: List[float], b: List[float], page_w: float, page_h: float) -> float:
     ax = (a[0] + a[2]) / 2.0
     ay = (a[1] + a[3]) / 2.0
@@ -512,6 +558,7 @@ def render_pdf_to_images(pdf_path: str, output_dir: str | Path, dpi: int = 200) 
     try:
         for page_idx in range(len(doc)):
             page = doc.load_page(page_idx)
+            image_bboxes = extract_pdf_image_bboxes(page)
             pix = page.get_pixmap(matrix=matrix, alpha=False)
             image_path = output_dir / f"page_{page_idx + 1:04d}.png"
             pix.save(str(image_path))
@@ -522,6 +569,7 @@ def render_pdf_to_images(pdf_path: str, output_dir: str | Path, dpi: int = 200) 
                 "image_height": pix.height,
                 "pdf_width": float(page.rect.width),
                 "pdf_height": float(page.rect.height),
+                "image_bboxes": image_bboxes,
             })
     finally:
         doc.close()
@@ -622,7 +670,12 @@ def scale_ocr_bbox_to_pdf(ocr_bbox: List[float], image_width: float, image_heigh
     return [ocr_bbox[0] * sx, ocr_bbox[1] * sy, ocr_bbox[2] * sx, ocr_bbox[3] * sy]
 
 
-def ocr_images_with_surya(image_infos: List[Dict[str, Any]], batch_size: int = 8) -> List[Dict[str, Any]]:
+def ocr_images_with_surya(
+    image_infos: List[Dict[str, Any]],
+    batch_size: int = 8,
+    skip_image_ocr: bool = True,
+    image_overlap_threshold: float = 0.85,
+) -> List[Dict[str, Any]]:
     recognition_predictor, detection_predictor = get_surya_predictors()
     results: List[Dict[str, Any]] = []
 
@@ -637,6 +690,8 @@ def ocr_images_with_surya(image_infos: List[Dict[str, Any]], batch_size: int = 8
             predictions = recognition_predictor(images, det_predictor=detection_predictor)
             for item, pred in zip(batch_infos, predictions):
                 page_regions: List[Dict[str, Any]] = []
+                image_bboxes = item.get("image_bboxes", []) or []
+                skipped_image_ocr_count = 0
                 region_id = 0
                 for line in getattr(pred, "text_lines", []) or []:
                     raw_text = getattr(line, "text", "") or ""
@@ -651,6 +706,13 @@ def ocr_images_with_surya(image_infos: List[Dict[str, Any]], batch_size: int = 8
                         item["pdf_width"],
                         item["pdf_height"],
                     )
+                    if skip_image_ocr and is_ocr_bbox_inside_pdf_image(
+                        bbox_pdf,
+                        image_bboxes,
+                        overlap_threshold=image_overlap_threshold,
+                    ):
+                        skipped_image_ocr_count += 1
+                        continue
                     page_regions.append({
                         "region_id": region_id,
                         "page_num": item["page_num"],
@@ -668,6 +730,8 @@ def ocr_images_with_surya(image_infos: List[Dict[str, Any]], batch_size: int = 8
                     "pdf_height": item["pdf_height"],
                     "image_width": item["image_width"],
                     "image_height": item["image_height"],
+                    "image_bboxes": image_bboxes,
+                    "skipped_image_ocr_count": skipped_image_ocr_count,
                     "regions": page_regions,
                 })
         finally:
@@ -1436,6 +1500,132 @@ def write_records_json_csv(records: List[Dict[str, Any]], json_path: str | Path,
             writer.writerow({k: row.get(k, "") for k in fields})
 
 
+def build_region_export_records(pages: List[Dict[str, Any]], source: str) -> List[Dict[str, Any]]:
+    rows: List[Dict[str, Any]] = []
+    for page in pages:
+        page_num = int(page.get("page_num", 0))
+        for region in page.get("regions", []) or []:
+            bbox = region.get("bbox")
+            rows.append({
+                "page_num": int(region.get("page_num", page_num)),
+                "region_id": region.get("region_id", ""),
+                "source": region.get("source", source),
+                "bbox": bbox,
+                "bbox_str": bbox_to_compact_str(bbox),
+                "text": region.get("text", ""),
+                "raw_text": region.get("raw_text", ""),
+            })
+    return rows
+
+
+def write_region_records_json_csv(records: List[Dict[str, Any]], json_path: str | Path, csv_path: str | Path) -> None:
+    json_path = Path(json_path)
+    csv_path = Path(csv_path)
+
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(records, f, ensure_ascii=False, indent=2)
+
+    fields = [
+        "page_num",
+        "region_id",
+        "source",
+        "bbox_str",
+        "text",
+        "raw_text",
+    ]
+    with open(csv_path, "w", encoding="utf-8-sig", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fields)
+        writer.writeheader()
+        for row in records:
+            writer.writerow({k: row.get(k, "") for k in fields})
+
+
+def group_records_by_page(records: List[Dict[str, Any]]) -> Dict[int, List[Dict[str, Any]]]:
+    page_map: Dict[int, List[Dict[str, Any]]] = {}
+    for record in records:
+        page_map.setdefault(int(record.get("page_num", 0)), []).append(record)
+    return page_map
+
+
+def write_page_outputs(
+    image_infos: List[Dict[str, Any]],
+    pdf_pages: List[Dict[str, Any]],
+    ocr_pages: List[Dict[str, Any]],
+    export_records: List[Dict[str, Any]],
+    suspicious_records: List[Dict[str, Any]],
+    refined_suspicious_records: List[Dict[str, Any]],
+    pages_dir: str | Path,
+) -> None:
+    pages_dir = Path(pages_dir)
+    pages_dir.mkdir(parents=True, exist_ok=True)
+
+    image_by_page = {int(info["page_num"]): info for info in image_infos}
+    ocr_page_by_page = {int(page["page_num"]): page for page in ocr_pages}
+    pdf_regions_by_page = group_records_by_page(build_region_export_records(pdf_pages, "pdf"))
+    ocr_regions_by_page = group_records_by_page(build_region_export_records(ocr_pages, "ocr"))
+    export_by_page = group_records_by_page(export_records)
+    suspicious_by_page = group_records_by_page(suspicious_records)
+    refined_by_page = group_records_by_page(refined_suspicious_records)
+
+    page_nums = sorted(
+        set(image_by_page)
+        | set(pdf_regions_by_page)
+        | set(ocr_regions_by_page)
+        | set(export_by_page)
+        | set(suspicious_by_page)
+        | set(refined_by_page)
+    )
+
+    for page_num in page_nums:
+        page_dir = pages_dir / f"page_{page_num:04d}"
+        page_dir.mkdir(parents=True, exist_ok=True)
+
+        page_image_path = ""
+        image_info = image_by_page.get(page_num)
+        if image_info:
+            src_image = Path(image_info["image_path"])
+            dst_image = page_dir / "ocr_image.png"
+            if src_image.exists() and src_image.resolve() != dst_image.resolve():
+                shutil.copy2(src_image, dst_image)
+            page_image_path = str(dst_image)
+
+        page_export_records = export_by_page.get(page_num, [])
+        page_suspicious_records = suspicious_by_page.get(page_num, [])
+        page_refined_records = refined_by_page.get(page_num, [])
+        page_pdf_regions = pdf_regions_by_page.get(page_num, [])
+        page_ocr_regions = ocr_regions_by_page.get(page_num, [])
+        page_ocr_info = ocr_page_by_page.get(page_num, {})
+
+        page_summary = {
+            "page_num": page_num,
+            "ocr_image": page_image_path,
+            "record_count": len(page_export_records),
+            "suspicious_count": len(page_suspicious_records),
+            "refined_suspicious_count": len(page_refined_records),
+            "pdf_region_count": len(page_pdf_regions),
+            "ocr_region_count": len(page_ocr_regions),
+            "pdf_image_count": len((image_info or {}).get("image_bboxes", []) or []),
+            "skipped_image_ocr_count": int(page_ocr_info.get("skipped_image_ocr_count", 0) or 0),
+            "image_info": image_info or {},
+        }
+        with open(page_dir / "page_summary.json", "w", encoding="utf-8") as f:
+            json.dump(page_summary, f, ensure_ascii=False, indent=2)
+
+        write_region_records_json_csv(page_pdf_regions, page_dir / "pdf_regions.json", page_dir / "pdf_regions.csv")
+        write_region_records_json_csv(page_ocr_regions, page_dir / "ocr_regions.json", page_dir / "ocr_regions.csv")
+        write_records_json_csv(page_export_records, page_dir / "bbox_records.json", page_dir / "bbox_records.csv")
+        write_records_json_csv(
+            page_suspicious_records,
+            page_dir / "suspicious_bbox_records.json",
+            page_dir / "suspicious_bbox_records.csv",
+        )
+        write_refined_records_json_csv(
+            page_refined_records,
+            page_dir / "suspicious_bbox_records_refined.json",
+            page_dir / "suspicious_bbox_records_refined.csv",
+        )
+
+
 # ------------------------------------------------------------
 # Main pipeline
 # ------------------------------------------------------------
@@ -1446,6 +1636,8 @@ def run_pdf_bbox_match_and_compare(
     pdf_granularity: str = "line",
     batch_size: int = 8,
     geom_threshold: float = 0.18,
+    skip_image_ocr: bool = True,
+    image_overlap_threshold: float = 0.85,
 ) -> Dict[str, Any]:
     work_dir = Path(work_dir)
     image_dir = work_dir / "images"
@@ -1459,7 +1651,15 @@ def run_pdf_bbox_match_and_compare(
     pdf_pages = extract_pdf_regions_with_bbox(pdf_path, granularity=pdf_granularity)
 
     print("[3] Running OCR with Surya...")
-    ocr_pages = ocr_images_with_surya(image_infos, batch_size=batch_size)
+    ocr_pages = ocr_images_with_surya(
+        image_infos,
+        batch_size=batch_size,
+        skip_image_ocr=skip_image_ocr,
+        image_overlap_threshold=image_overlap_threshold,
+    )
+    skipped_image_ocr_count = sum(int(page.get("skipped_image_ocr_count", 0) or 0) for page in ocr_pages)
+    if skip_image_ocr:
+        print(f"[3] Skipped OCR text lines inside PDF image regions: {skipped_image_ocr_count}")
 
     print("[4] Matching PDF bbox with OCR bbox (with PDF-side merge candidates)...")
     raw_records = match_pdf_and_ocr_bboxes(
@@ -1478,6 +1678,7 @@ def run_pdf_bbox_match_and_compare(
     suspicious_csv = work_dir / "suspicious_bbox_records.csv"
     refined_json = work_dir / "suspicious_bbox_records_refined.json"
     refined_csv = work_dir / "suspicious_bbox_records_refined.csv"
+    pages_dir = work_dir / "pages"
 
     write_records_json_csv(export_records, all_json, all_csv)
     write_records_json_csv(suspicious_records, suspicious_json, suspicious_csv)
@@ -1486,15 +1687,28 @@ def run_pdf_bbox_match_and_compare(
     refined_suspicious_records = build_refined_suspicious_records(raw_records)
     write_refined_records_json_csv(refined_suspicious_records, refined_json, refined_csv)
 
+    print("[7] Exporting page-level folders...")
+    write_page_outputs(
+        image_infos=image_infos,
+        pdf_pages=pdf_pages,
+        ocr_pages=ocr_pages,
+        export_records=export_records,
+        suspicious_records=suspicious_records,
+        refined_suspicious_records=refined_suspicious_records,
+        pages_dir=pages_dir,
+    )
+
     print(f"[DONE] bbox_records.csv -> {all_csv}")
     print(f"[DONE] suspicious_bbox_records.csv -> {suspicious_csv}")
     print(f"[DONE] suspicious_bbox_records_refined.csv -> {refined_csv}")
+    print(f"[DONE] page folders -> {pages_dir}")
 
     return {
         "bbox_records": export_records,
         "suspicious_bbox_records": suspicious_records,
         "suspicious_bbox_records_refined": refined_suspicious_records,
         "output_dir": str(work_dir),
+        "page_output_dir": str(pages_dir),
     }
 
 
@@ -1508,6 +1722,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--pdf-granularity", type=str, default="line", choices=["line", "word", "span"], help="PDF extraction granularity")
     parser.add_argument("--batch-size", type=int, default=8, help="Surya batch size")
     parser.add_argument("--geom-threshold", type=float, default=0.18, help="Geometry overlap threshold")
+    parser.add_argument("--no-skip-image-ocr", dest="skip_image_ocr", action="store_false", help="Keep OCR text lines that fall inside PDF image regions")
+    parser.add_argument("--image-overlap-threshold", type=float, default=0.85, help="Minimum OCR bbox coverage by a PDF image bbox before skipping it")
+    parser.set_defaults(skip_image_ocr=True)
     return parser.parse_args()
 
 
@@ -1523,4 +1740,6 @@ if __name__ == "__main__":
         pdf_granularity=args.pdf_granularity,
         batch_size=args.batch_size,
         geom_threshold=args.geom_threshold,
+        skip_image_ocr=args.skip_image_ocr,
+        image_overlap_threshold=args.image_overlap_threshold,
     )

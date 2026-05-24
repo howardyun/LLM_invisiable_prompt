@@ -96,7 +96,7 @@ def run_pdf_implicit_injection_check(
 
 
 if __name__ == "__main__":
-    pdf_path = Path("../testData/pdf-easy.pdf")
+    pdf_path = Path("../testData/org/pdf-easy.pdf")
 
     if not pdf_path.exists():
         raise FileNotFoundError(f"PDF 不存在: {pdf_path}")

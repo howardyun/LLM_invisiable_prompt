@@ -92,4 +92,4 @@ def single_pdf_main(pdf_path) -> None:
 
 if __name__ == "__main__":
     # main(Path(r"LocalData"))
-    single_pdf_main(r"testData/pdf_poc.pdf")
+    single_pdf_main(r"testData/org/pdf_poc.pdf")
