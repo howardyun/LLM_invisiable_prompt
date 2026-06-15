@@ -33,6 +33,28 @@ output-root/manifest.csv
 
 The scanner also supports the older `year/month/day` layout via `--layout year-month-day`; the default `--layout auto` detects both.
 
+Scan one month at a time:
+
+```bash
+.\venv\Scripts\python.exe .\Static_Analysis\scan_month_tree.py --input-root G:\arxiv_pdf --output-root D:\scan_output --month May_2026 --jobs 8
+```
+
+You can also scan multiple months:
+
+```bash
+.\venv\Scripts\python.exe .\Static_Analysis\scan_month_tree.py --input-root G:\arxiv_pdf --output-root D:\scan_output --month May_2026,June_2026 --jobs 8
+```
+
+Monthly output:
+
+```text
+output-root/May_2026/2026-05-10/summary.csv
+output-root/May_2026/2026-05-10/findings.csv
+output-root/May_2026/2026-05-10/problem_sentences.csv
+output-root/May_2026/month_manifest.csv
+output-root/months_manifest.csv
+```
+
 Compare several loader profiles while extracting each PDF only once:
 
 ```bash
