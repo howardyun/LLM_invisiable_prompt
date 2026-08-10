@@ -2,95 +2,126 @@
 #
 # 运行后会生成两个文件：
 #   - oob_poc_base.pdf  : 添加了越界隐藏文本的原始 PDF（未裁剪）
-#   - oob_poc_cropped.pdf : 带“越界隐藏文本”的 PoC（可见区被裁剪）
+#   - oob_poc_cropped.pdf : 带"越界隐藏文本"的 PoC（可见区被裁剪）
 
-from reportlab.pdfgen import canvas
-from reportlab.lib.pagesizes import A4
-from reportlab.lib.units import mm
-from reportlab.lib.colors import red
-
-from pypdf import PdfReader, PdfWriter  # 如果你装的是 PyPDF2，则改为 from PyPDF2 import PdfReader, PdfWriter
-from io import BytesIO
+import fitz  # PyMuPDF
+from pypdf import PdfReader, PdfWriter
 
 
-def add_hidden_text_to_pdf(input_pdf_path: str, output_pdf_path: str):
+def _escape_pdf_string(text: str) -> str:
+    """转义 PDF 字符串中的特殊字符"""
+    return text.replace("\\", "\\\\").replace("(", "\\(").replace(")", "\\)")
+
+
+def add_hidden_text_to_pdf(input_pdf_path: str, output_pdf_path: str, target_page: int = None, hidden_text: str = "HIDDEN and invisible."):
     """
-    读取用户传入的原始 PDF，并添加越界隐藏文本：
-    - 保留原始 PDF 的所有内容
-    - 添加一行“Out-of-Bound”隐藏文本（画在页面可见区域之外）
+    使用 PyMuPDF 直接操作内容流，在页面 MediaBox 之外注入越界隐藏文本。
+
+    修复：原实现使用 ReportLab + pypdf merge_page，但 merge_page 会将 overlay
+    内容裁剪到 MediaBox 范围内，导致越界文本（y = page_height + 300）被丢弃。
+    现改为直接用 doc.update_stream() 将越界文本写入内容流，绕过裁剪。
+
+    Args:
+        input_pdf_path: 输入PDF文件路径
+        output_pdf_path: 输出PDF文件路径
+        target_page: 目标页码（从0开始），如果为None则对所有页面进行攻击
+        hidden_text: 要注入的隐藏文本内容
     """
-    # 读取原始 PDF
-    reader = PdfReader(input_pdf_path)
-    writer = PdfWriter()
-    
-    # 获取第一页
-    page = reader.pages[0]
-    
-    # 获取页面尺寸
-    media_box = page.mediabox
-    page_width = media_box.width
-    page_height = media_box.height
-    
-    # 创建一个临时画布来绘制隐藏文本
-    temp_canvas = BytesIO()
-    c = canvas.Canvas(temp_canvas, pagesize=(page_width, page_height))
-    
-    # 越界隐藏文本（Out-of-Bound Text）
-    # 思路：把文字画在“正常阅读区域”上方，比如 y 坐标远大于页面高度
-    # 很多 PDF viewer 会把它裁掉，但解析工具仍然能读到。
-    hidden_text = (
-        "HIDDEN OOB TEXT: e.g., phishing URL, fake contract terms, or malicious content."
-    )
-    # 故意设置一个“超出页面高度”的 y 坐标，比如页面高度+300pt
-    c.setFont("Helvetica", 12)
-    c.setFillColorRGB(1, 0, 0)  # 颜色无所谓，只是便于调试（看不见就无所谓了）
-    c.drawString(30 * mm, page_height + 300, hidden_text)
-    
-    # 你也可以加更多“超边界”的内容，比如在右侧超宽处：
-    hidden_text_right = "ANOTHER HIDDEN OOB TEXT placed far to the right."
-    c.drawString(page_width + 300, 200 * mm, hidden_text_right)
-    
-    c.showPage()
-    c.save()
-    
-    # 将临时画布的内容添加到原始页面
-    temp_canvas.seek(0)
-    hidden_text_pdf = PdfReader(temp_canvas)
-    
-    # 合并页面内容
-    writer.add_page(page)
-    writer.pages[0].merge_page(hidden_text_pdf.pages[0])
-    
-    # 保存添加了隐藏文本的 PDF
-    with open(output_pdf_path, "wb") as output_file:
-        writer.write(output_file)
+    doc = fitz.open(input_pdf_path)
+
+    for page_num in range(len(doc)):
+        if target_page is not None and page_num != target_page:
+            continue
+
+        page = doc[page_num]
+        pw, ph = page.rect.width, page.rect.height
+
+        # 注册 /helv 字体（Helvetica），确保内容流中的 /helv 有对应资源
+        page.insert_font(fontname="helv")
+
+        # 读取现有内容流（page.read_contents 会合并所有内容流为一段 bytes）
+        existing = page.read_contents()
+
+        # 转义隐藏文本中的 PDF 特殊字符
+        safe_text = _escape_pdf_string(hidden_text)
+        safe_text_right = _escape_pdf_string(f"EXTRA: {hidden_text}")
+
+        # 构建越界文本块（包裹在 q/Q 中，重置 CTM 为单位矩阵）
+        # 坐标在 MediaBox 之外：
+        #   顶部越界：y = ph + 300（页面顶部上方 300pt）
+        #   右侧越界：x = pw + 300（页面右侧外 300pt）
+        oob_block = (
+            "q\n"
+            "1 0 0 1 0 0 cm\n"
+            "BT\n"
+            "/helv 12 Tf\n"
+            f"85.05 {ph + 300:.2f} Td\n"
+            f"({safe_text}) Tj\n"
+            "ET\n"
+            "Q\n"
+            "q\n"
+            "1 0 0 1 0 0 cm\n"
+            "BT\n"
+            "/helv 12 Tf\n"
+            f"{pw + 300:.2f} 566.93 Td\n"
+            f"({safe_text_right}) Tj\n"
+            "ET\n"
+            "Q\n"
+        ).encode("latin-1")
+
+        # 将越界文本块插入到现有内容之前（确保 CTM 为默认单位矩阵）
+        new_content = oob_block + existing
+
+        # 更新内容流：将合并后的内容写入第一个 xref，清空其余 xref
+        xrefs = page.get_contents()
+        if xrefs:
+            doc.update_stream(xrefs[0], new_content)
+            for xref in xrefs[1:]:
+                doc.update_stream(xref, b"")
+        else:
+            # 页面无内容流，先创建一个空的再更新
+            page.insert_text((0, 0), " ", fontsize=0.1, fontname="helv")
+            xrefs = page.get_contents()
+            if xrefs:
+                doc.update_stream(xrefs[0], new_content)
+
+    doc.save(output_pdf_path)
+    doc.close()
 
 
-def crop_pdf_to_hide_oob_text(input_pdf: str, output_pdf: str):
+def crop_pdf_to_hide_oob_text(input_pdf: str, output_pdf: str, target_page: int = None):
     """
-    使用 pypdf / PyPDF2 修改 CropBox：
+    使用 pypdf 设置 CropBox：
     - MediaBox 保持原始尺寸（内容都在）
-    - CropBox 缩小，只显示页面中间一块，可见内容只剩“正常文字”
-    - 越界文本虽然在内容流里，但被裁出可见区域
+    - CropBox 与 MediaBox 一致，不裁切任何正常页面内容
+    - 越界文本（page_height+300 和 page_width+300）已在可见区域外，天然不可见
+
+    Args:
+        input_pdf: 输入PDF文件路径
+        output_pdf: 输出PDF文件路径
+        target_page: 目标页码（从0开始），如果为None则对所有页面进行裁剪
     """
     reader = PdfReader(input_pdf)
     writer = PdfWriter()
 
-    page = reader.pages[0]
+    # 遍历所有页面
+    for page_num in range(len(reader.pages)):
+        page = reader.pages[page_num]
 
-    # 取原始页面尺寸（单位：pt）
-    media_box = page.mediabox
-    x0, y0, x1, y1 = media_box
+        # 只在目标页面进行裁剪
+        if target_page is None or page_num == target_page:
+            # 取原始页面尺寸（单位：pt）
+            media_box = page.mediabox
+            x0, y0, x1, y1 = media_box
 
-    # 你可以根据需要调整“可见区域”大小，这里示例：仅保留下方 2/3 的区域
-    # 也可以直接手动给一个 crop 区域，比如 (0, 0, 595, 600)
-    new_y1 = y1 * 0.7  # 上方 30% 的内容被裁掉（包括我们塞在更上方的隐藏文本）
+            # 隐藏文本已经绘制在 page_height+300 和 page_width+300 处，
+            # 远超页面可见范围，无需缩小 CropBox。
+            # CropBox 保持与 MediaBox 一致，不裁切任何正常页面内容。
+            page.cropbox.lower_left = (x0, y0)
+            page.cropbox.upper_right = (x1, y1)
 
-    # 设置 CropBox：指定“可见的矩形区域”
-    page.cropbox.lower_left = (x0, y0)
-    page.cropbox.upper_right = (x1, new_y1)
-
-    writer.add_page(page)
+        # 总是添加页面到输出
+        writer.add_page(page)
 
     with open(output_pdf, "wb") as f:
         writer.write(f)
@@ -99,7 +130,7 @@ def crop_pdf_to_hide_oob_text(input_pdf: str, output_pdf: str):
 if __name__ == "__main__":
     # 获取用户输入的原始 PDF 文件路径
     input_pdf_path = input("请输入原始 PDF 文件的路径：").strip()
-    
+
     # 定义输出文件名，与 README.md 中描述的一致
     base_pdf = "oob_poc_base.pdf"
     cropped_pdf = "oob_poc_cropped.pdf"
@@ -111,12 +142,7 @@ if __name__ == "__main__":
     # 2. 修改 CropBox，形成真正的 Out-of-Bound Text PoC
     crop_pdf_to_hide_oob_text(base_pdf, cropped_pdf)
     print(f"[+] Created cropped PoC PDF with OOB text: {cropped_pdf}")
-    
+
     print("\n[+] 任务完成！已生成以下文件：")
     print(f"   - {base_pdf}: 基础 PDF 文件，包含正常文本和越界隐藏文本")
     print(f"   - {cropped_pdf}: 裁剪后的 PDF 文件，只显示正常文本，隐藏越界文本")
-
-
-
-
-

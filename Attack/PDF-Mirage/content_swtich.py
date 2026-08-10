@@ -7,6 +7,8 @@ under_text = []
 show_text = []
 latex_text = []
 usedFont = []
+# 记录 show_text 中每行最后一个单词的索引，用于在 LaTeX 中插入换行符
+show_line_breaks = set()
 
 punctuation = {
     "!": "Exclam",
@@ -20,7 +22,7 @@ punctuation = {
     ")": "parenright",
     "*": "Asterisk",
     "+": "Plus",
-    ",": "Comma",
+    ",": "comma",
     "-": "Minus",
     ".": "Period",
     "/": "Slash",
@@ -40,14 +42,18 @@ punctuation = {
 
 def readFiles():
     # read files and split word into lists
+    global show_line_breaks
     with open(under_text_path, 'r') as f:
         for line in f:
             for word in line.split():
                 under_text.append(word)
     with open(show_text_path, 'r') as f:
         for line in f:
-            for word in line.split():
-                show_text.append(word)
+            words = line.split()
+            if words:
+                show_text.extend(words)
+                # 记录该行最后一个单词在 show_text 中的索引
+                show_line_breaks.add(len(show_text) - 1)
 
 
 def appendWordAndFont(under, show, c):
@@ -171,10 +177,14 @@ def generateLatex():
         cmd = f"cd output && ttf2tfm {i}.ttf -p T1-WGL4.enc"
         os.system(cmd)
 
-    # 构建文档内容
+    # 构建文档内容，保留 show_text 的原始换行结构
+    N = len(show_text)  # 前 N 个 latex_text entry 与 show_text 单词一一对应
     latex_code += r"\begin{document}" + "\n"
-    for i in latex_text:
+    for entry_idx, i in enumerate(latex_text):
         latex_code += i + " "
+        # 当该 entry 对应 show_text 的某行最后一个单词时，插入换行
+        if entry_idx < N and entry_idx in show_line_breaks:
+            latex_code += r"\\" + "\n"
     latex_code += r"\end{document}" + "\n"
 
     # 写入主文档

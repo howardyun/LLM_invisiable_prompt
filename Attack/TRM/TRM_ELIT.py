@@ -23,9 +23,9 @@ def add_tr3_tiny_matrix(input_pdf_path, output_pdf_path=None):
     reader = PdfReader(input_pdf_path)
     writer = PdfWriter()
     
-    # 处理第一页
-    if len(reader.pages) > 0:
-        page = reader.pages[0]
+    # 处理所有页面
+    for page_num in range(len(reader.pages)):
+        page = reader.pages[page_num]
         
         # 创建一个reportlab画布来绘制隐形文本
         packet = BytesIO()
@@ -52,10 +52,6 @@ def add_tr3_tiny_matrix(input_pdf_path, output_pdf_path=None):
         page.merge_page(new_pdf.pages[0])
         writer.add_page(page)
     
-    # 添加剩余页面
-    for page_num in range(1, len(reader.pages)):
-        writer.add_page(reader.pages[page_num])
-    
     # 保存输出PDF
     with open(output_pdf_path, "wb") as output_file:
         writer.write(output_file)
@@ -75,9 +71,9 @@ def add_tr3_tj_fragmented(input_pdf_path, output_pdf_path=None):
     reader = PdfReader(input_pdf_path)
     writer = PdfWriter()
     
-    # 处理第一页
-    if len(reader.pages) > 0:
-        page = reader.pages[0]
+    # 处理所有页面
+    for page_num in range(len(reader.pages)):
+        page = reader.pages[page_num]
         
         # 创建一个reportlab画布来绘制隐形文本
         packet = BytesIO()
@@ -123,10 +119,6 @@ def add_tr3_tj_fragmented(input_pdf_path, output_pdf_path=None):
         page.merge_page(new_pdf.pages[0])
         writer.add_page(page)
     
-    # 添加剩余页面
-    for page_num in range(1, len(reader.pages)):
-        writer.add_page(reader.pages[page_num])
-    
     # 保存输出PDF
     with open(output_pdf_path, "wb") as output_file:
         writer.write(output_file)
@@ -146,9 +138,9 @@ def add_tr3_artifact(input_pdf_path, output_pdf_path=None):
     reader = PdfReader(input_pdf_path)
     writer = PdfWriter()
     
-    # 处理第一页
-    if len(reader.pages) > 0:
-        page = reader.pages[0]
+    # 处理所有页面
+    for page_num in range(len(reader.pages)):
+        page = reader.pages[page_num]
         
         # 创建一个reportlab画布来绘制隐形文本
         packet = BytesIO()
@@ -182,10 +174,6 @@ def add_tr3_artifact(input_pdf_path, output_pdf_path=None):
         # 合并页面
         page.merge_page(new_pdf.pages[0])
         writer.add_page(page)
-    
-    # 添加剩余页面
-    for page_num in range(1, len(reader.pages)):
-        writer.add_page(reader.pages[page_num])
     
     # 保存输出PDF
     with open(output_pdf_path, "wb") as output_file:

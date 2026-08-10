@@ -64,7 +64,16 @@ def _build_pdf(objects: List[PDFObj], root_objno: int) -> bytes:
 
 import os
 
-def make_ocg_hidden_pdf(input_pdf_path: str, output_pdf_path: str = "ocg_hidden_poc.pdf") -> None:
+def make_ocg_hidden_pdf(input_pdf_path: str, output_pdf_path: str = "ocg_hidden_poc.pdf", target_page: int = None, hidden_text: str = "HIDDEN_LAYER: steal_me") -> None:
+    """
+    生成包含OCG隐藏内容的PDF
+    
+    Args:
+        input_pdf_path: 输入PDF文件路径
+        output_pdf_path: 输出PDF文件路径
+        target_page: 目标页码（从0开始），如果为None则对所有页面进行攻击
+        hidden_text: 要注入的隐藏文本内容
+    """
     # Validate input file exists
     if not os.path.exists(input_pdf_path):
         print(f"Error: Input file '{input_pdf_path}' does not exist")
@@ -83,94 +92,131 @@ def make_ocg_hidden_pdf(input_pdf_path: str, output_pdf_path: str = "ocg_hidden_
         print(f"Error reading input PDF: {e}")
         return
 
-    # Get the first page
-    page = reader.pages[0]
+    # 1. 创建 OCG 字典并将其注册为间接对象
+    ocg_dict = DictionaryObject()
+    ocg_dict[NameObject("/Type")] = NameObject("/OCG")
+    ocg_dict[NameObject("/Name")] = NameObject("/HiddenLayer")
+    # 关键：获取该对象的引用
+    ocg_ref = writer._add_object(ocg_dict)
+    
+    # 2. 获取或创建 OCProperties 字典
+    if not hasattr(writer, '_root_object'):
+        writer._root_object = DictionaryObject()
+    
+    root = writer._root_object
+    if NameObject("/OCProperties") not in root:
+        root[NameObject("/OCProperties")] = DictionaryObject()
+    oc_properties = root[NameObject("/OCProperties")]
+    
+    # 3. 设置 OCGs 数组 - 使用引用
+    ocgs_array = ArrayObject([ocg_ref])
+    oc_properties[NameObject("/OCGs")] = ocgs_array
+    
+    # 4. 设置默认配置（默认关闭 OCG 图层）
+    # 用 /BaseState /OFF 直接声明默认所有 OCG 关闭，比 /BaseState /ON + /OFF 数组的
+    # “覆盖式”写法更直接，兼容性更好；同时保留 /OFF 数组作为双保险。
+    oc_defaults = DictionaryObject()
+    oc_defaults[NameObject("/Name")] = NameObject("/Default")
+    oc_defaults[NameObject("/BaseState")] = NameObject("/OFF")  # 基准为关：默认所有 OCG 关闭
+    oc_defaults[NameObject("/OFF")] = ArrayObject([ocg_ref])    # 双保险：明确指定该层关闭
+    oc_defaults[NameObject("/Order")] = ArrayObject([ocg_ref])   # 保持顺序
+    oc_properties[NameObject("/D")] = oc_defaults
 
-    # Create a new content stream with OCG hidden text
-    # First, get the existing content
-    existing_content = page.get_contents()
-    if existing_content:
-        # Convert existing content to bytes
-        if isinstance(existing_content, list):
-            existing_content = b''.join(content.get_data() for content in existing_content)
-        else:
-            existing_content = existing_content.get_data()
-    else:
-        existing_content = b''
+    # Process all pages to preserve them
+    for page_num in range(len(reader.pages)):
+        # Get current page
+        page = reader.pages[page_num]
+        
+        # Only modify the target page if specified
+        if target_page is None or page_num == target_page:
+            # Create a new content stream with OCG hidden text
+            # First, get the existing content
+            existing_content = page.get_contents()
+            if existing_content:
+                # Convert existing content to bytes (PyPDF2 3.0+ compatible)
+                try:
+                    if isinstance(existing_content, list):
+                        # For list of content streams
+                        content_parts = []
+                        for content in existing_content:
+                            if hasattr(content, 'get_data'):
+                                content_parts.append(content.get_data())
+                            elif hasattr(content, 'get_bytes'):
+                                content_parts.append(content.get_bytes())
+                            else:
+                                content_parts.append(bytes(content))
+                        existing_content = b''.join(content_parts)
+                    elif hasattr(existing_content, 'get_data'):
+                        # For ContentStream object
+                        existing_content = existing_content.get_data()
+                    elif hasattr(existing_content, 'get_bytes'):
+                        existing_content = existing_content.get_bytes()
+                    else:
+                        existing_content = bytes(existing_content)
+                except Exception:
+                    existing_content = b''
+            else:
+                existing_content = b''
 
-    # Add OCG hidden text to the content
-    ocg_hidden_text = b'''
+            # Add OCG hidden text to the content
+            # Only add hidden text, no visible text
+            # 用 q/Q 包裹以隔离图形状态；并插入到 existing_content 之前。
+            # 原因：PDF 的 cm 操作符是“右乘拼接”而非“设置”，无法把 existing_content
+            # 末尾残留的 CTM（典型为 y 轴翻转 1 0 0 -1 0 H cm）重置回单位矩阵。
+            # 而内容流开头 CTM 一定是页面默认的单位矩阵，故把 OCG 块放前面可保证
+            # 文字方向正常；q/Q 隔离后 existing_content 仍在单位矩阵下执行，不受影响。
+            ocg_hidden_text = f'''
+q
 /OC /OC1 BDC
 BT
 /F1 18 Tf
 72 680 Td
-(HIDDEN_LAYER: steal_me) Tj
+({hidden_text}) Tj
 ET
 EMC
-'''
+Q
+'''.encode('utf-8')
 
-    # Combine existing content with OCG hidden text
-    new_content = existing_content + ocg_hidden_text
+            # 把 OCG 内容插入到 existing_content 之前，保证文字方向正常
+            new_content = ocg_hidden_text + existing_content
 
-    # Set the new content stream
-    page._content_stream = new_content
+            # Set the new content stream using PyPDF2's proper method
+            # Create a new content stream object
+            from PyPDF2.generic import DecodedStreamObject
+            
+            # Create a proper content stream
+            content_stream = DecodedStreamObject()
+            content_stream.set_data(new_content)
+            
+            # Replace the page's content with our new content
+            page[NameObject("/Contents")] = content_stream
 
-    # Add necessary resources for OCG
-    if NameObject("/Resources") not in page:
-        page[NameObject("/Resources")] = DictionaryObject()
-    resources = page[NameObject("/Resources")]
-    
-    # Add font if not present
-    if NameObject("/Font") not in resources:
-        resources[NameObject("/Font")] = DictionaryObject()
-    font_resources = resources[NameObject("/Font")]
-    if NameObject("/F1") not in font_resources:
-        font_dict = DictionaryObject()
-        font_dict[NameObject("/Type")] = NameObject("/Font")
-        font_dict[NameObject("/Subtype")] = NameObject("/Type1")
-        font_dict[NameObject("/BaseFont")] = NameObject("/Helvetica")
-        font_resources[NameObject("/F1")] = font_dict
-    
-    # Add OCG properties
-    if NameObject("/Properties") not in resources:
-        resources[NameObject("/Properties")] = DictionaryObject()
-    properties = resources[NameObject("/Properties")]
-    
-    # Create OCG dictionary
-    ocg_dict = DictionaryObject()
-    ocg_dict[NameObject("/Type")] = NameObject("/OCG")
-    ocg_dict[NameObject("/Name")] = NameObject("HiddenLayer")
-    
-    # Add OCG to properties
-    properties[NameObject("/OC1")] = ocg_dict
+            # Add necessary resources for OCG
+            if NameObject("/Resources") not in page:
+                page[NameObject("/Resources")] = DictionaryObject()
+            resources = page[NameObject("/Resources")]
+            
+            # Add font if not present
+            if NameObject("/Font") not in resources:
+                resources[NameObject("/Font")] = DictionaryObject()
+            font_resources = resources[NameObject("/Font")]
+            if NameObject("/F1") not in font_resources:
+                font_dict = DictionaryObject()
+                font_dict[NameObject("/Type")] = NameObject("/Font")
+                font_dict[NameObject("/Subtype")] = NameObject("/Type1")
+                font_dict[NameObject("/BaseFont")] = NameObject("/Helvetica")
+                font_resources[NameObject("/F1")] = font_dict
+            
+            # Add OCG properties
+            if NameObject("/Properties") not in resources:
+                resources[NameObject("/Properties")] = DictionaryObject()
+            properties = resources[NameObject("/Properties")]
+            
+            # Add OCG to properties - 使用同一个引用
+            properties[NameObject("/OC1")] = ocg_ref
 
-    # Add OCProperties to the catalog
-    if NameObject("/OCProperties") not in reader.trailer[NameObject("/Root")]:
-        reader.trailer[NameObject("/Root")][NameObject("/OCProperties")] = DictionaryObject()
-    oc_properties = reader.trailer[NameObject("/Root")][NameObject("/OCProperties")]
-    
-    # Add OCGs array if not present
-    if NameObject("/OCGs") not in oc_properties:
-        oc_properties[NameObject("/OCGs")] = ArrayObject()
-    oc_properties[NameObject("/OCGs")].append(ocg_dict)
-    
-    # Add default OCG settings
-    if NameObject("/D") not in oc_properties:
-        oc_properties[NameObject("/D")] = DictionaryObject()
-    oc_defaults = oc_properties[NameObject("/D")]
-    if NameObject("/Order") not in oc_defaults:
-        oc_defaults[NameObject("/Order")] = ArrayObject()
-    oc_defaults[NameObject("/Order")].append(ocg_dict)
-    if NameObject("/OFF") not in oc_defaults:
-        oc_defaults[NameObject("/OFF")] = ArrayObject()
-    oc_defaults[NameObject("/OFF")].append(ocg_dict)
-
-    # Add the modified page to the writer
-    writer.add_page(page)
-
-    # Copy all other pages from the input PDF
-    for i in range(1, len(reader.pages)):
-        writer.add_page(reader.pages[i])
+        # Always add the page to the writer (modified or not)
+        writer.add_page(page)
 
     # Write the output PDF
     with open(output_pdf_path, 'wb') as f:

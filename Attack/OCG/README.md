@@ -65,7 +65,6 @@ python OCG_main.py
 
 生成的PDF文件包含以下内容：
 
-- **可见内容**：页面顶部显示 "VISIBLE: hello"
 - **隐藏内容**：位于默认关闭的OCG图层中，包含 "HIDDEN_LAYER: steal_me"
 
 ## 查看隐藏内容

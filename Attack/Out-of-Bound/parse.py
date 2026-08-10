@@ -2,7 +2,7 @@
 
 from pypdf import PdfReader
 
-pdf_path = "oob_poc_base.pdf"   # 换成你的 PoC 文件路径
+pdf_path = "D:\LLM_invisiable_prompt\LLM_invisiable_prompt\Attack\Out-of-Bound\oob_poc_base.pdf"   # 换成你的 PoC 文件路径
 
 reader = PdfReader(pdf_path)
 page = reader.pages[0]
